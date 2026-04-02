@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{% assign project_slug = page.slug | default: page.name %}
+{% assign folder = '/assets/projects/' | append: project_slug | append: '/' %}
+{% assign images = site.static_files | where_exp: 'file', 'file.path contains folder' | sort: 'path' %}
+<section class="section project-hero">
+  <div class="container">
+    <div class="eyebrow">Project</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+    <div class="tag-row">
+      {% if page.material %}<span class="tag">{{ page.material }}</span>{% endif %}
+      {% if page.category %}<span class="tag">{{ page.category }}</span>{% endif %}
+      {% if page.application %}<span class="tag">{{ page.application }}</span>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid two-col project-layout">
+    <div>
+      {% if page.cover %}
+        <img class="project-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+      {% elsif images.size > 0 %}
+        <img class="project-cover" src="{{ images.first.path | relative_url }}" alt="{{ page.title }}">
+      {% else %}
+        <div class="project-cover placeholder-card">Foto volgt</div>
+      {% endif %}
+    </div>
+    <div class="project-meta-card">
+      <h2>Over dit project</h2>
+      <dl class="meta-list">
+        {% if page.material %}<div><dt>Materiaal</dt><dd>{{ page.material }}</dd></div>{% endif %}
+        {% if page.category %}<div><dt>Type</dt><dd>{{ page.category }}</dd></div>{% endif %}
+        {% if page.application %}<div><dt>Toepassing</dt><dd>{{ page.application }}</dd></div>{% endif %}
+      </dl>
+      <div class="prose compact">
+        {{ content }}
+      </div>
+      <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Project bespreken</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Galerij</div>
+      <h2>Foto's van dit project</h2>
+    </div>
+    {% assign valid_images = '' | split: '' %}
+    {% for image in images %}
+      {% assign ext = image.extname | downcase %}
+      {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.svg' %}
+        {% assign valid_images = valid_images | push: image %}
+      {% endif %}
+    {% endfor %}
+    {% if valid_images.size > 0 %}
+      <div class="gallery-grid">
+        {% for image in valid_images %}
+          <a class="gallery-item" href="{{ image.path | relative_url }}">
+            <img src="{{ image.path | relative_url }}" alt="{{ page.title }} foto {{ forloop.index }}" loading="lazy">
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <p>Nog geen foto's toegevoegd voor dit project.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>

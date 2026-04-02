@@ -1,0 +1,111 @@
+from __future__ import annotations
+
+import re
+from pathlib import Path
+import shutil
+
+ROOT = Path(__file__).resolve().parents[1]
+ASSETS_DIR = ROOT / "assets" / "projects"
+OUTPUT_DIR = ROOT / "_projects"
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".svg"}
+META_PATTERN = re.compile(r"^(Materiaal|Categorie|Toepassing|Samenvatting|Titel):\s*(.+)$", re.I)
+
+
+def slug_to_title(slug: str) -> str:
+    return slug.replace("-", " ").replace("_", " ").strip().title()
+
+
+def parse_readme(path: Path, slug: str) -> dict[str, str]:
+    data = {
+        "title": slug_to_title(slug),
+        "material": "",
+        "category": "",
+        "application": "",
+        "summary": "",
+        "body": "",
+    }
+    if not path.exists():
+        return data
+
+    text = path.read_text(encoding="utf-8").strip()
+    if not text:
+        return data
+
+    lines = text.splitlines()
+    body_lines: list[str] = []
+
+    if lines and lines[0].startswith("# "):
+        data["title"] = lines[0][2:].strip()
+        lines = lines[1:]
+
+    parsing_meta = True
+    for line in lines:
+        stripped = line.strip()
+        if parsing_meta:
+            match = META_PATTERN.match(stripped)
+            if match:
+                key = match.group(1).lower()
+                value = match.group(2).strip()
+                if key == "materiaal":
+                    data["material"] = value
+                elif key == "categorie":
+                    data["category"] = value
+                elif key == "toepassing":
+                    data["application"] = value
+                elif key == "samenvatting":
+                    data["summary"] = value
+                elif key == "titel":
+                    data["title"] = value
+                continue
+            if stripped == "":
+                continue
+            parsing_meta = False
+        body_lines.append(line)
+
+    body = "\n".join(body_lines).strip()
+    if body:
+        data["body"] = body
+    elif data["summary"]:
+        data["body"] = data["summary"]
+    return data
+
+
+def collect_images(folder: Path) -> list[Path]:
+    return sorted([
+        p for p in folder.iterdir()
+        if p.is_file() and p.suffix.lower() in IMAGE_EXTS
+    ])
+
+
+def yaml_escape(value: str) -> str:
+    return value.replace('"', '\\"')
+
+
+def main() -> None:
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    for old in OUTPUT_DIR.glob("*.md"):
+        old.unlink()
+
+    for folder in sorted([p for p in ASSETS_DIR.iterdir() if p.is_dir()]):
+        slug = folder.name
+        images = collect_images(folder)
+        meta = parse_readme(folder / "README.md", slug)
+        cover = f"/assets/projects/{slug}/{images[0].name}" if images else ""
+        body = meta["body"] or "Praktisch maatwerkproject in uitvoering volgens toepassing en materiaalkeuze."
+        page = f"""---
+title: \"{yaml_escape(meta['title'])}\"
+slug: \"{slug}\"
+material: \"{yaml_escape(meta['material'])}\"
+category: \"{yaml_escape(meta['category'])}\"
+application: \"{yaml_escape(meta['application'])}\"
+summary: \"{yaml_escape(meta['summary'])}\"
+cover: \"{cover}\"
+---
+
+{body}
+"""
+        (OUTPUT_DIR / f"{slug}.md").write_text(page, encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()
