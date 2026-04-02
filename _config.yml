@@ -1,0 +1,33 @@
+title: Beckers Services
+email: info@example.com
+description: >-
+  Lasmaatwerk in inox en aluminium voor industrie, machinebouw en technische toepassingen.
+baseurl: ""
+url: ""
+lang: nl-BE
+markdown: kramdown
+permalink: pretty
+collections:
+  projects:
+    output: true
+    permalink: /projecten/:name/
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      seo_type: CreativeWork
+  - scope:
+      path: ""
+    values:
+      layout: page
+sass:
+  style: compressed
+exclude:
+  - README.md
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - scripts
+  - .github
