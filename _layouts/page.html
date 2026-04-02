@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
-<section class="section page-intro">
+<section class="page-shell">
   <div class="container narrow">
-    <h1>{{ page.title }}</h1>
-    {% if page.intro %}<p class="lead">{{ page.intro }}</p>{% endif %}
-  </div>
-</section>
-<section class="section page-body">
-  <div class="container narrow prose">
-    {{ content }}
+    <div class="page-panel">
+      <div class="page-intro">
+        <span class="section-kicker">Beckers Services</span>
+        <h1>{{ page.title }}</h1>
+        {% if page.intro %}<p class="page-lead">{{ page.intro }}</p>{% endif %}
+      </div>
+      <div class="page-content prose">
+        {{ content }}
+      </div>
+    </div>
   </div>
 </section>

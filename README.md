@@ -1,22 +1,16 @@
-# Beckers Services website
+# Beckers Services - GitHub Pages starter
 
-Jekyll-site voor GitHub Pages, opgebouwd voor een B2B-profiel in lasmaatwerk.
+Professionele Jekyll-site voor GitHub Pages met:
 
-## Live zetten op GitHub Pages
-
-1. push alles naar de `main` branch
-2. ga in GitHub naar **Settings > Pages**
-3. kies **Build and deployment: GitHub Actions**
-4. push opnieuw of start de workflow handmatig
-
-De workflow in `.github/workflows/pages.yml`:
-- bouwt de site
-- maakt automatisch projectpagina's uit de projectmappen
-- publiceert naar GitHub Pages
+- aangepaste B2B-homepage
+- projectenoverzicht
+- automatische projectpagina's
+- dynamische galerijen per projectmap
+- optionele `README.md` per projectmap
 
 ## Nieuwe projecten toevoegen
 
-Maak voor elk project een nieuwe map in:
+Maak een map onder:
 
 ```text
 assets/projects/project-naam/
@@ -31,16 +25,7 @@ assets/projects/inox-werktafel/
 └─ README.md
 ```
 
-### Hoe werkt het?
-
-- de mapnaam wordt de slug van het project
-- alle foto's in de map verschijnen automatisch op de projectpagina
-- `README.md` is optioneel maar aanbevolen
-- tijdens GitHub Actions wordt automatisch een projectpagina gegenereerd in `_projects/`
-
-## Structuur van README.md in een projectmap
-
-Gebruik dit formaat:
+### Optionele README in de projectmap
 
 ```md
 # Inox werktafel op maat
@@ -49,30 +34,36 @@ Categorie: Werktafel
 Toepassing: Voedingsomgeving
 Samenvatting: Compact maatwerk in inox voor een duurzame werkopstelling.
 
-Korte vrije beschrijving van het project.
-U mag hier meerdere alinea's gebruiken.
+Korte beschrijving van het project.
 ```
 
-### Ondersteunde velden
+Na een build of deploy wordt automatisch een pagina aangemaakt in `_projects/`.
 
-- `Materiaal:`
-- `Categorie:`
-- `Toepassing:`
-- `Samenvatting:`
-- `Titel:` (optioneel als u geen `# Titel` gebruikt)
-
-## Lokale preview
+## Lokaal testen
 
 ```bash
+python scripts/generate_projects.py
 bundle install
-python3 scripts/generate_projects.py
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
-## Aanpassen van contactgegevens
+Open daarna:
 
-Zoek en vervang deze placeholders:
+```text
+http://127.0.0.1:4000
+```
 
-- `info@beckersservices.be`
-- `+32 0 00 00 00 00`
-- `Gingelom, België`
+## Deploy op GitHub Pages
+
+1. Push naar `main`
+2. Zorg dat **Settings -> Pages -> Source** op **GitHub Actions** staat
+3. De workflow in `.github/workflows/pages.yml` bouwt en deployt de site automatisch
+
+## Nog aanpassen
+
+Vervang zeker deze placeholders:
+
+- e-mailadres
+- telefoonnummer
+- regio
+- eventuele voorbeeldprojecten

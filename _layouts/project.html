@@ -4,32 +4,47 @@ layout: default
 {% assign project_slug = page.slug | default: page.name %}
 {% assign folder = '/assets/projects/' | append: project_slug | append: '/' %}
 {% assign images = site.static_files | where_exp: 'file', 'file.path contains folder' | sort: 'path' %}
-<section class="section project-hero">
-  <div class="container">
-    <div class="eyebrow">Project</div>
-    <h1>{{ page.title }}</h1>
-    {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
-    <div class="tag-row">
-      {% if page.material %}<span class="tag">{{ page.material }}</span>{% endif %}
-      {% if page.category %}<span class="tag">{{ page.category }}</span>{% endif %}
-      {% if page.application %}<span class="tag">{{ page.application }}</span>{% endif %}
+{% assign valid_images = '' | split: '' %}
+{% for image in images %}
+  {% assign ext = image.extname | downcase %}
+  {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.svg' %}
+    {% assign valid_images = valid_images | push: image %}
+  {% endif %}
+{% endfor %}
+
+<section class="project-top">
+  <div class="container project-top-grid">
+    <div>
+      <span class="section-kicker">Project</span>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="hero-lead">{{ page.summary }}</p>{% endif %}
+      <div class="tag-row">
+        {% if page.material %}<span class="tag">{{ page.material }}</span>{% endif %}
+        {% if page.category %}<span class="tag">{{ page.category }}</span>{% endif %}
+        {% if page.application %}<span class="tag">{{ page.application }}</span>{% endif %}
+      </div>
+    </div>
+    <div class="hero-side-card">
+      <strong>B2B maatwerk</strong>
+      <p>Praktische oplossingen in inox en aluminium, volgens plan of in overleg. Ook staal op aanvraag.</p>
+      <a class="button button-primary button-full" href="{{ '/contact/' | relative_url }}">Project bespreken</a>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container grid two-col project-layout">
+<section class="project-main">
+  <div class="container project-main-grid">
     <div>
       {% if page.cover %}
         <img class="project-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
-      {% elsif images.size > 0 %}
-        <img class="project-cover" src="{{ images.first.path | relative_url }}" alt="{{ page.title }}">
+      {% elsif valid_images.size > 0 %}
+        <img class="project-cover" src="{{ valid_images.first.path | relative_url }}" alt="{{ page.title }}">
       {% else %}
         <div class="project-cover placeholder-card">Foto volgt</div>
       {% endif %}
     </div>
-    <div class="project-meta-card">
-      <h2>Over dit project</h2>
+    <aside class="project-info-panel">
+      <h2>Projectinfo</h2>
       <dl class="meta-list">
         {% if page.material %}<div><dt>Materiaal</dt><dd>{{ page.material }}</dd></div>{% endif %}
         {% if page.category %}<div><dt>Type</dt><dd>{{ page.category }}</dd></div>{% endif %}
@@ -38,24 +53,16 @@ layout: default
       <div class="prose compact">
         {{ content }}
       </div>
-      <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Project bespreken</a>
-    </div>
+    </aside>
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="gallery-section">
   <div class="container">
     <div class="section-heading">
-      <div class="eyebrow">Galerij</div>
+      <span class="section-kicker">Galerij</span>
       <h2>Foto's van dit project</h2>
     </div>
-    {% assign valid_images = '' | split: '' %}
-    {% for image in images %}
-      {% assign ext = image.extname | downcase %}
-      {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.svg' %}
-        {% assign valid_images = valid_images | push: image %}
-      {% endif %}
-    {% endfor %}
     {% if valid_images.size > 0 %}
       <div class="gallery-grid">
         {% for image in valid_images %}
@@ -65,7 +72,7 @@ layout: default
         {% endfor %}
       </div>
     {% else %}
-      <div class="empty-state">
+      <div class="empty-state wide-state">
         <p>Nog geen foto's toegevoegd voor dit project.</p>
       </div>
     {% endif %}
