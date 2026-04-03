@@ -109,8 +109,8 @@ title: Home
       <p>Stuur een foto, schets of plan door en maak van je vraag snel iets concreets.</p>
     </div>
     <div class="button-row">
-      <a class="button button-primary" href="mailto:info@beckersservices.be">Mail ons</a>
-      <a class="button button-secondary" href="tel:+32000000000">Bel ons</a>
+      <a class="button button-primary" href="mailto:services.beckers@gmail.com">Mail ons</a>
+      <a class="button button-secondary" href="tel:+32 476 06 32 85">Bel ons</a>
     </div>
   </div>
 </section>
