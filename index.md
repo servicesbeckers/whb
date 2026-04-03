@@ -114,3 +114,19 @@ title: Home
     </div>
   </div>
 </section>
+
+<section class="projects-shell">
+  <div class="container">
+    <h2>Projecten</h2>
+    {% assign featured_projects = site.projects | sort: 'title' %}
+    {% if featured_projects.size > 0 %}
+      <div class="project-grid project-grid-large">
+        {% for project in featured_projects limit:6 %}
+          {% include project-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>Nog geen projecten gepubliceerd.</p>
+    {% endif %}
+  </div>
+</section>
