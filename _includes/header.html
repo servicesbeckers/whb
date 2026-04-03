@@ -1,18 +1,40 @@
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Beckers Services home">
-      <span class="brand-mark">BS</span>
-      <span class="brand-copy">
-        <strong>Beckers Services</strong>
-        <small>Lasmaatwerk in inox, aluminium en staal</small>
-      </span>
-    </a>
-    <nav class="site-nav" aria-label="Hoofdnavigatie">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/#diensten' | relative_url }}">Diensten</a>
-      <a href="{{ '/projecten/' | relative_url }}">Projecten</a>
-      <a href="{{ '/#werkwijze' | relative_url }}">Werkwijze</a>
-      <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Contact</a>
-    </nav>
-  </div>
+    <div class="container header-inner">
+
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Werkhuizen Beckers home">
+            <span class="brand-mark">WB</span>
+            <span class="brand-copy">
+                <strong>Werkhuizen Beckers</strong>
+                <small>Maatwerk in staal, RVS en aluminium</small>
+            </span>
+        </a>
+
+        <!-- Hamburger knop -->
+        <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigatie -->
+        <nav class="site-nav" aria-label="Hoofdnavigatie">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/#diensten' | relative_url }}">Diensten</a>
+            <a href="{{ '/projecten/' | relative_url }}">Projecten</a>
+            <a href="{{ '/#werkwijze' | relative_url }}">Werkwijze</a>
+            <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Offerte aanvragen</a>
+        </nav>
+
+    </div>
 </header>
+
+<!-- JS -->
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>

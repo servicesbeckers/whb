@@ -1,23 +1,36 @@
-{% assign p = include.project %}
+{% assign project = include.project %}
+
 <article class="project-card">
-  <a class="project-card-link" href="{{ p.url | relative_url }}">
-    {% if p.cover %}
-      <img class="project-card-image" src="{{ p.cover | relative_url }}" alt="{{ p.title }}">
-    {% else %}
-      <div class="project-card-image placeholder-card">Project</div>
-    {% endif %}
-    <div class="project-card-body">
-      <div class="tag-row small-gap">
-        {% if p.material %}<span class="tag">{{ p.material }}</span>{% endif %}
-        {% if p.category %}<span class="tag">{{ p.category }}</span>{% endif %}
-      </div>
-      <h3>{{ p.title }}</h3>
-      {% if p.summary %}
-        <p>{{ p.summary }}</p>
-      {% else %}
-        <p>Bekijk projectdetails en foto's.</p>
-      {% endif %}
-      <span class="card-link">Bekijk project</span>
-    </div>
-  </a>
+    <a class="project-card-link" href="{{ project.url | relative_url }}">
+
+        {% if project.cover %}
+        <img class="project-card-image"
+             src="{{ project.cover | relative_url }}"
+             alt="{{ project.title }}">
+        {% else %}
+        <div class="project-card-image placeholder-card">Projectafbeelding</div>
+        {% endif %}
+
+        <div class="project-card-body">
+            <div class="tag-row small-gap">
+                {% if project.material %}
+                <span class="tag">{{ project.material }}</span>
+                {% endif %}
+                {% if project.category %}
+                <span class="tag">{{ project.category }}</span>
+                {% endif %}
+            </div>
+
+            <h3>{{ project.title }}</h3>
+
+            {% if project.summary %}
+            <p>{{ project.summary }}</p>
+            {% else %}
+            <p>Ontdek meer over dit project, de uitvoering en het eindresultaat.</p>
+            {% endif %}
+
+            <span class="card-link">Bekijk project</span>
+        </div>
+
+    </a>
 </article>

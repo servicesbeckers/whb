@@ -1,80 +1,127 @@
 ---
 layout: default
 ---
+
 {% assign project_slug = page.slug | default: page.name %}
-{% assign folder = '/assets/projects/' | append: project_slug | append: '/' %}
-{% assign images = site.static_files | where_exp: 'file', 'file.path contains folder' | sort: 'path' %}
-{% assign valid_images = '' | split: '' %}
-{% for image in images %}
-  {% assign ext = image.extname | downcase %}
-  {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.svg' %}
-    {% assign valid_images = valid_images | push: image %}
+{% assign project_folder = '/assets/projects/' | append: project_slug | append: '/' %}
+{% assign project_images = site.static_files | where_exp: 'file', 'file.path contains project_folder' | sort: 'path' %}
+{% assign gallery_images = '' | split: '' %}
+
+{% for image in project_images %}
+  {% assign extension = image.extname | downcase %}
+  {% if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.webp' or extension == '.svg' %}
+    {% assign gallery_images = gallery_images | push: image %}
   {% endif %}
 {% endfor %}
 
-<section class="project-top">
-  <div class="container project-top-grid">
-    <div>
-      <span class="section-kicker">Project</span>
-      <h1>{{ page.title }}</h1>
-      {% if page.summary %}<p class="hero-lead">{{ page.summary }}</p>{% endif %}
-      <div class="tag-row">
-        {% if page.material %}<span class="tag">{{ page.material }}</span>{% endif %}
-        {% if page.category %}<span class="tag">{{ page.category }}</span>{% endif %}
-        {% if page.application %}<span class="tag">{{ page.application }}</span>{% endif %}
-      </div>
+<section class="project-hero">
+    <div class="container project-hero-grid">
+
+        <div class="project-hero-content">
+            <span class="section-kicker">Project</span>
+            <h1>{{ page.title }}</h1>
+
+            {% if page.summary %}
+            <p class="hero-lead">{{ page.summary }}</p>
+            {% endif %}
+
+            <div class="tag-row">
+                {% if page.material %}
+                <span class="tag">{{ page.material }}</span>
+                {% endif %}
+                {% if page.category %}
+                <span class="tag">{{ page.category }}</span>
+                {% endif %}
+                {% if page.application %}
+                <span class="tag">{{ page.application }}</span>
+                {% endif %}
+            </div>
+        </div>
+
+        <aside class="hero-side-card">
+            <strong>Maatwerk voor bedrijven en particulieren</strong>
+            <p>
+                Duurzame oplossingen in staal, RVS en aluminium, volledig afgestemd op uw wensen,
+                technische vereisten en toepassing.
+            </p>
+            <a class="button button-primary button-full" href="{{ '/contact/' | relative_url }}">
+                Project bespreken
+            </a>
+        </aside>
+
     </div>
-    <div class="hero-side-card">
-      <strong>B2B maatwerk</strong>
-      <p>Praktische oplossingen in staal, inox en aluminium, volgens plan of in overleg.</p>
-      <a class="button button-primary button-full" href="{{ '/contact/' | relative_url }}">Project bespreken</a>
-    </div>
-  </div>
 </section>
 
-<section class="project-main">
-  <div class="container project-main-grid">
-    <div>
-      {% if page.cover %}
-        <img class="project-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
-      {% elsif valid_images.size > 0 %}
-        <img class="project-cover" src="{{ valid_images.first.path | relative_url }}" alt="{{ page.title }}">
-      {% else %}
-        <div class="project-cover placeholder-card">Foto volgt</div>
-      {% endif %}
+<section class="project-content">
+    <div class="container project-content-grid">
+
+        <div class="project-media">
+            {% if page.cover %}
+            <img class="project-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+            {% elsif gallery_images.size > 0 %}
+            <img class="project-cover" src="{{ gallery_images.first.path | relative_url }}" alt="{{ page.title }}">
+            {% else %}
+            <div class="project-cover placeholder-card">Afbeelding volgt</div>
+            {% endif %}
+        </div>
+
+        <aside class="project-details">
+            <h2>Projectinformatie</h2>
+
+            <dl class="meta-list">
+                {% if page.material %}
+                <div>
+                    <dt>Materiaal</dt>
+                    <dd>{{ page.material }}</dd>
+                </div>
+                {% endif %}
+
+                {% if page.category %}
+                <div>
+                    <dt>Type</dt>
+                    <dd>{{ page.category }}</dd>
+                </div>
+                {% endif %}
+
+                {% if page.application %}
+                <div>
+                    <dt>Toepassing</dt>
+                    <dd>{{ page.application }}</dd>
+                </div>
+                {% endif %}
+            </dl>
+
+            <div class="prose compact">
+                {{ content }}
+            </div>
+        </aside>
+
     </div>
-    <aside class="project-info-panel">
-      <h2>Projectinfo</h2>
-      <dl class="meta-list">
-        {% if page.material %}<div><dt>Materiaal</dt><dd>{{ page.material }}</dd></div>{% endif %}
-        {% if page.category %}<div><dt>Type</dt><dd>{{ page.category }}</dd></div>{% endif %}
-        {% if page.application %}<div><dt>Toepassing</dt><dd>{{ page.application }}</dd></div>{% endif %}
-      </dl>
-      <div class="prose compact">
-        {{ content }}
-      </div>
-    </aside>
-  </div>
 </section>
 
-<section class="gallery-section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-kicker">Galerij</span>
-      <h2>Foto's van dit project</h2>
+<section class="project-gallery">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-kicker">Galerij</span>
+            <h2>Foto’s van dit project</h2>
+        </div>
+
+        {% if gallery_images.size > 0 %}
+        <div class="gallery-grid">
+            {% for image in gallery_images %}
+            <a class="gallery-item" href="{{ image.path | relative_url }}">
+                <img src="{{ image.path | relative_url }}"
+                     alt="{{ page.title }} – foto {{ forloop.index }}"
+                     loading="lazy">
+            </a>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state wide-state">
+            <p>Er zijn momenteel nog geen foto’s toegevoegd aan dit project.</p>
+        </div>
+        {% endif %}
+
     </div>
-    {% if valid_images.size > 0 %}
-      <div class="gallery-grid">
-        {% for image in valid_images %}
-          <a class="gallery-item" href="{{ image.path | relative_url }}">
-            <img src="{{ image.path | relative_url }}" alt="{{ page.title }} foto {{ forloop.index }}" loading="lazy">
-          </a>
-        {% endfor %}
-      </div>
-    {% else %}
-      <div class="empty-state wide-state">
-        <p>Nog geen foto's toegevoegd voor dit project.</p>
-      </div>
-    {% endif %}
-  </div>
 </section>
