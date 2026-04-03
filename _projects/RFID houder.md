@@ -1,7 +1,7 @@
 ---
 title: "RFID houder"
 slug: "RFID houder"
-material: "RVS 304 K320"
+material: "RVS 304 [2mm K320]"
 category: "Automatisatie"
 application: "Houder RFID-reader voor productieproces."
 summary: "Voor dit project werd een RVS houder ontworpen en vervaardigd voor het nauwkeurig positioneren van een RFID-reader binnen een geautomatiseerd productieproces."
