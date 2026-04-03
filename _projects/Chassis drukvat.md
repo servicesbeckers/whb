@@ -1,5 +1,5 @@
 ---
-title: "Chassis Drukvat"
+title: "Chassis drukvat"
 slug: "Chassis drukvat"
 material: "Staal S235JR 20mm"
 category: "Landbouwmachines"

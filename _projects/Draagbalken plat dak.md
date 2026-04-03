@@ -1,5 +1,5 @@
 ---
-title: "Draagbalken Plat Dak"
+title: "Draagbalken plat dak"
 slug: "Draagbalken plat dak"
 material: "S235JR constructieprofielen"
 category: "Constructie"

@@ -10,13 +10,13 @@ IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".svg"}
 META_PATTERN = re.compile(r"^(Materiaal|Categorie|Toepassing|Samenvatting|Titel|Material|Category|Application|Summary|Title):\s*(.+)$", re.I)
 
 
-def slug_to_title(slug: str) -> str:
-    return slug.replace("-", " ").replace("_", " ").strip().title()
+def fallback_title(raw_name: str) -> str:
+    return raw_name.strip()
 
 
 def parse_readme(path: Path, slug: str) -> dict[str, str]:
     data = {
-        "title": slug_to_title(slug),
+        "title": fallback_title(slug),
         "material": "",
         "category": "",
         "application": "",

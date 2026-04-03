@@ -1,5 +1,5 @@
 ---
-title: "Minimalistische Trapleuning"
+title: "Minimalistische trapleuning"
 slug: "Minimalistische trapleuning"
 material: "RVS 304 30x20x2 K320"
 category: "Leuning"
