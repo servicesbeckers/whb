@@ -1,6 +1,6 @@
 ---
 layout: projects
 title: Projecten
-intro: Hier vindt u een overzicht van enkele uitgevoerde projecten.
+intro: Een verzorgde projectpagina per realisatie, automatisch opgebouwd op basis van je projectmappen in assets/projects.
 permalink: /projecten/
 ---
