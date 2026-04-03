@@ -1,4 +1,4 @@
-Materiaal: S235JR staalplaat (boilervat onbekend)
+Materiaal: S235JR [3mm] | Boilervat onbekend
 Categorie: Drukvat
 Toepassing: Herstelling van een lekkende waterboiler.
 Samenvatting: Bij deze bestaande stookolieboiler werd een lek vastgesteld ter hoogte van een optionele, ongebruikte elektrische weerstand. Na analyse van de technische schema’s werd eerst de elektrische weerstand veilig uitgeschakeld via de dip switches.

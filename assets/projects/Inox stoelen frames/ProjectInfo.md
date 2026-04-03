@@ -1,4 +1,4 @@
-Materiaal: RVS 304 30x20x2 K320
+Materiaal: RVS 304 [30x20x2 K320]
 Categorie: Meubels
 Toepassing: Frame voor stoelen in serieproductie.
 Samenvatting: Voor dit project werden RVS stoelstructuren in serie vervaardigd uit RVS 304 kokers met een K320 geslepen afwerking.
