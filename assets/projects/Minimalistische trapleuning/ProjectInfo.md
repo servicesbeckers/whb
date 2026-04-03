@@ -1,4 +1,4 @@
-Materiaal: RVS 304 [30x20x2 K320]
+Materiaal: RVS 304 30x20x2 K320
 Categorie: Leuning
 Toepassing: Minimalistische trapleuning op maat
 Samenvatting: Voor dit project werd een strakke, minimalistische trapleuning in inox ontworpen en vervaardigd voor een bestaande trap.
