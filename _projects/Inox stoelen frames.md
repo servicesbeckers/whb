@@ -1,7 +1,7 @@
 ---
 title: "Inox stoelen frames"
 slug: "Inox stoelen frames"
-material: "RVS 304 30x20x2 K320"
+material: "RVS 304 [30x20x2 K320]"
 category: "Meubels"
 application: "Frame voor stoelen in serieproductie."
 summary: "Voor dit project werden RVS stoelstructuren in serie vervaardigd uit RVS 304 kokers met een K320 geslepen afwerking."

@@ -1,7 +1,7 @@
 ---
 title: "Draagbalken plat dak"
 slug: "Draagbalken plat dak"
-material: "S235JR constructieprofielen"
+material: "S235JR [constructieprofielen]"
 category: "Constructie"
 application: "Dragende balken voor een plat dak."
 summary: "Voor dit project werden stalen draagbalken vervaardigd uit S235JR constructieprofielen, specifiek ontworpen voor de ondersteuning van een plat dak."

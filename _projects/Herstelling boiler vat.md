@@ -1,7 +1,7 @@
 ---
 title: "Herstelling boiler vat"
 slug: "Herstelling boiler vat"
-material: "S235JR staalplaat (boilervat onbekend)"
+material: "S235JR [3mm] | Boilervat onbekend"
 category: "Drukvat"
 application: "Herstelling van een lekkende waterboiler."
 summary: "Bij deze bestaande stookolieboiler werd een lek vastgesteld ter hoogte van een optionele, ongebruikte elektrische weerstand. Na analyse van de technische schema’s werd eerst de elektrische weerstand veilig uitgeschakeld via de dip switches."
