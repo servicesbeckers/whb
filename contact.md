@@ -6,10 +6,10 @@ permalink: /contact/
 ---
 
 **E-mail**  
-[info@beckersservices.be](mailto:info@beckersservices.be)
+[services.beckers@gmail.com](mailto:services.beckers@gmail.com)
 
 **Telefoon**  
-[+32 0 00 00 00 00](tel:+32000000000)
+[+32 476 06 32 85](tel:+32 476 06 32 85)
 
 **Regio**  
 Gingelom, Limburg, België

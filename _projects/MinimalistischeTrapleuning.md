@@ -1,11 +1,11 @@
 ---
 title: "Minimalistischetrapleuning"
 slug: "MinimalistischeTrapleuning"
-material: "Inox"
+material: "RVS 304 30x20x2 K320"
 category: "Leuning"
 application: "Minimalistische trapleuning op maat"
-summary: "Er werd gevraagd een minimalistische trapleuning uit inox te vervaardigen voor een bestaande trap."
+summary: "Voor dit project werd een strakke, minimalistische trapleuning in inox ontworpen en vervaardigd voor een bestaande trap."
 cover: "/assets/projects/MinimalistischeTrapleuning/LeuningBoven.jpeg"
 ---
 
-Dit is een voorbeeldproject dat mee in de starter zit. Vervang dit gerust door uw eigen projectmap of voeg echte foto's toe in dezelfde map.
+De focus lag op een tijdloos design met een slanke uitstraling, zonder in te boeten op stevigheid en gebruikscomfort. Dankzij het gebruik van inox is de leuning niet alleen esthetisch, maar ook duurzaam en onderhoudsvriendelijk.

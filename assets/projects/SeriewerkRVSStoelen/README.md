@@ -1,6 +1,5 @@
-Materiaal: Inox
-Categorie: Leuning
-Toepassing: Minimalistische trapleuning op maat
-Samenvatting: Er werd gevraagd een minimalistische trapleuning uit inox te vervaardigen voor een bestaande trap. 
-
-Dit is een voorbeeldproject dat mee in de starter zit. Vervang dit gerust door uw eigen projectmap of voeg echte foto's toe in dezelfde map.
+Materiaal: RVS 304 30x20x2 K320
+Categorie: Meubels
+Toepassing: Frame voor stoelen in serieproductie.
+Samenvatting: Voor dit project werden RVS stoelstructuren in serie vervaardigd uit RVS 304 kokers met een K320 geslepen afwerking.
+De focus lag op maatvastheid, herhaalbaarheid en een hoogwaardige afwerking. Dankzij het gebruik van roestvast staal zijn de frames duurzaam, onderhoudsvriendelijk en geschikt voor intensief gebruik, zowel in particuliere als professionele omgevingen.
