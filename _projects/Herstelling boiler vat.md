@@ -1,11 +1,11 @@
 ---
-title: "Boilervatreparatie"
-slug: "BoilervatReparatie"
+title: "Herstelling Boiler Vat"
+slug: "Herstelling boiler vat"
 material: "S235JR staalplaat (boilervat onbekend)"
 category: "Drukvat"
 application: "Herstelling van een lekkende waterboiler."
 summary: "Bij deze bestaande stookolieboiler werd een lek vastgesteld ter hoogte van een optionele, ongebruikte elektrische weerstand. Na analyse van de technische schema’s werd eerst de elektrische weerstand veilig uitgeschakeld via de dip switches."
-cover: "/assets/projects/BoilervatReparatie/Na.jpeg"
+cover: "/assets/projects/Herstelling boiler vat/Na.jpeg"
 ---
 
 Vervolgens werd de opening vakkundig dichtgelast met TIG-lastechniek. Dit project bracht enkele specifieke uitdagingen met zich mee, waaronder de zeer beperkte werkruimte rond de boiler en de slechte staat van het materiaal. Het staal was sterk vervuild en gemagnetiseerd, wat het lasproces aanzienlijk bemoeilijkte.
