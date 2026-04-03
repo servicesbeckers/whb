@@ -1,4 +1,4 @@
-Materiaal: S235JR constructieprofielen
+Materiaal: S235JR [constructieprofielen]
 Categorie: Constructie
 Toepassing: Dragende balken voor een plat dak.
 Samenvatting: Voor dit project werden stalen draagbalken vervaardigd uit S235JR constructieprofielen, specifiek ontworpen voor de ondersteuning van een plat dak.
