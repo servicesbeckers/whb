@@ -1,5 +1,5 @@
 ---
-title: "Herstelling Boiler Vat"
+title: "Herstelling boiler vat"
 slug: "Herstelling boiler vat"
 material: "S235JR staalplaat (boilervat onbekend)"
 category: "Drukvat"

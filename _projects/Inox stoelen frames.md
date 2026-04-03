@@ -1,5 +1,5 @@
 ---
-title: "Inox Stoelen Frames"
+title: "Inox stoelen frames"
 slug: "Inox stoelen frames"
 material: "RVS 304 30x20x2 K320"
 category: "Meubels"
