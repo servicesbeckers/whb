@@ -22,7 +22,7 @@ Wij helpen u graag met een praktische en duurzame oplossing op maat.
 **Telefoon**  
 [+32 476 06 32 85](tel:+32476063285)
 
-**Regio**  
+**Werkhuis gelegen te**  
 Gingelom, Limburg, België
 
 ---
@@ -32,8 +32,8 @@ Gingelom, Limburg, België
 Voor een vlotte opvolging raden we aan om volgende informatie mee te sturen:
 
 - Foto’s van de huidige situatie  
-- Een schets, plan of voorbeeld  
-- Afmetingen en gewenste materialen  
+- Indien mogelijk een schets, plan of voorbeeld
+- Afmetingen en gewenste materialen 
 - Eventuele specifieke vereisten  
 
 Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of voorstel** kunnen geven.
@@ -43,9 +43,19 @@ Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of vo
 ### Onze aanpak
 
 1. **Analyse van uw aanvraag**  
-2. **Technisch advies en mogelijke oplossingen**  
-3. **Duidelijke offerte op maat**  
-4. **Uitvoering met focus op kwaliteit en afwerking**
+   Elk project start met een heldere bespreking van uw vraag, zodat we meteen de juiste richting bepalen.
+
+2. **Ter plaatse of technisch overleg**  
+   In de meeste gevallen komen we bij u langs. Zo kunnen we de situatie correct inschatten en meteen praktisch, onderbouwd advies geven.
+
+3. **Transparante en gestructureerde communicatie**  
+   Als metaalbewerkingspartner hechten wij veel belang aan duidelijke afspraken, heldere communicatie en een vlotte opvolging. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.
+
+4. **Duidelijke offerte op maat**  
+   U ontvangt een overzichtelijke en correcte prijsopgave, volledig afgestemd op uw project en verwachtingen.
+
+5. **Uitvoering met focus op kwaliteit en afwerking**  
+   We realiseren uw project nauwkeurig, met oog voor detail, duurzaamheid en een professioneel eindresultaat.
 
 ---
 

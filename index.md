@@ -65,8 +65,8 @@ title: Home
 
       <div class="prose rich-copy">
         <p>
-          Elk project start met uw vraag, idee of plan. Op basis daarvan bekijken we
-          samen de meest geschikte oplossing, het juiste materiaal en de praktische uitvoering.
+          Elk project begint bij uw probleemstelling, vraag, idee of plan. Van daaruit bekijken we
+          samen welke oplossing het beste past, welke materialen nodig zijn en hoe we dit praktisch kunnen realiseren.
         </p>
         <p>
           Zo ontstaat maatwerk dat niet alleen technisch klopt, maar ook duurzaam,
