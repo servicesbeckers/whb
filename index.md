@@ -33,23 +33,23 @@ title: Home
 
     <div class="feature-grid">
       <article class="feature-card">
+        <h3>Herstellingen ter plaatsen</h3>
+        <p>Snelle en betrouwbare herstellingen bij u ter plaatse. Elk probleem wordt efficiënt aangepakt, zodat u snel weer verder kunt. Minimale stilstand, maximale service.</p>
+      </article>
+
+      <article class="feature-card">
         <h3>Staal maatwerk</h3>
-        <p>Stevige en betrouwbare oplossingen voor constructiewerk en functionele toepassingen.</p>
+        <p>Robuust en veelzijdig. Staal biedt maximale stevigheid en draagkracht, ideaal voor constructies en toepassingen waar kracht en stabiliteit essentieel zijn.</p>
       </article>
 
       <article class="feature-card">
         <h3>RVS maatwerk</h3>
-        <p>Ideaal waar uitstraling, hygiëne en corrosiebestendigheid belangrijk zijn.</p>
+        <p>Duurzaam, hygiënisch en onderhoudsvriendelijk. Inox is bestand tegen roest en slijtage, perfect voor maatwerk in omgevingen waar kwaliteit, netheid en lange levensduur centraal staan.</p>
       </article>
 
       <article class="feature-card">
         <h3>Aluminium maatwerk</h3>
-        <p>Lichte, sterke en duurzame onderdelen en constructies op maat gemaakt.</p>
-      </article>
-
-      <article class="feature-card">
-        <h3>Unieke stukken en kleine series</h3>
-        <p>Geschikt voor prototypes, eenmalige realisaties en beperkte oplages.</p>
+        <p>Licht en toch sterk. Aluminium is corrosiebestendig en ideaal voor toepassingen waar duurzaamheid en een strakke afwerking belangrijk zijn. Geschikt voor zowel binnen- als buitenafwerkingen.</p>
       </article>
     </div>
   </div>
