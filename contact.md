@@ -8,7 +8,7 @@ permalink: /contact/
 ### Contacteer ons rechtstreeks
 
 **E-mail**  
-[services.beckers@gmail.com](mailto:services.beckers@gmail.com)
+[info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be)
 
 **Telefoon**  
 [+32 476 06 32 85](tel:+32476063285)
@@ -34,7 +34,7 @@ Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of vo
 ### Onze aanpak
 
 **Transparante en gestructureerde communicatie**  
-Als metaalbewerkingspartner hechten wij veel belang aan duidelijke afspraken, heldere communicatie en een vlotte opvolging. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.
+Wij hechten veel belang aan **duidelijke afspraken**, **heldere communicatie** en een vlotte **opvolging**. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.
 
 1. **Analyse van uw aanvraag**  
    Elk project start met een heldere bespreking van uw vraag, zodat we meteen de juiste richting bepalen.

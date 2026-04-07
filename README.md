@@ -1,4 +1,4 @@
-# Beckers Services - GitHub Pages starter
+# Werkhuizen Beckers - GitHub Pages starter
 
 Professionele Jekyll-site voor GitHub Pages met:
 
