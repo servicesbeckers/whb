@@ -32,9 +32,26 @@
 <script>
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.site-nav');
+    const navLinks = document.querySelectorAll('.site-nav a');
 
-    toggle.addEventListener('click', () => {
-        const isOpen = nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', isOpen);
-    });
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 760) {
+                nav.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 </script>

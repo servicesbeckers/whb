@@ -5,15 +5,6 @@ intro: Heeft u een project in gedachten? Wij denken graag met u mee.
 permalink: /contact/
 ---
 
-### Vraag vrijblijvend uw offerte aan
-
-Heeft u een idee, project of specifieke uitdaging in staal, RVS of aluminium?  
-Wij helpen u graag met een praktische en duurzame oplossing op maat.
-
-👉 **Stuur ons uw aanvraag en ontvang snel een reactie.**
-
----
-
 ### Contacteer ons rechtstreeks
 
 **E-mail**  
@@ -42,19 +33,19 @@ Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of vo
 
 ### Onze aanpak
 
+**Transparante en gestructureerde communicatie**  
+Als metaalbewerkingspartner hechten wij veel belang aan duidelijke afspraken, heldere communicatie en een vlotte opvolging. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.
+
 1. **Analyse van uw aanvraag**  
    Elk project start met een heldere bespreking van uw vraag, zodat we meteen de juiste richting bepalen.
 
-2. **Ter plaatse of technisch overleg**  
-   In de meeste gevallen komen we bij u langs. Zo kunnen we de situatie correct inschatten en meteen praktisch, onderbouwd advies geven.
+2. **Ter plaatse technisch overleg**  
+   Bezoek ter plaatsen. Zo kunnen we de situatie correct inschatten en meteen praktisch, onderbouwd advies geven.
 
-3. **Transparante en gestructureerde communicatie**  
-   Als metaalbewerkingspartner hechten wij veel belang aan duidelijke afspraken, heldere communicatie en een vlotte opvolging. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.
+3. **Duidelijke offerte op maat**  
+   U ontvangt een overzichtelijke en eerlijke prijsopgave, volledig afgestemd op uw project en verwachtingen.
 
-4. **Duidelijke offerte op maat**  
-   U ontvangt een overzichtelijke en correcte prijsopgave, volledig afgestemd op uw project en verwachtingen.
-
-5. **Uitvoering met focus op kwaliteit en afwerking**  
+4. **Uitvoering met focus op kwaliteit en afwerking**  
    We realiseren uw project nauwkeurig, met oog voor detail, duurzaamheid en een professioneel eindresultaat.
 
 ---
@@ -62,4 +53,4 @@ Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of vo
 ### Klaar om te starten?
 
 👉 Neem vandaag nog contact op en bespreek uw project.  
-Wij zorgen voor een betrouwbare en professionele uitvoering van A tot Z.
+Wij zorgen voor een betrouwbare en nauwkeurige uitvoering van A tot Z.
