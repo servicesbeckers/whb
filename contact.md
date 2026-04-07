@@ -15,6 +15,7 @@ permalink: /contact/
 
 **Werkhuis gelegen te**  
 Gingelom, Limburg, België
+BTW: BE1009384770
 
 ---
 
