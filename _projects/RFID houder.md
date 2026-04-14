@@ -1,5 +1,5 @@
 ---
-title: "RFID houder | Werkhuizen Beckers"
+title: "RFID houder"
 slug: "RFID houder"
 material: "RVS 304 K320"
 category: "Automatisatie"

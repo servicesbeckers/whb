@@ -12,10 +12,6 @@ META_PATTERN = re.compile(
     re.I,
 )
 
-SITE_NAME = "Werkhuizen Beckers"
-BASE_TITLE = "Metaalbewerking op maat"
-
-
 def prettify_slug(slug: str) -> str:
     text = slug.replace("-", " ").replace("_", " ").strip()
     text = re.sub(r"\s+", " ", text)
@@ -29,25 +25,7 @@ def fallback_title(raw_name: str) -> str:
 def build_unique_title(title: str, slug: str) -> str:
     slug_title = prettify_slug(slug)
     clean_title = title.strip()
-
-    generic_titles = {
-        "",
-        BASE_TITLE.lower(),
-        f"{SITE_NAME} - {BASE_TITLE}".lower(),
-        f"{BASE_TITLE} - {SITE_NAME}".lower(),
-    }
-
-    if clean_title.lower() in generic_titles:
-        return f"{slug_title} | {SITE_NAME}"
-
-    if slug_title.lower() not in clean_title.lower():
-        return f"{clean_title} | {slug_title} | {SITE_NAME}"
-
-    if SITE_NAME.lower() not in clean_title.lower():
-        return f"{clean_title} | {SITE_NAME}"
-
-    return clean_title
-
+    return f"{slug_title}"
 
 def parse_readme(path: Path, slug: str) -> dict[str, str]:
     data = {
