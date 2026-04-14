@@ -7,11 +7,46 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS_DIR = ROOT / "assets" / "projects"
 OUTPUT_DIR = ROOT / "_projects"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".svg"}
-META_PATTERN = re.compile(r"^(Materiaal|Categorie|Toepassing|Samenvatting|Titel|Material|Category|Application|Summary|Title):\s*(.+)$", re.I)
+META_PATTERN = re.compile(
+    r"^(Materiaal|Categorie|Toepassing|Samenvatting|Titel|Material|Category|Application|Summary|Title):\s*(.+)$",
+    re.I,
+)
+
+SITE_NAME = "Werkhuizen Beckers"
+BASE_TITLE = "Metaalbewerking op maat"
+
+
+def prettify_slug(slug: str) -> str:
+    text = slug.replace("-", " ").replace("_", " ").strip()
+    text = re.sub(r"\s+", " ", text)
+    return text[:1].upper() + text[1:] if text else slug
 
 
 def fallback_title(raw_name: str) -> str:
-    return raw_name.strip()
+    return prettify_slug(raw_name)
+
+
+def build_unique_title(title: str, slug: str) -> str:
+    slug_title = prettify_slug(slug)
+    clean_title = title.strip()
+
+    generic_titles = {
+        "",
+        BASE_TITLE.lower(),
+        f"{SITE_NAME} - {BASE_TITLE}".lower(),
+        f"{BASE_TITLE} - {SITE_NAME}".lower(),
+    }
+
+    if clean_title.lower() in generic_titles:
+        return f"{slug_title} | {SITE_NAME}"
+
+    if slug_title.lower() not in clean_title.lower():
+        return f"{clean_title} | {slug_title} | {SITE_NAME}"
+
+    if SITE_NAME.lower() not in clean_title.lower():
+        return f"{clean_title} | {SITE_NAME}"
+
+    return clean_title
 
 
 def parse_readme(path: Path, slug: str) -> dict[str, str]:
@@ -66,6 +101,8 @@ def parse_readme(path: Path, slug: str) -> dict[str, str]:
         data["body"] = body
     elif data["summary"]:
         data["body"] = data["summary"]
+
+    data["title"] = build_unique_title(data["title"], slug)
     return data
 
 
@@ -89,21 +126,26 @@ def main() -> None:
     if not ASSETS_DIR.exists():
         return
 
-    for folder in sorted(p for p in ASSETS_DIR.iterdir() if p.is_dir() and not p.name.startswith(".")):
+    for folder in sorted(
+        p for p in ASSETS_DIR.iterdir() if p.is_dir() and not p.name.startswith(".")
+    ):
         slug = folder.name
         images = collect_images(folder)
         meta = parse_readme(folder / "ProjectInfo.md", slug)
         cover = f"/assets/projects/{slug}/{images[0].name}" if images else ""
-        body = meta["body"] or "Praktisch maatwerkproject in uitvoering volgens toepassing en materiaalkeuze."
+        body = (
+            meta["body"]
+            or "Praktisch maatwerkproject in uitvoering volgens toepassing en materiaalkeuze."
+        )
 
         page = f"""---
-title: \"{yaml_escape(meta['title'])}\"
-slug: \"{slug}\"
-material: \"{yaml_escape(meta['material'])}\"
-category: \"{yaml_escape(meta['category'])}\"
-application: \"{yaml_escape(meta['application'])}\"
-summary: \"{yaml_escape(meta['summary'])}\"
-cover: \"{cover}\"
+title: "{yaml_escape(meta['title'])}"
+slug: "{slug}"
+material: "{yaml_escape(meta['material'])}"
+category: "{yaml_escape(meta['category'])}"
+application: "{yaml_escape(meta['application'])}"
+summary: "{yaml_escape(meta['summary'])}"
+cover: "{cover}"
 ---
 
 {body}

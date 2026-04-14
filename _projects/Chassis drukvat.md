@@ -1,5 +1,5 @@
 ---
-title: "Chassis drukvat"
+title: "Chassis drukvat | Werkhuizen Beckers"
 slug: "Chassis drukvat"
 material: "Staal S235JR 20mm"
 category: "Landbouwmachines"
