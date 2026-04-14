@@ -1,5 +1,5 @@
 ---
-title: "Lade bakken"
+title: "Lade bakken | Werkhuizen Beckers"
 slug: "Lade bakken"
 material: "S235JR (1.5mm)"
 category: "Ladebakken"

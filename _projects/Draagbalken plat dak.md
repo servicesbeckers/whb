@@ -1,5 +1,5 @@
 ---
-title: "Draagbalken plat dak"
+title: "Draagbalken plat dak | Werkhuizen Beckers"
 slug: "Draagbalken plat dak"
 material: "S235JR constructieprofielen"
 category: "Constructie"

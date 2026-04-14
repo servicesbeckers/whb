@@ -31,7 +31,7 @@ Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of vo
 
 ---
 
-### Onze aanpak
+### Uw specialist in maatwerk metaalbewerking  
 
 **Transparante en gestructureerde communicatie**  
 Wij hechten veel belang aan **duidelijke afspraken**, **heldere communicatie** en een vlotte **opvolging**. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.

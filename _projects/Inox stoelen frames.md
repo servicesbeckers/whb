@@ -1,5 +1,5 @@
 ---
-title: "Inox stoelen frames"
+title: "Inox stoelen frames | Werkhuizen Beckers"
 slug: "Inox stoelen frames"
 material: "RVS 304 30x20x2 K320"
 category: "Meubels"

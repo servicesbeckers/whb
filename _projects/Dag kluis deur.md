@@ -1,5 +1,5 @@
 ---
-title: "Dag kluis deur"
+title: "Dag kluis deur | Werkhuizen Beckers"
 slug: "Dag kluis deur"
 material: "S235JR (30x20x3)"
 category: "Beveiliging"

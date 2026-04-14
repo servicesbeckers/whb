@@ -1,5 +1,5 @@
 ---
-title: "Minimalistische trapleuning"
+title: "Minimalistische trapleuning | Werkhuizen Beckers"
 slug: "Minimalistische trapleuning"
 material: "RVS 304 30x20x2 K320"
 category: "Leuning"
