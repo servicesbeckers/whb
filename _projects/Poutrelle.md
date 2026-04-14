@@ -1,5 +1,5 @@
 ---
-title: "Poutrelle | Werkhuizen Beckers"
+title: "Poutrelle"
 slug: "Poutrelle"
 material: "L 150x150x15"
 category: "Poutrelle, draagbalk lassen"

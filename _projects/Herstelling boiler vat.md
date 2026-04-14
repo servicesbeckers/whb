@@ -1,5 +1,5 @@
 ---
-title: "Herstelling boiler vat | Werkhuizen Beckers"
+title: "Herstelling boiler vat"
 slug: "Herstelling boiler vat"
 material: "S235JR staalplaat (boilervat onbekend)"
 category: "Drukvat"
