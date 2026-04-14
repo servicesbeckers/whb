@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Offerte aanvragen
-intro: Heeft u een project in gedachten? Wij denken graag met u mee.
+intro: Heeft u een project in gedachten? Vraag eenvoudig een offerte aan en wij denken graag met u mee.
 permalink: /contact/
 ---
 
