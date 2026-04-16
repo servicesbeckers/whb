@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Offerte aanvragen
-intro: Heeft u een project in gedachten? Vraag eenvoudig een offerte aan en wij denken graag met u mee.
+intro: Heeft u een project in gedachten? Bezorg ons uw vraag, schets, plan of foto en wij denken mee over de juiste uitvoering.
 permalink: /contact/
+description: Contacteer Werkhuizen Beckers voor een offerte of technische vraag.
 ---
 
-### Contacteer ons rechtstreeks
+### Rechtstreeks contact
 
 **E-mail**  
 [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be)
@@ -13,44 +14,34 @@ permalink: /contact/
 **Telefoon**  
 [+32 476 06 32 85](tel:+32476063285)
 
-**Werkhuis gelegen te**  
+**Regio**  
 Gingelom, Limburg, België
 
 ---
 
-### Sneller en gerichter advies
+### Wat stuurt u best mee?
 
-Voor een vlotte opvolging raden we aan om volgende informatie mee te sturen:
+Voor een snelle en gerichte inschatting helpt het als u meteen wat extra informatie bezorgt:
 
-- Foto’s van de huidige situatie  
-- Indien mogelijk een schets, plan of voorbeeld
-- Afmetingen en gewenste materialen 
-- Eventuele specifieke vereisten  
+- foto’s van de huidige situatie
+- een schets, plan of voorbeeld
+- afmetingen
+- gewenst materiaal
+- eventuele praktische of technische vereisten
 
-Hoe duidelijker uw aanvraag, hoe sneller wij een **gerichte prijsindicatie of voorstel** kunnen geven.
-
----
-
-### Uw specialist in maatwerk metaalbewerking  
-
-**Transparante en gestructureerde communicatie**  
-Wij hechten veel belang aan **duidelijke afspraken**, **heldere communicatie** en een vlotte **opvolging**. U weet steeds waar u aan toe bent — van eerste contact tot oplevering.
-
-1. **Analyse van uw aanvraag**  
-   Elk project start met een heldere bespreking van uw vraag, zodat we meteen de juiste richting bepalen.
-
-2. **Ter plaatse technisch overleg**  
-   Bezoek ter plaatsen. Zo kunnen we de situatie correct inschatten en meteen praktisch, onderbouwd advies geven.
-
-3. **Duidelijke offerte op maat**  
-   U ontvangt een overzichtelijke en eerlijke prijsopgave, volledig afgestemd op uw project en verwachtingen.
-
-4. **Uitvoering met focus op kwaliteit en afwerking**  
-   We realiseren uw project nauwkeurig, met oog voor detail, duurzaamheid en een professioneel eindresultaat.
+Hoe concreter de aanvraag, hoe sneller wij u gericht kunnen adviseren.
 
 ---
 
-### Klaar om te starten?
+### Hoe gaan we te werk?
 
-👉 Neem vandaag nog contact op en bespreek uw project.  
-Wij zorgen voor een betrouwbare en nauwkeurige uitvoering van A tot Z.
+1. **We bekijken uw aanvraag** en stemmen af wat precies nodig is.
+2. **We denken technisch mee** over materiaal, uitvoering en praktische haalbaarheid.
+3. **U ontvangt een duidelijke offerte** op maat van uw project.
+4. **Na akkoord voeren we het werk zorgvuldig uit** met aandacht voor kwaliteit en afwerking.
+
+---
+
+### Klaar om uw project te bespreken?
+
+Neem contact op via mail of telefoon. Wij helpen u graag verder met een praktische en duidelijke aanpak.

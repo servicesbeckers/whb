@@ -2,56 +2,41 @@
 layout: default
 ---
 
-{% assign projects = site.projects | sort: 'title' %}
+{% assign all_projects = site.projects | sort: 'title' %}
 
-<section class="projects-hero">
-    <div class="container split-hero">
-
-        <div class="projects-hero-content">
-            <span class="section-kicker">Projecten</span>
-            <h1>{{ page.title }}</h1>
-
-            {% if page.intro %}
-            <p class="hero-lead">{{ page.intro }}</p>
-            {% else %}
-            <p class="hero-lead">
-                Ontdek een selectie van onze gerealiseerde projecten in staal, RVS en aluminium.
-                Van functionele constructies tot verfijnd maatwerk: elk project wordt uitgewerkt
-                met oog voor kwaliteit, afwerking en duurzaamheid.
-            </p>
-            {% endif %}
-        </div>
-
-        <aside class="hero-side-card">
-            <strong>Maatwerk van A tot Z</strong>
-            <p>
-                Elk project is uniek. Wij realiseren oplossingen op maat voor zowel
-                particulieren als professionele toepassingen, volledig afgestemd op
-                functie, vorm en gebruik.
-            </p>
-        </aside>
-
+<section class="page-hero">
+    <div class="container narrow">
+        <p class="eyebrow">Projecten</p>
+        <h1>{{ page.title }}</h1>
+        {% if page.intro %}
+        <p class="page-intro">{{ page.intro }}</p>
+        {% endif %}
     </div>
 </section>
 
 <section class="projects-overview">
     <div class="container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Realisaties</p>
+                <h2>Maatwerk dat functioneert in de praktijk</h2>
+            </div>
+            <p class="section-lead">
+                Een selectie van uitgevoerde of gepubliceerde projecten, telkens opgebouwd rond toepassing, materiaal en afwerking.
+            </p>
+        </div>
 
-        {% if projects.size > 0 %}
-        <div class="project-grid project-grid-large">
-            {% for project in projects %}
+        {% if all_projects.size > 0 %}
+        <div class="projects-grid">
+            {% for project in all_projects %}
             {% include project-card.html project=project %}
             {% endfor %}
         </div>
         {% else %}
-        <div class="empty-state wide-state">
-            <h2>Binnenkort meer projecten te bekijken</h2>
-            <p>
-                We vullen deze pagina stap voor stap aan met recente realisaties.
-                Kom binnenkort gerust opnieuw kijken voor meer inspiratie en uitgevoerde projecten.
-            </p>
+        <div class="empty-state">
+            <h3>Nog geen projecten gepubliceerd</h3>
+            <p>Maak een map aan in <code>assets/projects/</code> en voeg daar foto's en eventueel een <code>README.md</code> toe.</p>
         </div>
         {% endif %}
-
     </div>
 </section>
