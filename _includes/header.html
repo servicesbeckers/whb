@@ -1,22 +1,19 @@
 <header class="site-header">
     <div class="container header-inner">
-
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Werkhuizen Beckers home">
             <span class="brand-mark">WB</span>
             <span class="brand-copy">
                 <strong>Werkhuizen Beckers</strong>
-                <small>Maatwerk in staal, RVS en aluminium</small>
+                <small>Metaalbewerking op maat in staal, inox en aluminium</small>
             </span>
         </a>
 
-        <!-- Hamburger knop -->
         <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
-        <!-- Navigatie -->
         <nav class="site-nav" aria-label="Hoofdnavigatie">
             <a href="{{ '/' | relative_url }}">Home</a>
             <a href="{{ '/#diensten' | relative_url }}">Diensten</a>
@@ -24,34 +21,5 @@
             <a href="{{ '/projecten/' | relative_url }}">Projecten</a>
             <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Offerte aanvragen</a>
         </nav>
-
     </div>
 </header>
-
-<!-- JS -->
-<script>
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.site-nav');
-    const navLinks = document.querySelectorAll('.site-nav a');
-
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            const isOpen = nav.classList.toggle('open');
-            toggle.setAttribute('aria-expanded', String(isOpen));
-        });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('open');
-                toggle.setAttribute('aria-expanded', 'false');
-            });
-        });
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 760) {
-                nav.classList.remove('open');
-                toggle.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
-</script>

@@ -2,25 +2,18 @@
 layout: default
 ---
 
-<section class="page">
+<section class="page-hero">
     <div class="container narrow">
+        <p class="eyebrow">Werkhuizen Beckers</p>
+        <h1>{{ page.title }}</h1>
+        {% if page.intro %}
+        <p class="page-intro">{{ page.intro }}</p>
+        {% endif %}
+    </div>
+</section>
 
-        <article class="page-card">
-
-            <header class="page-header">
-                <span class="section-kicker">Werkhuizen Beckers</span>
-                <h1 class="page-title">{{ page.title }}</h1>
-
-                {% if page.intro %}
-                <p class="page-intro">{{ page.intro }}</p>
-                {% endif %}
-            </header>
-
-            <div class="page-content prose">
-                {{ content }}
-            </div>
-
-        </article>
-
+<section class="page-content">
+    <div class="container narrow prose-block">
+        {{ content }}
     </div>
 </section>

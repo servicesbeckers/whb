@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Projecten
-intro: Bekijk hoe wij maatwerk in staal, RVS en aluminium vertalen naar duurzame en praktische oplossingen voor elk project.
+intro: Bekijk een selectie van maatwerkprojecten in staal, inox en aluminium, telkens met focus op toepassing, duurzaamheid en afwerking.
 permalink: /projecten/
+description: Overzicht van projecten en realisaties van Werkhuizen Beckers.
 ---

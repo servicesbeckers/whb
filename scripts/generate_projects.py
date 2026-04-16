@@ -23,8 +23,7 @@ def fallback_title(raw_name: str) -> str:
 
 
 def build_unique_title(title: str, slug: str) -> str:
-    slug_title = prettify_slug(slug)
-    clean_title = title.strip()
+    slug_title = prettify_slug(slug).replace("/assets", "").replace("ProjectInfo/", "")
     return f"{slug_title}"
 
 def parse_readme(path: Path, slug: str) -> dict[str, str]:

@@ -1,103 +1,173 @@
 ---
 layout: home
 title: Home
+description: Metaalbewerking op maat in staal, inox en aluminium voor industrie, machinebouw, technische toepassingen en particuliere projecten.
 ---
 
-<section class="hero-section">
-  <div class="container hero-layout">
-    <div>
-      <span class="section-kicker">Metaalbewerking op maat</span>
-      <h1>Vakwerk in <span>staal</span>, <span>RVS</span> en <span>aluminium</span></h1>
-      <p class="hero-lead">
-        Werkhuizen Beckers realiseert duurzame en functionele oplossingen op maat
-        voor particulieren en professionele toepassingen.
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Werkhuizen Beckers</p>
+      <h1>Metaalbewerking op maat met een strakke uitvoering en duidelijke aanpak.</h1>
+      <p class="hero-intro">
+        Wij realiseren maatwerk in staal, inox en aluminium voor industrie, machinebouw, technische toepassingen en particuliere projecten. 
+        Van enkel stuk tot kleine reeks, altijd met focus op functionaliteit, afwerking en betrouwbaarheid.
       </p>
-      <div class="button-row">
-        <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Vraag een offerte aan</a>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Offerte aanvragen</a>
         <a class="button button-secondary" href="{{ '/projecten/' | relative_url }}">Bekijk projecten</a>
       </div>
+
+      <ul class="hero-points">
+        <li>Staal, inox en aluminium</li>
+        <li>Van idee of schets tot uitvoering</li>
+        <li>Voor bedrijven én particulieren</li>
+      </ul>
+    </div>
+
+    <div class="hero-panel">
+      <div class="hero-card">
+        <span class="hero-card-label">Praktisch maatwerk</span>
+        <h2>Geen overbodige franjes. Wel degelijk werk dat klopt.</h2>
+        <p>
+          We denken mee over materiaalkeuze, constructie, afmetingen en afwerking, zodat het eindresultaat niet alleen mooi oogt maar ook technisch logisch is.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="diensten" class="section-block surface-dark">
+<section class="section" id="diensten">
   <div class="container">
-    <div class="section-heading max-copy">
-      <span class="section-kicker">Diensten</span>
-      <h2>Maatwerk voor uiteenlopende toepassingen</h2>
-      <p>
-        Van functionele constructies tot verfijnde afwerking: wij leveren metaalwerk
-        op maat met aandacht voor kwaliteit, precisie en duurzaamheid.
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Diensten</p>
+        <h2>Maatwerk voor uiteenlopende toepassingen</h2>
+      </div>
+      <p class="section-lead">
+        Elke aanvraag vertrekt vanuit gebruik, omgeving en gewenste afwerking. Zo krijg je een oplossing die technisch én praktisch juist zit.
       </p>
     </div>
 
-    <div class="feature-grid">
-      <article class="feature-card">
-        <h3>Herstellingen ter plaatsen</h3>
-        <p>Snelle en betrouwbare herstellingen bij u ter plaatse. Elk probleem wordt efficiënt aangepakt, zodat u snel weer verder kunt. Minimale stilstand, maximale service.</p>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Staalconstructies op maat</h3>
+        <p>Stevige en functionele oplossingen voor dragende constructies, frames, steunen, werkstukken en specifieke toepassingen.</p>
       </article>
 
-      <article class="feature-card">
-        <h3>Staal maatwerk</h3>
-        <p>Robuust en veelzijdig. Staal biedt maximale stevigheid en draagkracht, ideaal voor constructies en toepassingen waar kracht en stabiliteit essentieel zijn.</p>
+      <article class="info-card">
+        <h3>Inox maatwerk</h3>
+        <p>Ideaal wanneer afwerking, hygiëne, corrosiebestendigheid en duurzaamheid een belangrijke rol spelen.</p>
       </article>
 
-      <article class="feature-card">
-        <h3>RVS maatwerk</h3>
-        <p>Duurzaam, hygiënisch en onderhoudsvriendelijk. Inox is bestand tegen roest en slijtage, perfect voor maatwerk in omgevingen waar kwaliteit, netheid en lange levensduur centraal staan.</p>
-      </article>
-
-      <article class="feature-card">
+      <article class="info-card">
         <h3>Aluminium maatwerk</h3>
-        <p>Licht en toch sterk. Aluminium is corrosiebestendig en ideaal voor toepassingen waar duurzaamheid en een strakke afwerking belangrijk zijn. Geschikt voor zowel binnen- als buitenafwerkingen.</p>
+        <p>Licht, sterk en geschikt voor toepassingen waar gewicht, verwerkbaarheid en nette afwerking belangrijk zijn.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Herstellingen en aanpassingen</h3>
+        <p>Ook voor het aanpassen, herstellen of verbeteren van bestaande metalen onderdelen of constructies.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Enkele stuks en kleine reeksen</h3>
+        <p>Interessant voor prototypes, éénmalige oplossingen of beperkte producties waar flexibiliteit nodig is.</p>
+      </article>
+
+      <article class="info-card">
+        <h3>Technisch meedenken</h3>
+        <p>Heb je enkel een idee, schets of voorbeeld? Dan denken we mee over uitvoering, materiaalkeuze en haalbaarheid.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section id="werkwijze" class="section-block">
-  <div class="container info-split">
-    <div>
-      <div class="section-heading left max-copy">
-        <span class="section-kicker">Werkwijze</span>
-        <h2>Van idee tot afgewerkt resultaat</h2>
+<section class="section section-dark" id="werkwijze">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Werkwijze</p>
+        <h2>Van aanvraag tot afgewerkt resultaat</h2>
       </div>
-
-      <div class="prose rich-copy">
-        <p>
-          Elk project begint bij uw probleemstelling, vraag, idee of plan. Van daaruit bekijken we
-          samen welke oplossing het beste past, welke materialen nodig zijn en hoe we dit praktisch kunnen realiseren.
-        </p>
-        <p>
-          Zo ontstaat maatwerk dat niet alleen technisch klopt, maar ook duurzaam,
-          functioneel en netjes afgewerkt is.
-        </p>
-      </div>
+      <p class="section-lead">
+        We houden het traject helder, zodat je snel weet wat mogelijk is en waarop je kan rekenen.
+      </p>
     </div>
 
-    <div class="process-list">
-      <div class="process-item"><strong>1</strong><span>Bezorg ons een foto, schets of plan.</span></div>
-      <div class="process-item"><strong>2</strong><span>We bespreken materiaal, afmetingen en toepassing.</span></div>
-      <div class="process-item"><strong>3</strong><span>U ontvangt een duidelijke aanpak of offerte op maat.</span></div>
-      <div class="process-item"><strong>4</strong><span>We zorgen voor een professionele uitvoering en afwerking.</span></div>
+    <div class="steps-grid">
+      <article class="step-card">
+        <span class="step-number">01</span>
+        <h3>Bespreking van je vraag</h3>
+        <p>Je bezorgt ons een plan, schets, foto of omschrijving van wat je nodig hebt.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">02</span>
+        <h3>Technische inschatting</h3>
+        <p>We bekijken afmetingen, toepassing, materiaal en de meest logische uitvoering.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">03</span>
+        <h3>Duidelijke offerte</h3>
+        <p>Je ontvangt een voorstel op maat, afgestemd op de vraag en gewenste afwerking.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">04</span>
+        <h3>Uitvoering met zorg</h3>
+        <p>We werken nauwkeurig af en focussen op een duurzaam en praktisch eindresultaat.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section-block surface-dark">
+<section class="section">
   <div class="container">
-    <div class="section-heading max-copy">
-      <span class="section-kicker">Projecten</span>
-      <h2>Bekijk een selectie van onze realisaties</h2>
-      <p>
-        Ontdek hoe wij maatwerk in staal, RVS en aluminium vertalen naar duurzame
-        en praktische oplossingen.
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Waarom kiezen voor ons</p>
+        <h2>Rechttoe rechtaan samenwerken</h2>
+      </div>
+      <p class="section-lead">
+        Je zoekt geen marketingverhaal, maar iemand die correct werk levert en helder communiceert. Precies daarop leggen wij de nadruk.
+      </p>
+    </div>
+
+    <div class="feature-strip">
+      <div class="feature-item">
+        <strong>Duidelijke communicatie</strong>
+        <span>Heldere afspraken en realistische verwachtingen.</span>
+      </div>
+      <div class="feature-item">
+        <strong>Degelijke uitvoering</strong>
+        <span>Focus op kwaliteit, functionaliteit en afwerking.</span>
+      </div>
+      <div class="feature-item">
+        <strong>Flexibel maatwerk</strong>
+        <span>Van één stuk tot kleine reeks, aangepast aan je project.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projecten">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Projecten</p>
+        <h2>Recente realisaties</h2>
+      </div>
+      <p class="section-lead">
+        Een selectie van projecten die tonen hoe we materiaal, toepassing en afwerking samenbrengen in functioneel maatwerk.
       </p>
     </div>
 
     {% assign featured_projects = site.projects | sort: 'title' %}
     {% if featured_projects.size > 0 %}
-      <div class="project-grid">
+      <div class="projects-grid">
         {% for project in featured_projects limit: 6 %}
           {% include project-card.html project=project %}
         {% endfor %}
@@ -107,30 +177,27 @@ title: Home
         <a class="button button-secondary" href="{{ '/projecten/' | relative_url }}">Alle projecten bekijken</a>
       </div>
     {% else %}
-      <div class="empty-state wide-state">
-        <h3>Binnenkort meer projecten online</h3>
-        <p>
-          We vullen deze pagina stap voor stap aan met recente realisaties.
-          Kom binnenkort gerust opnieuw kijken voor meer inspiratie.
-        </p>
+      <div class="empty-state">
+        <h3>Nog geen projecten zichtbaar</h3>
+        <p>Voeg een projectmap toe in <code>assets/projects/</code> met foto's en eventueel een <code>README.md</code>. Daarna verschijnt het project automatisch op de site.</p>
       </div>
     {% endif %}
   </div>
 </section>
 
-<section class="section-block">
-  <div class="container cta-banner">
+<section class="cta-section">
+  <div class="container cta-box">
     <div>
-      <span class="section-kicker">Contact</span>
-      <h2>Een project bespreken?</h2>
+      <p class="eyebrow">Contact</p>
+      <h2>Een project in gedachten?</h2>
       <p>
-        Stuur ons een foto, schets of plan door en ontvang snel een gerichte reactie.
+        Stuur gerust een foto, schets, plan of korte omschrijving door. Dan bekijken we samen wat technisch en praktisch de beste oplossing is.
       </p>
     </div>
 
-    <div class="button-row">
-      <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Offerte aanvragen</a>
-      <a class="button button-secondary" href="tel:+32476063285">Bel ons</a>
+    <div class="cta-actions">
+      <a class="button button-primary" href="{{ '/contact/' | relative_url }}">Neem contact op</a>
+      <a class="button button-text" href="mailto:info@werkhuizenbeckers.be">info@werkhuizenbeckers.be</a>
     </div>
   </div>
 </section>

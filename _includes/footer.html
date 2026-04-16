@@ -1,33 +1,37 @@
 <footer class="site-footer">
     <div class="container footer-grid">
-
         <div>
-            <strong>WBH Metaalbewerking</strong>
-            <p>
-                Gespecialiseerd in maatwerk in staal, RVS en aluminium voor zowel
-                professionele toepassingen als particuliere projecten.
-            </p>
+            <div class="footer-brand">
+                <span class="brand-mark">WB</span>
+                <div>
+                    <strong>Werkhuizen Beckers</strong>
+                    <p>Praktisch en duurzaam maatwerk in staal, inox en aluminium voor professionele toepassingen en particulieren.</p>
+                </div>
+            </div>
         </div>
 
         <div>
-            <strong>Diensten</strong>
-            <p>
-                Constructiewerk<br>
-                Staal maatwerk<br>
-                RVS maatwerk<br>
-                Aluminium maatwerk<br>
-                CAD-ontwerp met sterkte- en spanningsanalyses
-            </p>
+            <h3>Snel naar</h3>
+            <ul class="footer-links">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/#diensten' | relative_url }}">Diensten</a></li>
+                <li><a href="{{ '/#werkwijze' | relative_url }}">Werkwijze</a></li>
+                <li><a href="{{ '/projecten/' | relative_url }}">Projecten</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+            </ul>
         </div>
 
         <div>
-            <strong>Contact</strong>
-            <p>
-                <a href="mailto:info@werkhuizenbeckers.be">info@werkhuizenbeckers.be</a><br>
-                <a href="tel:+32476063285">+32 476 06 32 85</a><br>
-                Gingelom, België
-            </p>
+            <h3>Contact</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@werkhuizenbeckers.be">info@werkhuizenbeckers.be</a></li>
+                <li><a href="tel:+32476063285">+32 476 06 32 85</a></li>
+                <li>Gingelom, Limburg, België</li>
+            </ul>
         </div>
+    </div>
 
+    <div class="container footer-bottom">
+        <p>© {{ 'now' | date: '%Y' }} Werkhuizen Beckers. Alle rechten voorbehouden.</p>
     </div>
 </footer>
