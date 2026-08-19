@@ -2,10 +2,12 @@
     <div class="container footer-grid">
         <div>
             <div class="footer-brand">
-                <span class="brand-mark">WB</span>
+                <span class="brand-mark">
+                    <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="40" height="40">
+                </span>
                 <div>
                     <strong>Werkhuizen Beckers</strong>
-                    <p>Praktisch en duurzaam maatwerk in staal, inox en aluminium voor professionele toepassingen en particulieren.</p>
+                    <p>We vertrekken vanuit uw probleem, niet vanuit een oplossing uit de catalogus. Laswerk, onderhoud, CAD, besturing en machinebouw in dezelfde hand.</p>
                 </div>
             </div>
         </div>
@@ -14,10 +16,11 @@
             <h3>Snel naar</h3>
             <ul class="footer-links">
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/#diensten' | relative_url }}">Diensten</a></li>
-                <li><a href="{{ '/#werkwijze' | relative_url }}">Werkwijze</a></li>
-                <li><a href="{{ '/projecten/' | relative_url }}">Projecten</a></li>
+                <li><a href="{{ '/diensten/' | relative_url }}">Diensten</a></li>
+                <li><a href="{{ '/aanpak/' | relative_url }}">Aanpak</a></li>
+                <li><a href="{{ '/over/' | relative_url }}">Over</a></li>
                 <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+                <li><a href="{{ '/privacy/' | relative_url }}">Privacy</a></li>
             </ul>
         </div>
 
@@ -33,5 +36,8 @@
 
     <div class="container footer-bottom">
         <p>© {{ 'now' | date: '%Y' }} Werkhuizen Beckers. Alle rechten voorbehouden.</p>
+        <p class="footer-legal">
+            Werkhuizen Beckers BV · BTW BE 1009.384.770 · Gingelom, België
+        </p>
     </div>
 </footer>

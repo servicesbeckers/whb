@@ -1,10 +1,12 @@
 <header class="site-header">
     <div class="container header-inner">
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Werkhuizen Beckers home">
-            <span class="brand-mark">WB</span>
+            <span class="brand-mark">
+                <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="44" height="44">
+            </span>
             <span class="brand-copy">
                 <strong>Werkhuizen Beckers</strong>
-                <small>Metaalbewerking op maat in staal, inox en aluminium</small>
+                <small>Probleem in, oplossing uit</small>
             </span>
         </a>
 
@@ -16,9 +18,9 @@
 
         <nav class="site-nav" aria-label="Hoofdnavigatie">
             <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/#diensten' | relative_url }}">Diensten</a>
-            <a href="{{ '/#werkwijze' | relative_url }}">Werkwijze</a>
-            <a href="{{ '/projecten/' | relative_url }}">Projecten</a>
+            <a href="{{ '/diensten/' | relative_url }}">Diensten</a>
+            <a href="{{ '/aanpak/' | relative_url }}">Aanpak</a>
+            <a href="{{ '/over/' | relative_url }}">Over</a>
             <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Offerte aanvragen</a>
         </nav>
     </div>

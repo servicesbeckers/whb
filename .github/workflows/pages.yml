@@ -3,6 +3,8 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -31,9 +33,6 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
-      - name: Generate project pages from project folders
-        run: python3 scripts/generate_projects.py
-
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
@@ -45,6 +44,8 @@ jobs:
           path: ./_site
 
   deploy:
+    # Alleen echt publiceren bij push/merge naar main. PR's draaien enkel de build als check.
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

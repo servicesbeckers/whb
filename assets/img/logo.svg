@@ -1,0 +1,6 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Werkhuizen Beckers">
+  <rect width="64" height="64" fill="#1f3a47"/>
+  <path d="M 6 18 L 6 6 L 18 6" fill="none" stroke="#dc9370" stroke-width="3" stroke-linecap="square"/>
+  <path d="M 58 46 L 58 58 L 46 58" fill="none" stroke="#dc9370" stroke-width="3" stroke-linecap="square"/>
+  <text x="32" y="45" text-anchor="middle" font-family="IBM Plex Serif, Georgia, serif" font-weight="700" font-size="38" fill="#f6f2ea">W</text>
+</svg>
