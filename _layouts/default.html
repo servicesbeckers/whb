@@ -20,11 +20,13 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:locale" content="nl_BE">
 
-    <meta name="theme-color" content="#121212">
+    <meta name="theme-color" content="#1f3a47">
+
+    <link rel="icon" href="{{ '/assets/img/logo.svg' | relative_url }}" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
@@ -33,6 +35,7 @@
 
     <main id="main-content">
         {{ content }}
+        {% include lead-cta.html %}
     </main>
 
     {% include footer.html %}
