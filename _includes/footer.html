@@ -1,43 +1,26 @@
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div>
-            <div class="footer-brand">
-                <span class="brand-mark">
-                    <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="40" height="40">
-                </span>
-                <div>
-                    <strong>Werkhuizen Beckers</strong>
-                    <p>We vertrekken vanuit uw probleem, niet vanuit een oplossing uit de catalogus. Laswerk, onderhoud, CAD, besturing en machinebouw in dezelfde hand.</p>
-                </div>
-            </div>
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign b = site.bedrijf -%}
+{%- assign privacy = site.pages | where: "ref", "privacy" | where: "lang", page.lang | first -%}
+<footer class="voet">
+    <div class="kader voet-raster">
+        <div class="voet-merk">
+            {% include woordmerk.html %}
+            <p>{{ t.footer.baseline }}</p>
         </div>
 
-        <div>
-            <h3>Snel naar</h3>
-            <ul class="footer-links">
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/diensten/' | relative_url }}">Diensten</a></li>
-                <li><a href="{{ '/aanpak/' | relative_url }}">Aanpak</a></li>
-                <li><a href="{{ '/over/' | relative_url }}">Over</a></li>
-                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-                <li><a href="{{ '/privacy/' | relative_url }}">Privacy</a></li>
-            </ul>
-        </div>
+        <ul class="voet-gegevens">
+            <li><a href="tel:{{ b.telefoon_link }}">{{ b.telefoon }}</a></li>
+            <li><a href="mailto:{{ b.email }}">{{ b.email }}</a></li>
+            <li>{{ t.contact.locatie }}</li>
+        </ul>
 
-        <div>
-            <h3>Contact</h3>
-            <ul class="footer-links">
-                <li><a href="mailto:info@werkhuizenbeckers.be">info@werkhuizenbeckers.be</a></li>
-                <li><a href="tel:+32476063285">+32 476 06 32 85</a></li>
-                <li>Gingelom, Limburg, België</li>
-            </ul>
+        <div class="voet-taal">
+            {% include taalkiezer.html %}
         </div>
     </div>
 
-    <div class="container footer-bottom">
-        <p>© {{ 'now' | date: '%Y' }} Werkhuizen Beckers. Alle rechten voorbehouden.</p>
-        <p class="footer-legal">
-            Werkhuizen Beckers BV · BTW BE 1009.384.770 · Gingelom, België
-        </p>
+    <div class="kader voet-onder">
+        <p>{{ b.rechtsvorm }} · {{ t.footer.btw }} {{ b.btw }} · {{ t.contact.locatie }}</p>
+        <p>© {{ 'now' | date: '%Y' }} {{ b.naam }}. {{ t.footer.rechten }} · <a href="{{ privacy.url | relative_url }}">{{ t.footer.privacy }}</a></p>
     </div>
 </footer>
