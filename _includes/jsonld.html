@@ -1,6 +1,11 @@
 {%- assign t = site.data.i18n[page.lang] -%}
 {%- assign b = site.bedrijf -%}
 {%- assign w = t.werkgebied.plaatsen -%}
+{%- assign kennis = "" | split: "" -%}
+{%- for d in t.diensten.items -%}
+  {%- assign kennis = kennis | push: d.titel -%}
+  {%- if d.lijst %}{% assign kennis = kennis | concat: d.lijst %}{% endif -%}
+{%- endfor -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,6 +47,7 @@
         { "@type": "City", "name": {{ w.leuven | jsonify }} }
       ],
       "knowsLanguage": ["nl", "fr", "en", "de"],
+      "knowsAbout": {{ kennis | jsonify }},
       "founder": { "@type": "Person", "name": "Lander Beckers", "jobTitle": "Engineer" },
       "contactPoint": {
         "@type": "ContactPoint",
