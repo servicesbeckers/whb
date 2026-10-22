@@ -65,8 +65,8 @@ for (const pad of bestanden(root)) {
     const tekst = tekstVan(regel, isYaml);
     if (!tekst.trim()) return;
     for (const r of lijst) {
-      // Ik-vorm-regels (wij/we/nous/wir) gelden niet in de privacyverklaring.
-      if (isPrivacy && /Ik-vorm|Je-vorm|Ich-Form/.test(r.reden)) continue;
+      // Wij-vorm-regels gelden niet in de privacyverklaring (juridische tekst).
+      if (isPrivacy && /Wij-vorm/.test(r.reden)) continue;
       const re = new RegExp(r.patroon, r.hoofdlettergevoelig ? 'u' : 'iu');
       const m = tekst.match(re);
       if (!m) continue;

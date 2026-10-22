@@ -1,72 +1,251 @@
 {
   "_uitleg": "Patronen zijn reguliere expressies, hoofdletterongevoelig. 'alle' geldt voor elke taal. Een regel in 'uitzonderingen' wordt niet gemeld.",
   "alle": [
-    { "patroon": "\\s[—–]\\s", "reden": "Gedachtestreepje als tussenzin. Gebruik een punt, komma of dubbelpunt." },
-    { "patroon": "\\w—\\w", "reden": "Em-dash tussen woorden." },
-    { "patroon": "(^|\\s)--(\\s|$)", "reden": "Dubbel streepje als gedachtestreepje." },
-    { "patroon": "!(\\s|$|\")", "reden": "Uitroepteken. De toon is nuchter." },
-    { "patroon": "[\\u{1F300}-\\u{1FAFF}\\u{2600}-\\u{27BF}]", "reden": "Emoji." },
-    { "patroon": "1009[ .]?384[ .]?770", "reden": "Oud BTW-nummer." },
-    { "patroon": "ISO ?9606|EN ?1090|\\bCE[- ]?(gemarkeerd|markering|marking|marquage|Kennzeichnung)", "reden": "Certificaat of conformiteit die er (nog) niet is." },
-    { "patroon": "24 ?/ ?7|24u|24h", "reden": "Beschikbaarheidsbelofte." },
-    { "patroon": "€|\\bEUR\\b|priceRange", "reden": "Prijzen horen niet op de site." },
-    { "patroon": "KUKA|FANUC|\\.NET\\b|C#", "reden": "Dienst die van de site verwijderd is." },
-    { "patroon": "\\b(ABB|MES|ERP)\\b", "reden": "Dienst die van de site verwijderd is.", "hoofdlettergevoelig": true },
-    { "patroon": "probleem in, oplossing uit|vijf disciplines", "reden": "Oude positionering." }
+    {
+      "patroon": "\\s[—–]\\s",
+      "reden": "Gedachtestreepje als tussenzin. Gebruik een punt, komma of dubbelpunt."
+    },
+    {
+      "patroon": "\\w—\\w",
+      "reden": "Em-dash tussen woorden."
+    },
+    {
+      "patroon": "(^|\\s)--(\\s|$)",
+      "reden": "Dubbel streepje als gedachtestreepje."
+    },
+    {
+      "patroon": "!(\\s|$|\")",
+      "reden": "Uitroepteken. De toon is nuchter."
+    },
+    {
+      "patroon": "[\\u{1F300}-\\u{1FAFF}\\u{2600}-\\u{27BF}]",
+      "reden": "Emoji."
+    },
+    {
+      "patroon": "1009[ .]?384[ .]?770",
+      "reden": "Oud BTW-nummer."
+    },
+    {
+      "patroon": "ISO ?9606|EN ?1090|\\bCE[- ]?(gemarkeerd|markering|marking|marquage|Kennzeichnung)",
+      "reden": "Certificaat of conformiteit die er (nog) niet is."
+    },
+    {
+      "patroon": "24 ?/ ?7|24u|24h",
+      "reden": "Beschikbaarheidsbelofte."
+    },
+    {
+      "patroon": "€|\\bEUR\\b|priceRange",
+      "reden": "Prijzen horen niet op de site."
+    },
+    {
+      "patroon": "\b(MES|ERP)\b",
+      "reden": "Dienst die van de site verwijderd is.",
+      "hoofdlettergevoelig": true
+    },
+    {
+      "patroon": "probleem in, oplossing uit|vijf disciplines",
+      "reden": "Oude positionering."
+    },
+    {
+      "patroon": ".NET\b|C#",
+      "reden": "Dienst die van de site verwijderd is (softwareontwikkeling)."
+    }
   ],
   "nl": [
-    { "patroon": "naadlo(os|ze)", "reden": "Hol woord." },
-    { "patroon": "\\bontdek\\b", "reden": "Hol woord." },
-    { "patroon": "uw (betrouwbare )?partner", "reden": "Cliché." },
-    { "patroon": "op maat gemaakt|oplossingen op maat|maatwerkoplossing", "reden": "Cliché. Zeg wat je concreet maakt." },
-    { "patroon": "tot in de puntjes|met passie|passie voor", "reden": "Cliché." },
-    { "patroon": "kwaliteit staat centraal|hoogwaardig|innovatie(f|ve)|state[- ]of[- ]the[- ]art", "reden": "Marketingtaal." },
-    { "patroon": "niet alleen .{1,60} maar ook", "reden": "AI-zinsbouw." },
-    { "patroon": "of het nu (gaat om|om)", "reden": "AI-zinsbouw." },
-    { "patroon": "één aanspreekpunt voor al uw|alles onder één dak", "reden": "Cliché." },
-    { "patroon": "\\bons team\\b|\\bonze (vakmensen|experts|specialisten)\\b", "reden": "Eenmanszaak: ik-vorm." },
-    { "patroon": "\\b(wij|we)\\b", "reden": "Ik-vorm gebruiken, behalve in de privacyverklaring." },
-    { "patroon": "gecertificeerd(e)? lasser|dragende constructie", "reden": "Juridisch niet toegestaan." },
-    { "patroon": "diverse|allerhande|breed gamma|ruim aanbod", "reden": "Vaag. Geef een voorbeeld." },
-    { "patroon": "binnen \\d+ ?(uur|u\\b|minuten)", "reden": "Reactietijdbelofte." }
+    {
+      "patroon": "naadlo(os|ze)",
+      "reden": "Hol woord."
+    },
+    {
+      "patroon": "\\bontdek\\b",
+      "reden": "Hol woord."
+    },
+    {
+      "patroon": "uw (betrouwbare )?partner",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "op maat gemaakt|oplossingen op maat|maatwerkoplossing",
+      "reden": "Cliché. Zeg wat je concreet maakt."
+    },
+    {
+      "patroon": "tot in de puntjes|met passie|passie voor",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "kwaliteit staat centraal|hoogwaardig|innovatie(f|ve)|state[- ]of[- ]the[- ]art",
+      "reden": "Marketingtaal."
+    },
+    {
+      "patroon": "niet alleen .{1,60} maar ook",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "of het nu (gaat om|om)",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "één aanspreekpunt voor al uw|alles onder één dak",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "gecertificeerd(e)? lasser|dragende constructie",
+      "reden": "Juridisch niet toegestaan."
+    },
+    {
+      "patroon": "diverse|allerhande|breed gamma|ruim aanbod",
+      "reden": "Vaag. Geef een voorbeeld."
+    },
+    {
+      "patroon": "binnen \\d+ ?(uur|u\\b|minuten)",
+      "reden": "Reactietijdbelofte."
+    },
+    {
+      "patroon": "\b(wij|we|ons team|onze mensen)\b",
+      "reden": "Wij-vorm: suggereert een team. Gebruik Werkhuizen Beckers of een neutrale zin."
+    },
+    {
+      "patroon": "één persoon|eenmanszaak|ik kom zelf|kom ik zelf|in mijn eentje|alleen werk",
+      "reden": "Suggereert dat Lander alleen werkt."
+    }
   ],
   "fr": [
-    { "patroon": "sans faille|sans couture", "reden": "Hol woord." },
-    { "patroon": "\\bdécouvrez\\b", "reden": "Hol woord." },
-    { "patroon": "votre partenaire", "reden": "Cliché." },
-    { "patroon": "sur[- ]mesure", "reden": "Cliché, behalve 'travaux sur mesure en concertation'.", "uitzondering": "sur mesure,? en concertation" },
-    { "patroon": "passion|innovant|haut de gamme|de pointe", "reden": "Marketingtaal." },
-    { "patroon": "non seulement .{1,60} mais aussi", "reden": "AI-zinsbouw." },
-    { "patroon": "qu'il s'agisse de", "reden": "AI-zinsbouw." },
-    { "patroon": "notre équipe|nos experts", "reden": "Eenmanszaak: je-vorm." },
-    { "patroon": "\\bnous\\b", "reden": "Je-vorm gebruiken, behalve in de privacyverklaring." },
-    { "patroon": "soudeur certifié|structures? porteuses?", "reden": "Juridisch niet toegestaan." },
-    { "patroon": "dans les \\d+ ?(heures|h\\b|minutes)", "reden": "Reactietijdbelofte." }
+    {
+      "patroon": "sans faille|sans couture",
+      "reden": "Hol woord."
+    },
+    {
+      "patroon": "\\bdécouvrez\\b",
+      "reden": "Hol woord."
+    },
+    {
+      "patroon": "votre partenaire",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "sur[- ]mesure",
+      "reden": "Cliché, behalve 'travaux sur mesure en concertation'.",
+      "uitzondering": "sur mesure,? en concertation"
+    },
+    {
+      "patroon": "passion|innovant|haut de gamme|de pointe",
+      "reden": "Marketingtaal."
+    },
+    {
+      "patroon": "non seulement .{1,60} mais aussi",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "qu'il s'agisse de",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "soudeur certifié|structures? porteuses?",
+      "reden": "Juridisch niet toegestaan."
+    },
+    {
+      "patroon": "dans les \\d+ ?(heures|h\\b|minutes)",
+      "reden": "Reactietijdbelofte."
+    },
+    {
+      "patroon": "\b(nous|notre équipe|nos équipes)\b",
+      "reden": "Wij-vorm: suggereert een team."
+    },
+    {
+      "patroon": "une seule personne|seul à|c'est moi qui viens|entreprise individuelle",
+      "reden": "Suggereert dat Lander alleen werkt."
+    }
   ],
   "en": [
-    { "patroon": "seamless(ly)?|\\bdiscover\\b|\\bunlock\\b|\\belevate\\b|\\bempower", "reden": "Hol woord." },
-    { "patroon": "your (trusted )?partner|one-stop[- ]shop", "reden": "Cliché." },
-    { "patroon": "tailor(ed|-made)|bespoke solutions", "reden": "Cliché." },
-    { "patroon": "passion(ate)?|innovative|cutting[- ]edge|state[- ]of[- ]the[- ]art|world[- ]class", "reden": "Marketingtaal." },
-    { "patroon": "not only .{1,60} but also", "reden": "AI-zinsbouw." },
-    { "patroon": "whether it'?s|whether you need", "reden": "AI-zinsbouw." },
-    { "patroon": "our team|our experts", "reden": "Eenmanszaak: I." },
-    { "patroon": "\\b(we|our|us)\\b", "reden": "Ik-vorm gebruiken, behalve in de privacyverklaring." },
-    { "patroon": "certified welder|load[- ]bearing|structural steel", "reden": "Juridisch niet toegestaan." },
-    { "patroon": "within \\d+ ?(hours?|h\\b|minutes)", "reden": "Reactietijdbelofte." }
+    {
+      "patroon": "seamless(ly)?|\\bdiscover\\b|\\bunlock\\b|\\belevate\\b|\\bempower",
+      "reden": "Hol woord."
+    },
+    {
+      "patroon": "your (trusted )?partner|one-stop[- ]shop",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "tailor(ed|-made)|bespoke solutions",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "passion(ate)?|innovative|cutting[- ]edge|state[- ]of[- ]the[- ]art|world[- ]class",
+      "reden": "Marketingtaal."
+    },
+    {
+      "patroon": "not only .{1,60} but also",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "whether it'?s|whether you need",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "certified welder|load[- ]bearing|structural steel",
+      "reden": "Juridisch niet toegestaan."
+    },
+    {
+      "patroon": "within \\d+ ?(hours?|h\\b|minutes)",
+      "reden": "Reactietijdbelofte."
+    },
+    {
+      "patroon": "\b(we|our|us|our team)\b",
+      "reden": "Wij-vorm: suggereert een team."
+    },
+    {
+      "patroon": "one person|one-man|sole trader|I come out myself|on my own",
+      "reden": "Suggereert dat Lander alleen werkt."
+    }
   ],
   "de": [
-    { "patroon": "nahtlos|\\bentdecken Sie\\b", "reden": "Hol woord." },
-    { "patroon": "Ihr (zuverlässiger )?Partner|alles aus einer Hand", "reden": "Cliché." },
-    { "patroon": "maßgeschneidert", "reden": "Cliché." },
-    { "patroon": "Leidenschaft|innovativ|hochwertig|modernste", "reden": "Marketingtaal." },
-    { "patroon": "nicht nur .{1,60} sondern auch", "reden": "AI-zinsbouw." },
-    { "patroon": "ob (es sich um|Sie)", "reden": "AI-zinsbouw." },
-    { "patroon": "unser Team|unsere (Experten|Fachleute)", "reden": "Eenmanszaak: ich-Form." },
-    { "patroon": "\\b(wir|uns|unser\\w*)\\b", "reden": "Ich-Form gebruiken, behalve in de privacyverklaring." },
-    { "patroon": "zertifiziert\\w* Schweißer|tragende (Konstruktion|Bauteile|Struktur)", "reden": "Juridisch niet toegestaan." },
-    { "patroon": "innerhalb von \\d+ ?(Stunden|h\\b|Minuten)", "reden": "Reactietijdbelofte." }
+    {
+      "patroon": "nahtlos|\\bentdecken Sie\\b",
+      "reden": "Hol woord."
+    },
+    {
+      "patroon": "Ihr (zuverlässiger )?Partner|alles aus einer Hand",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "maßgeschneidert",
+      "reden": "Cliché."
+    },
+    {
+      "patroon": "Leidenschaft|innovativ|hochwertig|modernste",
+      "reden": "Marketingtaal."
+    },
+    {
+      "patroon": "nicht nur .{1,60} sondern auch",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "ob (es sich um|Sie)",
+      "reden": "AI-zinsbouw."
+    },
+    {
+      "patroon": "zertifiziert\\w* Schweißer|tragende (Konstruktion|Bauteile|Struktur)",
+      "reden": "Juridisch niet toegestaan."
+    },
+    {
+      "patroon": "innerhalb von \\d+ ?(Stunden|h\\b|Minuten)",
+      "reden": "Reactietijdbelofte."
+    },
+    {
+      "patroon": "\b(wir|uns|unserw*)\b",
+      "reden": "Wij-vorm: suggereert een team."
+    },
+    {
+      "patroon": "eine Person|Einzelunternehmen|ich komme selbst|\\ballein\\b",
+      "reden": "Suggereert dat Lander alleen werkt."
+    }
   ],
-  "uitzonderingen_bestanden": ["privacy"],
-  "toegestaan": ["Gingelom – Sint-Truiden", "Gingelom – Saint-Trond", "Gingelom · Sint-Truiden"]
+  "uitzonderingen_bestanden": [
+    "privacy"
+  ],
+  "toegestaan": [
+    "Gingelom – Sint-Truiden",
+    "Gingelom – Saint-Trond",
+    "Gingelom · Sint-Truiden"
+  ]
 }

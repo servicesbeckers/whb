@@ -1,4 +1,5 @@
 # All English site texts. Same structure as nl.yml.
+# Tone: Werkhuizen Beckers as the subject or neutral sentences. "I" only in "About".
 
 taal: en
 hreflang: en
@@ -7,7 +8,7 @@ naam: English
 
 meta:
   title: "On-site welding & machine repair | Werkhuizen Beckers, Limburg, Belgium"
-  description: "Mobile welding and on-site machine repair in Belgium. Steel, stainless steel and aluminium. Based in Gingelom, covering Limburg, Hesbaye, Leuven and Liège."
+  description: "Mobile welding, hardfacing and on-site machine repair in Belgium. Engineering, CAD and robot programming. Based in Gingelom, covering Limburg, Hesbaye, Leuven and Liège."
   og_alt: "Werkhuizen Beckers, on-site welding and machine repair"
 
 skiplink: "Skip to content"
@@ -30,8 +31,8 @@ knop:
   foto: "Send a photo"
   mailen: "Email"
 
-whatsapp_tekst: "Hello Lander, I have a question about welding or a repair:"
-whatsapp_foto_tekst: "Hello Lander, here is a photo of the problem. Location:"
+whatsapp_tekst: "Hello, I have a question about welding or a repair:"
+whatsapp_foto_tekst: "Hello, here is a photo of the problem. Location:"
 
 suggestie:
   tekst: "This site is also available in English."
@@ -41,74 +42,88 @@ suggestie:
 hero:
   label: "Gingelom · Limburg and the surrounding area"
   titel: "On-site welding & machine repair"
-  tekst: "I come to you with my fully equipped van. I weld steel, stainless steel and aluminium, and get machines running again, mechanically and electrically."
+  tekst: "Werkhuizen Beckers comes to you with a fully equipped service van. Welding in steel, stainless steel and aluminium, and machines running again, mechanically and electrically."
+  of: "Or directly"
   plaat:
-    - [ "Work", "Weld · repair · adjust" ]
-    - [ "Material", "Steel · stainless · alu" ]
+    - [ "Work", "Weld · repair · engineer" ]
+    - [ "Material", "Steel · stainless · alu · cast iron" ]
     - [ "Process", "MMA · MIG/MAG · TIG" ]
     - [ "Base", "Gingelom" ]
   plaat_titel: "Mobile workshop"
 
 troeven:
-  - titel: "I come to you"
+  - titel: "On site"
     tekst: "No dismantling, no transport to a workshop. The machine stays where it is."
-  - titel: "One person for everything"
-    tekst: "Welding, mechanics, machine electrics, pneumatics and hydraulics. You call one number, not three companies."
+  - titel: "Everything in one job"
+    tekst: "Welding, mechanics, machine electrics, pneumatics, hydraulics and controls. You call one number, not three companies."
   - titel: "Quick to deploy"
     tekst: "Also when a machine is down and has to run again urgently."
-  - titel: "Engineer by training"
-    tekst: "I understand how the machine works. A repair is more than a weld."
+  - titel: "Engineering in-house"
+    tekst: "Every repair is looked at through an engineer's eyes: why did it break, and how do you stop it happening again."
 
 diensten:
   label: "Services"
-  titel: "What I do on site"
+  titel: "Weld, repair, design"
   items:
     - id: laswerk
       titel: "On-site welding"
-      tekst: "Repairing, reinforcing and modifying parts where they are: cracks, broken parts, brackets, frames and one-off pieces. My van carries a complete welding setup."
+      tekst: "Repairing, reinforcing and modifying parts where they are: cracks, broken parts, brackets, frames and one-off pieces. Worn parts get a new wear layer. The service van carries a complete welding and cutting setup."
       lijst:
         - "Steel, stainless steel and aluminium"
+        - "Cast iron, with preheating and controlled cooling"
         - "Stick (MMA), MIG/MAG and TIG"
+        - "Hardfacing and build-up welding: teeth, knives, blades, rollers, shafts and bearing seats"
+        - "Plasma cutting, oxy-fuel cutting and gouging"
+        - "Drilling out broken bolts, thread repair, magnetic drilling"
         - "Fabrication and custom work by arrangement"
     - id: onderhoud
-      titel: "Machine maintenance and repair"
-      tekst: "Mechanical, electrical, pneumatic and hydraulic. Planned preventive maintenance, or tracking down and fixing a fault when the machine stops."
+      titel: "Repair and maintenance"
+      tekst: "Repairs to steelwork, machines and installations: mechanical, electrical, pneumatic, hydraulic and steam. Often with welding involved, but not always. Planned preventive maintenance, or tracking down and fixing a fault when the machine stops."
       lijst:
         - "Bearings, shafts, drives and guides"
         - "Machine motors, sensors and control cabinets"
-        - "Cylinders, valves, hoses and lines"
-      noot: "Electrical work on machines only. No building installations."
+        - "Cylinders, valves, hoses and hydraulic lines"
+        - "Steam systems: lines, valves, steam traps and supports"
+      noot: "Electrical work on machines only, no building installations. Welding on steam lines by arrangement."
     - id: crash
       titel: "Bringing a machine back after a crash"
-      tekst: "Hit, tipped over or badly damaged. I weld what is broken, realign the mechanics, repair the electrical, pneumatic and hydraulic side, and set the machine up again until it is back in production. Where needed, I replace or upgrade outdated parts or controls."
-      noot: "Welding, mechanics and electrics in one job, by one person."
+      tekst: "Hit, tipped over or badly damaged. Broken parts are welded, the mechanics realigned, the electrical, pneumatic and hydraulic side repaired, and the machine set up again until it is back in production. Where needed, outdated parts or controls are replaced or upgraded."
+      noot: "Welding, mechanics, electrics and controls in one job."
+    - id: engineering
+      titel: "Engineering, controls and robots"
+      tekst: "Design and drawings in Autodesk Inventor: modifications, reinforcements, brackets, guards and replacement parts. As part of a repair or as a separate job. Also changes to machine control systems and robot programs."
+      lijst:
+        - "CAD design and workshop drawings (Autodesk Inventor)"
+        - "Measuring and redrawing worn or broken parts"
+        - "Machine control changes (Beckhoff/TwinCAT)"
+        - "Robot program changes: KUKA, ABB and FANUC"
+        - "Repairing robot cells, grippers and fixtures"
     - id: spoed
       titel: "Urgent call-outs"
       tekst: "For breakdowns and breakages, especially when welding is needed. Urgent call-outs are first and foremost for regular customers. Other requests depend on availability."
-  extra: "Where needed: CAD design (Autodesk Inventor) and changes to the machine control system (Beckhoff/TwinCAT) as part of a repair."
 
 spoed:
   label: "Urgent"
   titel: "Machine down?"
-  tekst: "For regular customers, I am also on hand for urgent breakdowns. New customer? Feel free to call and I will see what is possible."
+  tekst: "For regular customers, Werkhuizen Beckers is also on hand for urgent breakdowns. New customer? Feel free to call and see what is possible."
 
 werkwijze:
   label: "Process"
   titel: "How it works"
   stappen:
     - titel: "Send a photo or call"
-      tekst: "A photo on WhatsApp often says more than a long explanation. Mention where the machine is."
+      tekst: "A photo by WhatsApp or email often says more than a long explanation. Mention where the machine is."
     - titel: "Assessment"
-      tekst: "I look at what needs repairing and which equipment to bring."
-    - titel: "I come and fix it"
-      tekst: "With the van and the right tools. The machine stays where it is."
+      tekst: "What needs repairing, and which equipment goes along? That is settled before anyone sets off."
+    - titel: "Repair on site"
+      tekst: "With the service van and the right tools. The machine stays where it is."
     - titel: "Invoice, done"
       tekst: "You get an invoice listing the work. The machine is running again."
 
 werkgebied:
   label: "Service area"
   titel: "Based in Gingelom"
-  tekst: "Gingelom sits where Limburg, Flemish Brabant and the province of Liège meet. From there I easily reach the whole Hesbaye region and the towns around it."
+  tekst: "Gingelom sits where Limburg, Flemish Brabant and the province of Liège meet. From there the whole Hesbaye region and the towns around it are within easy reach."
   regios:
     - "Limburg"
     - "Hesbaye (Haspengouw)"
@@ -135,9 +150,9 @@ over:
   label: "About"
   titel: "Lander Beckers"
   tekst:
-    - "I am an engineer by training and I choose to work with my hands. I would rather weld, fix and troubleshoot at the machine than sit behind a desk."
-    - "That background helps when a repair takes more than a weld. I look at why something broke, not just where."
-    - "When you call, you get me, and I come out myself. In English, Dutch, French or German."
+    - "I run Werkhuizen Beckers and I am an engineer by training. Even so, I choose to work hands-on: welding, fixing and troubleshooting happen at the machine, not behind a desk."
+    - "That background helps when a repair takes more than a weld. The question is not just where something broke, but why."
+    - "At Werkhuizen Beckers you can be helped in English, Dutch, French and German."
   attesten_titel: "Certificates and insurance"
   attesten:
     - "VCA VOL safety certificate"
@@ -145,27 +160,31 @@ over:
     - "Forklift certificate"
     - "Insured: public and professional liability"
   foto_alt: "Lander Beckers welding at a customer's site"
-  foto_bijschrift: "Lander and the van with welding equipment"
+  foto_bijschrift: "Lander Beckers, managing director"
 
 faq:
   label: "FAQ"
   titel: "Frequently asked questions"
   items:
     - vraag: "Do you work outside Limburg?"
-      antwoord: "Yes. Hesbaye, Flemish Brabant and the province of Liège are part of my regular area. Further afield is possible by arrangement."
+      antwoord: "Yes. Hesbaye, Flemish Brabant and the province of Liège are part of the regular area. Further afield is possible by arrangement."
     - vraag: "Does the machine need to be dismantled?"
-      antwoord: "Usually not. I weld and repair where the machine stands. If a part has to come off to reach the damage, I do that on site."
+      antwoord: "Usually not. Welding and repairs are done where the machine stands. If a part has to come off to reach the damage, that is done on site."
     - vraag: "Which materials do you weld?"
-      antwoord: "Steel, stainless steel and aluminium. Stick (MMA), MIG/MAG or TIG, depending on the job and the location."
+      antwoord: "Steel, stainless steel, aluminium and cast iron. Stick (MMA), MIG/MAG or TIG, depending on the job and the location. Worn parts can also be hardfaced."
     - vraag: "Do you do electrical work too?"
-      antwoord: "On machines only: motors, sensors, control cabinets and the wiring on the machine. I do not work on building electrics."
+      antwoord: "On machines only: motors, sensors, control cabinets and the wiring on the machine. Building electrics are not included."
+    - vraag: "Can you just make a drawing or a design?"
+      antwoord: "Yes. CAD design and workshop drawings in Autodesk Inventor are also available as a separate job, for example for a modification, a bracket or a replacement part you have made elsewhere."
+    - vraag: "Do you also change robot programs?"
+      antwoord: "Yes, for KUKA, ABB and FANUC. For example after a repair or a change to the cell, when positions or paths have to be set again."
     - vraag: "How do I send a photo of the problem?"
-      antwoord: "Through WhatsApp to +32 476 06 32 85. Add the location and a short description."
+      antwoord: "Through WhatsApp to +32 476 06 32 85 or by email to info@werkhuizenbeckers.be. Add the location and a short description."
 
 contact:
   label: "Contact"
-  titel: "Call, send a photo or email"
-  tekst: "Pick whatever is easiest for you. Prefer to write? Fill in the form and I will get back to you."
+  titel: "Call, email or send a photo"
+  tekst: "Pick whatever is easiest for you. Prefer to write? Fill in the form and you will get a call or an email back."
   kanalen:
     bellen: "Call"
     whatsapp: "WhatsApp"
@@ -174,7 +193,7 @@ contact:
 
 formulier:
   titel: "Describe the problem"
-  foto_tip: "Photos are easiest to send through WhatsApp."
+  foto_tip: "Photos are easiest to send through WhatsApp or by email."
   naam: "Name"
   bedrijf: "Company"
   optioneel: "optional"
@@ -183,7 +202,7 @@ formulier:
   telefoon_of_email: "Phone or email, one of the two is enough."
   locatie: "Town or location"
   omschrijving: "What is the problem?"
-  omschrijving_hint: "For example: cracked bracket on a conveyor, hydraulic leak on a press."
+  omschrijving_hint: "For example: cracked bracket on a conveyor, worn knives on a forage harvester, hydraulic leak on a press."
   dringend: "Urgent: the machine is down"
   toestemming: "I agree that Werkhuizen Beckers may use my details to contact me."
   privacy_link: "Privacy statement"
@@ -192,7 +211,7 @@ formulier:
   onderwerp_dringend: "URGENT: request via werkhuizenbeckers.be (EN)"
   fout_contact: "Please enter a phone number or an email address."
   bezig: "Sending…"
-  gelukt: "Thank you, your message has been sent. I will get back to you."
+  gelukt: "Thank you, your message has been sent. You will get a reply by phone or email."
   mislukt: "Sending failed. Please call or email directly."
 
 footer:
@@ -216,9 +235,9 @@ privacy:
         Werkhuizen Beckers BV, Gingelom – Sint-Truiden, Belgium. VAT BE 1041 720 216.
 
         Questions about this statement: [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) or [+32 476 06 32 85](tel:+32476063285).
-    - titel: "Which data I process"
+    - titel: "Which data is processed?"
       tekst: |
-        Only what you give me yourself:
+        Only what you provide yourself:
 
         - **Through the contact form:** name, company (optional), phone number and/or email address, town or location, your description and whether it is urgent.
         - **By phone, WhatsApp or email:** your contact details, your message and any photos you send.
@@ -226,19 +245,19 @@ privacy:
         The website itself uses no cookies, no analytics or advertising services, and loads no fonts or scripts from other sites. If you close the language suggestion, your browser remembers that locally. That information does not leave your device.
     - titel: "Who receives the data?"
       tekst: |
-        - **Web3Forms** receives the content of the form and forwards it to me by email. Web3Forms acts as a processor. More information: [web3forms.com/privacy](https://web3forms.com/privacy).
-        - **WhatsApp** (Meta) processes the messages you send me through WhatsApp, under the terms you agreed with WhatsApp.
+        - **Web3Forms** receives the content of the form and forwards it by email to Werkhuizen Beckers. Web3Forms acts as a processor. More information: [web3forms.com/privacy](https://web3forms.com/privacy).
+        - **WhatsApp** (Meta) processes the messages you send through WhatsApp, under the terms you agreed with WhatsApp.
         - **GitHub** hosts the website. On every visit GitHub processes technical data such as your IP address in order to serve the page.
 
-        I do not sell your data and do not use it for marketing.
+        Werkhuizen Beckers does not sell your data and does not use it for marketing.
     - titel: "Why, and on what basis?"
       tekst: |
         To answer your request, plan and carry out a repair, and to invoice. The legal basis is your consent (through the form), preparing or performing a contract, or a legal obligation such as bookkeeping (Article 6 GDPR). You can withdraw your consent at any time.
-    - titel: "How long I keep it"
+    - titel: "How long is it kept?"
       tekst: |
         No longer than necessary. Requests that do not lead to a job are deleted after two years at the latest. Data that appears on an invoice is kept for as long as accounting law requires.
     - titel: "Your rights"
       tekst: |
         You can access your data, have it corrected or deleted, restrict its processing and object to it. Just send an email to [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be).
 
-        If you disagree with how I handle your data, you can lodge a complaint with the Belgian Data Protection Authority: [www.dataprotectionauthority.be](https://www.dataprotectionauthority.be).
+        If you disagree with how your data is handled, you can lodge a complaint with the Belgian Data Protection Authority: [www.dataprotectionauthority.be](https://www.dataprotectionauthority.be).
