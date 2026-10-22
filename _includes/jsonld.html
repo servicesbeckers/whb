@@ -1,0 +1,82 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign b = site.bedrijf -%}
+{%- assign w = t.werkgebied.plaatsen -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "{{ '/' | absolute_url }}#bedrijf",
+      "name": {{ b.naam | jsonify }},
+      "legalName": {{ b.rechtsvorm | jsonify }},
+      "vatID": "BE1041720216",
+      "description": {{ t.meta.description | jsonify }},
+      "slogan": {{ t.footer.baseline | jsonify }},
+      "url": "{{ '/' | absolute_url }}",
+      "telephone": "{{ b.telefoon_link }}",
+      "email": "{{ b.email }}",
+      "logo": "{{ '/assets/img/logo.png' | absolute_url }}",
+      "image": "{{ '/assets/img/og-image.png' | absolute_url }}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ b.plaats }}",
+        "addressRegion": "{{ b.regio }}",
+        "addressCountry": "{{ b.land }}"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ b.geo.lat }},
+        "longitude": {{ b.geo.lng }}
+      },
+      "areaServed": [
+        {%- for regio in t.werkgebied.regios limit: 4 %}
+        { "@type": "AdministrativeArea", "name": {{ regio | jsonify }} },
+        {%- endfor %}
+        { "@type": "City", "name": {{ w.sinttruiden | jsonify }} },
+        { "@type": "City", "name": {{ w.hasselt | jsonify }} },
+        { "@type": "City", "name": {{ w.tienen | jsonify }} },
+        { "@type": "City", "name": {{ w.tongeren | jsonify }} },
+        { "@type": "City", "name": {{ w.luik | jsonify }} },
+        { "@type": "City", "name": {{ w.borgworm | jsonify }} },
+        { "@type": "City", "name": {{ w.leuven | jsonify }} }
+      ],
+      "knowsLanguage": ["nl", "fr", "en", "de"],
+      "founder": { "@type": "Person", "name": "Lander Beckers", "jobTitle": "Engineer" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ b.telefoon_link }}",
+        "email": "{{ b.email }}",
+        "contactType": "customer service",
+        "availableLanguage": ["Dutch", "French", "English", "German"]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": {{ t.diensten.titel | jsonify }},
+        "itemListElement": [
+          {%- for d in t.diensten.items %}
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ d.titel | jsonify }}, "description": {{ d.tekst | jsonify }} } }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ '/' | absolute_url }}#website",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ b.naam | jsonify }},
+      "inLanguage": "{{ t.hreflang }}",
+      "publisher": { "@id": "{{ '/' | absolute_url }}#bedrijf" }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "{{ t.hreflang }}",
+      "mainEntity": [
+        {%- for item in t.faq.items %}
+        { "@type": "Question", "name": {{ item.vraag | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.antwoord | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
+}
+</script>

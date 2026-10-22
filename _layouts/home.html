@@ -1,5 +1,192 @@
 ---
 layout: default
 ---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign b = site.bedrijf -%}
+{%- capture wa %}https://wa.me/{{ b.whatsapp }}?text={{ t.whatsapp_tekst | uri_escape }}{% endcapture -%}
+{%- capture wa_foto %}https://wa.me/{{ b.whatsapp }}?text={{ t.whatsapp_foto_tekst | uri_escape }}{% endcapture -%}
 
-{{ content }}
+<section class="held" aria-labelledby="held-titel">
+    <div class="kader held-raster">
+        <div class="held-tekst">
+            <p class="label label-licht">{{ t.hero.label }}</p>
+            <h1 id="held-titel">{{ t.hero.titel }}</h1>
+            <p class="held-intro">{{ t.hero.tekst }}</p>
+            <div class="knoppen">
+                <a class="knop knop-primair" href="tel:{{ b.telefoon_link }}">{% include icoon.html naam="bel" %}<span>{{ t.knop.bellen }}</span></a>
+                <a class="knop knop-licht" href="{{ wa }}">{% include icoon.html naam="whatsapp" %}<span>{{ t.knop.whatsapp }}</span></a>
+                <a class="knop knop-lijn" href="{{ wa_foto }}">{% include icoon.html naam="foto" %}<span>{{ t.knop.foto }}</span></a>
+            </div>
+        </div>
+
+        <div class="plaat" aria-hidden="true">
+            <span class="schroef schroef-lb"></span><span class="schroef schroef-rb"></span>
+            <span class="schroef schroef-lo"></span><span class="schroef schroef-ro"></span>
+            <p class="plaat-kop">{% include woordmerk.html %}</p>
+            <p class="plaat-titel">{{ t.hero.plaat_titel }}</p>
+            <dl class="plaat-rijen">
+            {%- for rij in t.hero.plaat %}
+                <div><dt>{{ rij[0] }}</dt><dd>{{ rij[1] }}</dd></div>
+            {%- endfor %}
+            </dl>
+            <p class="plaat-voet">{{ t.footer.btw }} {{ b.btw }}</p>
+        </div>
+    </div>
+</section>
+
+<section class="troeven" aria-label="{{ t.diensten.label }}">
+    <ol class="kader troeven-lijst">
+    {%- for troef in t.troeven %}
+        <li>
+            <h2>{{ troef.titel }}</h2>
+            <p>{{ troef.tekst }}</p>
+        </li>
+    {%- endfor %}
+    </ol>
+</section>
+
+<section class="sectie" id="diensten" aria-labelledby="diensten-titel">
+    <div class="kader">
+        <header class="sectie-kop">
+            <p class="label">{{ t.diensten.label }}</p>
+            <h2 id="diensten-titel">{{ t.diensten.titel }}</h2>
+        </header>
+
+        <div class="diensten">
+        {%- for d in t.diensten.items %}
+            <article class="dienst dienst-{{ d.id }}" id="dienst-{{ d.id }}">
+                <p class="dienst-nummer">0{{ forloop.index }}</p>
+                <div class="dienst-inhoud">
+                    <h3>{{ d.titel }}</h3>
+                    <p>{{ d.tekst }}</p>
+                    {%- if d.lijst %}
+                    <ul class="streeplijst">
+                        {%- for regel in d.lijst %}<li>{{ regel }}</li>{% endfor %}
+                    </ul>
+                    {%- endif %}
+                    {%- if d.noot %}<p class="dienst-noot">{{ d.noot }}</p>{% endif %}
+                    {%- if d.id == "spoed" %}
+                    <p><a class="pijllink" href="#spoed">{{ t.spoed.titel }}</a></p>
+                    {%- endif %}
+                </div>
+            </article>
+        {%- endfor %}
+        </div>
+
+        <p class="diensten-extra">{{ t.diensten.extra }}</p>
+    </div>
+</section>
+
+<section class="spoed" id="spoed" aria-labelledby="spoed-titel">
+    <div class="kader spoed-raster">
+        <div>
+            <p class="label label-licht">{{ t.spoed.label }}</p>
+            <h2 id="spoed-titel">{{ t.spoed.titel }}</h2>
+            <p>{{ t.spoed.tekst }}</p>
+        </div>
+        <a class="spoed-bel" href="tel:{{ b.telefoon_link }}">
+            {% include icoon.html naam="bel" %}
+            <span><small>{{ t.knop.bellen }}</small>{{ b.telefoon }}</span>
+        </a>
+    </div>
+</section>
+
+<section class="sectie" id="werkwijze" aria-labelledby="werkwijze-titel">
+    <div class="kader">
+        <header class="sectie-kop">
+            <p class="label">{{ t.werkwijze.label }}</p>
+            <h2 id="werkwijze-titel">{{ t.werkwijze.titel }}</h2>
+        </header>
+        <ol class="stappen">
+        {%- for stap in t.werkwijze.stappen %}
+            <li>
+                <span class="stap-nummer">{{ forloop.index }}</span>
+                <h3>{{ stap.titel }}</h3>
+                <p>{{ stap.tekst }}</p>
+            </li>
+        {%- endfor %}
+        </ol>
+    </div>
+</section>
+
+<section class="sectie sectie-zand" id="werkgebied" aria-labelledby="werkgebied-titel">
+    <div class="kader werkgebied-raster">
+        <div>
+            <header class="sectie-kop">
+                <p class="label">{{ t.werkgebied.label }}</p>
+                <h2 id="werkgebied-titel">{{ t.werkgebied.titel }}</h2>
+            </header>
+            <p>{{ t.werkgebied.tekst }}</p>
+            <ul class="labels">
+            {%- for regio in t.werkgebied.regios %}<li>{{ regio }}</li>{% endfor %}
+            </ul>
+        </div>
+        <figure class="kaart">
+            {% include kaart.html %}
+            <figcaption>{{ t.werkgebied.kaart_bijschrift }}</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="sectie" id="over" aria-labelledby="over-titel">
+    <div class="kader over-raster">
+        <figure class="fotovak">
+            <!-- TODO-FOTO: foto van Lander aan het lassen ter plaatse, of Lander bij de bus.
+                 Formaat WebP, ca. 1200 x 1500 px, in assets/img/. Vervang dit blok door:
+                 <img src="/assets/img/lander.webp" alt="{{ t.over.foto_alt }}" width="1200" height="1500" loading="lazy" decoding="async"> -->
+            <div class="fotovak-tekening" aria-hidden="true">
+                {% include lasnaad.html %}
+            </div>
+            <figcaption>{{ t.over.foto_bijschrift }}</figcaption>
+        </figure>
+        <div>
+            <header class="sectie-kop">
+                <p class="label">{{ t.over.label }}</p>
+                <h2 id="over-titel">{{ t.over.titel }}</h2>
+            </header>
+            {%- for alinea in t.over.tekst %}
+            <p>{{ alinea }}</p>
+            {%- endfor %}
+            <h3 class="kleinkop">{{ t.over.attesten_titel }}</h3>
+            <ul class="labels labels-attest">
+            {%- for a in t.over.attesten %}<li>{{ a }}</li>{% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="sectie sectie-zand" id="vragen" aria-labelledby="vragen-titel">
+    <div class="kader kader-smal">
+        <header class="sectie-kop">
+            <p class="label">{{ t.faq.label }}</p>
+            <h2 id="vragen-titel">{{ t.faq.titel }}</h2>
+        </header>
+        <div class="vragen">
+        {%- for item in t.faq.items %}
+            <details>
+                <summary>{{ item.vraag }}</summary>
+                <p>{{ item.antwoord }}</p>
+            </details>
+        {%- endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="sectie contact" id="contact" aria-labelledby="contact-titel">
+    <div class="kader contact-raster">
+        <div>
+            <header class="sectie-kop">
+                <p class="label label-licht">{{ t.contact.label }}</p>
+                <h2 id="contact-titel">{{ t.contact.titel }}</h2>
+            </header>
+            <p>{{ t.contact.tekst }}</p>
+            <ul class="kanalen">
+                <li><a href="tel:{{ b.telefoon_link }}">{% include icoon.html naam="bel" %}<span><small>{{ t.contact.kanalen.bellen }}</small>{{ b.telefoon }}</span></a></li>
+                <li><a href="{{ wa }}">{% include icoon.html naam="whatsapp" %}<span><small>{{ t.contact.kanalen.whatsapp }}</small>{{ b.telefoon }}</span></a></li>
+                <li><a href="mailto:{{ b.email }}">{% include icoon.html naam="mail" %}<span><small>{{ t.contact.kanalen.mailen }}</small>{{ b.email }}</span></a></li>
+            </ul>
+            <p class="contact-plaats">{{ t.contact.locatie }}</p>
+        </div>
+        {% include contactformulier.html wa_foto=wa_foto %}
+    </div>
+</section>

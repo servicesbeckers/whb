@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign paginas = site.pages | where_exp: "p", "p.ref != nil" %}
+{%- for p in paginas %}
+  {%- assign alts = paginas | where: "ref", p.ref %}
+  <url>
+    <loc>{{ p.url | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {%- for code in site.talen %}{% assign alt = alts | where: "lang", code | first %}{% if alt %}
+    <xhtml:link rel="alternate" hreflang="{{ site.data.i18n[code].hreflang }}" href="{{ alt.url | absolute_url }}"/>
+    {%- endif %}{% endfor %}
+    {%- assign std = alts | where: "lang", site.standaardtaal | first %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ std.url | absolute_url }}"/>
+  </url>
+{%- endfor %}
+</urlset>

@@ -1,0 +1,18 @@
+{%- comment -%}
+Doorverwijzing voor oude URL's (GitHub Pages kent geen echte 301). Meta refresh plus canonical
+naar het doel, en noindex zodat Google de oude pagina laat vallen.
+{%- endcomment -%}
+{%- assign t = site.data.i18n.nl -%}
+<!doctype html>
+<html lang="nl-BE">
+<head>
+    <meta charset="utf-8">
+    <title>Werkhuizen Beckers</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
+</head>
+<body>
+    <p>{{ t.redirect.tekst }} <a href="{{ page.redirect_to | relative_url }}">{{ t.redirect.link }}</a></p>
+</body>
+</html>

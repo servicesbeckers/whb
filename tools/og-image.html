@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Bron voor assets/img/og-image.png (1200 x 630). Opnieuw maken: zie tools/README.md -->
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "IBM Plex Serif"; font-weight: 600; src: url("../assets/fonts/ibm-plex-serif-600.woff2"); }
+@font-face { font-family: "IBM Plex Serif"; font-weight: 700; src: url("../assets/fonts/ibm-plex-serif-700.woff2"); }
+@font-face { font-family: "DM Mono"; font-weight: 500; src: url("../assets/fonts/dm-mono-500.woff2"); }
+html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+body {
+    background-color: #142731;
+    background-image:
+        linear-gradient(rgba(246, 242, 234, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(246, 242, 234, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+    color: #f6f2ea;
+    font-family: "IBM Plex Serif", serif;
+    box-sizing: border-box;
+    padding: 72px 80px;
+    border-bottom: 14px solid #9a4a2f;
+    position: relative;
+}
+.merk { display: flex; align-items: center; gap: 12px; line-height: 1; }
+.w { font-weight: 700; font-size: 104px; line-height: 0.8; }
+.rest { display: flex; flex-direction: column; gap: 4px; font-weight: 600; font-size: 44px; }
+.beckers { color: #dc9370; }
+h1 { font-weight: 700; font-size: 76px; line-height: 1.05; margin: 64px 0 0; max-width: 900px; }
+.voet {
+    position: absolute; left: 80px; right: 80px; bottom: 56px;
+    display: flex; justify-content: space-between;
+    font-family: "DM Mono", monospace; font-weight: 500; font-size: 26px; letter-spacing: 0.08em;
+    color: #dc9370; text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+    <div class="merk"><span class="w">W</span><span class="rest"><span>erkhuizen</span><span class="beckers">Beckers</span></span></div>
+    <h1>Laswerk &amp; machineherstel op locatie</h1>
+    <div class="voet"><span>Gingelom · Limburg</span><span>+32 476 06 32 85</span></div>
+</body>
+</html>
