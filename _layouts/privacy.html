@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign home = site.pages | where: "ref", "home" | where: "lang", page.lang | first -%}
+<article class="sectie tekstpagina">
+    <div class="kader kader-smal">
+        <p class="label">{{ t.footer.privacy }}</p>
+        <h1>{{ t.privacy.titel }}</h1>
+        <p class="tekstpagina-datum">{{ t.privacy.bijgewerkt }}</p>
+        {%- for s in t.privacy.secties %}
+        <h2>{{ s.titel }}</h2>
+        {{ s.tekst | markdownify }}
+        {%- endfor %}
+        <p><a class="pijllink" href="{{ home.url | relative_url }}">{{ t.privacy.terug }}</a></p>
+    </div>
+</article>

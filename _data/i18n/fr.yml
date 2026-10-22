@@ -1,0 +1,244 @@
+# Tous les textes du site en français (Belgique). Même structure que nl.yml.
+
+taal: fr
+hreflang: fr-BE
+locale: fr_BE
+naam: Français
+
+meta:
+  title: "Soudure sur site & réparation de machines | Werkhuizen Beckers, Hesbaye"
+  description: "Soudure mobile et réparation de machines sur place. Acier, inox et aluminium. Depuis Gingelom vers Liège, Waremme, Hannut, Saint-Trond et toute la Hesbaye."
+  og_alt: "Werkhuizen Beckers, soudure et réparation de machines sur site"
+
+skiplink: "Aller au contenu"
+logo_alt: "Werkhuizen Beckers, vers la page d'accueil"
+menu_open: "Ouvrir le menu"
+menu_sluiten: "Fermer le menu"
+taalkeuze: "Choisir une langue"
+
+nav:
+  diensten: "Services"
+  werkwijze: "Méthode"
+  werkgebied: "Zone"
+  over: "À propos"
+  faq: "Questions"
+  contact: "Contact"
+
+knop:
+  bellen: "Appeler"
+  whatsapp: "WhatsApp"
+  foto: "Envoyer une photo"
+  mailen: "E-mail"
+
+whatsapp_tekst: "Bonjour Lander, j'ai une question concernant de la soudure ou une réparation :"
+whatsapp_foto_tekst: "Bonjour Lander, voici une photo du problème. Lieu :"
+
+suggestie:
+  tekst: "Ce site existe aussi en français."
+  link: "Vers la version française"
+  sluiten: "Fermer"
+
+hero:
+  label: "Gingelom · Hesbaye, Limbourg et région liégeoise"
+  titel: "Soudure & réparation de machines sur site"
+  tekst: "Je viens sur place avec ma camionnette équipée. Je soude l'acier, l'inox et l'aluminium, et je remets vos machines en marche, côté mécanique comme côté électrique."
+  plaat:
+    - [ "Travail", "Souder · réparer · régler" ]
+    - [ "Matériau", "Acier · inox · alu" ]
+    - [ "Procédé", "MMA · MIG/MAG · TIG" ]
+    - [ "Départ", "Gingelom" ]
+  plaat_titel: "Atelier mobile"
+
+troeven:
+  - titel: "Je viens sur place"
+    tekst: "Pas de démontage, pas de transport vers un atelier. La machine reste là où elle est."
+  - titel: "Une seule personne pour tout"
+    tekst: "Soudure, mécanique, électricité machine, pneumatique et hydraulique. Vous appelez un seul numéro, pas trois entreprises."
+  - titel: "Disponible rapidement"
+    tekst: "Aussi quand une machine est à l'arrêt et doit redémarrer d'urgence."
+  - titel: "Ingénieur de formation"
+    tekst: "Je comprends comment la machine fonctionne. Une réparation, c'est plus qu'un cordon de soudure."
+
+diensten:
+  label: "Services"
+  titel: "Ce que je fais sur place"
+  items:
+    - id: laswerk
+      titel: "Soudure sur site"
+      tekst: "Réparer, renforcer et modifier là où se trouve la pièce : fissures, pièces cassées, supports, châssis et pièces adaptées sur place. Ma camionnette transporte l'équipement de soudage complet."
+      lijst:
+        - "Acier, inox et aluminium"
+        - "Électrode (MMA), semi-automatique (MIG/MAG) et TIG"
+        - "Construction métallique et sur mesure, en concertation"
+    - id: onderhoud
+      titel: "Entretien et réparation de machines"
+      tekst: "Mécanique, électricité, pneumatique et hydraulique. Entretien préventif selon un planning convenu, ou recherche de panne et dépannage quand la machine s'arrête."
+      lijst:
+        - "Roulements, arbres, entraînements et guidages"
+        - "Moteurs, capteurs et armoires électriques des machines"
+        - "Vérins, distributeurs, flexibles et conduites"
+      noot: "Électricité uniquement sur les machines. Pas d'installations électriques de bâtiments."
+    - id: crash
+      titel: "Remettre en service une machine accidentée"
+      tekst: "Percutée, renversée ou fortement endommagée. Je ressoude ce qui est cassé, je réaligne la mécanique, je répare la partie électrique, pneumatique et hydraulique, puis je règle la machine jusqu'à ce qu'elle produise à nouveau. Si nécessaire, je remplace ou je modernise les pièces ou la commande obsolètes."
+      noot: "Soudure, mécanique et électricité en une seule intervention, par une seule personne."
+    - id: spoed
+      titel: "Intervention urgente"
+      tekst: "En cas d'arrêt ou de casse, surtout quand il faut souder. Les interventions urgentes sont d'abord réservées à mes clients réguliers. Les autres demandes sont traitées selon mes disponibilités."
+  extra: "Si nécessaire : conception CAO (Autodesk Inventor) et adaptations de la commande machine (Beckhoff/TwinCAT) dans le cadre d'une réparation."
+
+spoed:
+  label: "Urgence"
+  titel: "Machine à l'arrêt ?"
+  tekst: "Pour mes clients réguliers, je suis aussi disponible en cas d'arrêt urgent. Nouveau client ? Appelez sans hésiter, je verrai ce qui est possible."
+
+werkwijze:
+  label: "Méthode"
+  titel: "Comment ça se passe"
+  stappen:
+    - titel: "Envoyez une photo ou appelez"
+      tekst: "Une photo par WhatsApp en dit souvent plus qu'une longue explication. Indiquez où se trouve la machine."
+    - titel: "Évaluation"
+      tekst: "J'examine ce qu'il faut réparer et le matériel à emporter."
+    - titel: "Je viens sur place et je répare"
+      tekst: "Avec la camionnette et l'outillage adapté. La machine reste où elle est."
+    - titel: "Facture, c'est réglé"
+      tekst: "Vous recevez une facture avec le détail du travail. La machine tourne à nouveau."
+
+werkgebied:
+  label: "Zone d'intervention"
+  titel: "Au départ de Gingelom"
+  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. De là, je rejoins facilement toute la Hesbaye et les villes alentour."
+  regios:
+    - "Limbourg"
+    - "Hesbaye"
+    - "Brabant flamand"
+    - "Province de Liège"
+    - "Plus loin, en concertation"
+  kaart_alt: "Carte schématique : Gingelom au centre, avec Saint-Trond, Hasselt, Genk, Tongres, Tirlemont, Louvain, Waremme et Liège dans un rayon d'environ 30 km."
+  kaart_bijschrift: "Schématique, distances à vol d'oiseau"
+  plaatsen:
+    gingelom: "Gingelom"
+    sinttruiden: "Saint-Trond"
+    hasselt: "Hasselt"
+    genk: "Genk"
+    tongeren: "Tongres"
+    tienen: "Tirlemont"
+    leuven: "Louvain"
+    luik: "Liège"
+    borgworm: "Waremme"
+    hannuit: "Hannut"
+    diest: "Diest"
+    landen: "Landen"
+
+over:
+  label: "À propos"
+  titel: "Lander Beckers"
+  tekst:
+    - "Je suis ingénieur de formation et j'ai choisi de travailler de mes mains. Souder, réparer et chercher une panne, je préfère le faire devant la machine plutôt que derrière un bureau."
+    - "Cette formation aide quand une réparation demande plus qu'un cordon de soudure. Je cherche pourquoi la pièce a cassé, pas seulement où."
+    - "Au téléphone, c'est moi que vous avez, et c'est moi qui viens. En français, en néerlandais, en anglais ou en allemand."
+  attesten_titel: "Attestations et assurance"
+  attesten:
+    - "VCA VOL"
+    - "BA4 et BA5"
+    - "Brevet de cariste"
+    - "Assuré : RC exploitation et RC professionnelle"
+  foto_alt: "Lander Beckers en train de souder chez un client"
+  foto_bijschrift: "Lander et la camionnette avec l'équipement de soudage"
+
+faq:
+  label: "Questions"
+  titel: "Questions fréquentes"
+  items:
+    - vraag: "Intervenez-vous aussi hors du Limbourg ?"
+      antwoord: "Oui. La Hesbaye, le Brabant flamand et la province de Liège font partie de ma zone habituelle. Plus loin, c'est possible en concertation."
+    - vraag: "Faut-il démonter la machine ?"
+      antwoord: "Généralement pas. Je soude et je répare là où se trouve la machine. S'il faut quand même démonter une pièce pour y accéder, je le fais sur place."
+    - vraag: "Quels matériaux soudez-vous ?"
+      antwoord: "Acier, inox et aluminium. À l'électrode (MMA), en semi-automatique (MIG/MAG) ou en TIG, selon le travail et l'endroit."
+    - vraag: "Faites-vous aussi de l'électricité ?"
+      antwoord: "Uniquement sur les machines : moteurs, capteurs, armoires électriques et câblage de la machine. Je ne fais pas d'électricité de bâtiment."
+    - vraag: "Comment envoyer une photo du problème ?"
+      antwoord: "Par WhatsApp au +32 476 06 32 85. Ajoutez le lieu et une courte explication."
+
+contact:
+  label: "Contact"
+  titel: "Appelez, envoyez une photo ou un e-mail"
+  tekst: "Choisissez ce qui vous convient le mieux. Vous préférez écrire ? Remplissez le formulaire, je vous recontacte."
+  kanalen:
+    bellen: "Appeler"
+    whatsapp: "WhatsApp"
+    mailen: "E-mail"
+  locatie: "Gingelom – Saint-Trond"
+
+formulier:
+  titel: "Décrivez le problème"
+  foto_tip: "Pour les photos, le plus simple est WhatsApp."
+  naam: "Nom"
+  bedrijf: "Entreprise"
+  optioneel: "facultatif"
+  telefoon: "Téléphone"
+  email: "E-mail"
+  telefoon_of_email: "Téléphone ou e-mail, l'un des deux suffit."
+  locatie: "Commune ou lieu"
+  omschrijving: "Que se passe-t-il ?"
+  omschrijving_hint: "Par exemple : support fissuré sur un convoyeur, fuite hydraulique sur une presse."
+  dringend: "Urgent : la machine est à l'arrêt"
+  toestemming: "J'accepte que Werkhuizen Beckers utilise mes données pour me recontacter."
+  privacy_link: "Déclaration de confidentialité"
+  verzenden: "Envoyer"
+  onderwerp: "Demande via werkhuizenbeckers.be (FR)"
+  onderwerp_dringend: "URGENT : demande via werkhuizenbeckers.be (FR)"
+  fout_contact: "Indiquez un numéro de téléphone ou une adresse e-mail."
+  bezig: "Envoi en cours…"
+  gelukt: "Merci, votre message est envoyé. Je vous recontacte."
+  mislukt: "L'envoi n'a pas fonctionné. Appelez ou envoyez un e-mail directement."
+
+footer:
+  btw: "TVA"
+  baseline: "Soudure & réparation de machines sur site"
+  privacy: "Confidentialité"
+  rechten: "Tous droits réservés."
+
+redirect:
+  tekst: "Cette page a été déplacée."
+  link: "Continuer"
+
+privacy:
+  titel: "Déclaration de confidentialité"
+  meta_description: "Comment Werkhuizen Beckers traite les données que vous transmettez via le site, le formulaire, WhatsApp ou par e-mail."
+  bijgewerkt: "Dernière mise à jour : 22 octobre 2026."
+  terug: "Retour à la page d'accueil"
+  secties:
+    - titel: "Qui est responsable ?"
+      tekst: |
+        Werkhuizen Beckers BV, Gingelom – Saint-Trond, Belgique. TVA BE 1041 720 216.
+
+        Questions sur cette déclaration : [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) ou [+32 476 06 32 85](tel:+32476063285).
+    - titel: "Quelles données je traite"
+      tekst: |
+        Uniquement ce que vous me transmettez vous-même :
+
+        - **Via le formulaire de contact :** nom, entreprise (facultatif), numéro de téléphone et/ou adresse e-mail, commune ou lieu, votre description et l'indication d'urgence.
+        - **Par téléphone, WhatsApp ou e-mail :** vos coordonnées, votre message et les photos que vous joignez.
+
+        Le site lui-même n'utilise pas de cookies, pas d'outils d'analyse ou de publicité, et ne charge ni polices ni scripts depuis d'autres sites. Si vous fermez la suggestion de langue, votre navigateur s'en souvient localement. Cette information ne quitte pas votre appareil.
+    - titel: "Qui reçoit ces données ?"
+      tekst: |
+        - **Web3Forms** reçoit le contenu du formulaire et me le transmet par e-mail. Web3Forms agit en tant que sous-traitant. Plus d'informations : [web3forms.com/privacy](https://web3forms.com/privacy).
+        - **WhatsApp** (Meta) traite les messages que vous m'envoyez via WhatsApp, selon les conditions que vous avez acceptées chez WhatsApp.
+        - **GitHub** héberge le site. À chaque visite, GitHub traite des données techniques comme votre adresse IP pour pouvoir afficher la page.
+
+        Je ne vends pas vos données et je ne les utilise pas à des fins de marketing.
+    - titel: "Pourquoi et sur quelle base ?"
+      tekst: |
+        Pour répondre à votre demande, planifier et effectuer une réparation, et pour facturer. La base légale est votre consentement (via le formulaire), la préparation ou l'exécution d'un contrat, ou une obligation légale comme la comptabilité (art. 6 RGPD). Vous pouvez retirer votre consentement à tout moment.
+    - titel: "Combien de temps je les conserve"
+      tekst: |
+        Pas plus longtemps que nécessaire. Les demandes qui n'aboutissent pas à une commande sont supprimées au plus tard après deux ans. Les données qui figurent sur une facture sont conservées aussi longtemps que la législation comptable l'exige.
+    - titel: "Vos droits"
+      tekst: |
+        Vous pouvez consulter vos données, les faire corriger ou supprimer, en limiter le traitement et vous y opposer. Envoyez simplement un e-mail à [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be).
+
+        Si vous n'êtes pas d'accord avec la manière dont je traite vos données, vous pouvez introduire une plainte auprès de l'Autorité de protection des données : [www.autoriteprotectiondonnees.be](https://www.autoriteprotectiondonnees.be).

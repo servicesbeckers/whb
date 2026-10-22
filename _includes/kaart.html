@@ -1,0 +1,38 @@
+{%- comment -%}
+Schematische kaart van het werkgebied. Posities berekend uit echte coördinaten
+(equirectangulaire projectie rond Gingelom, 7,5 px per km). Ringen op 15 en 30 km.
+{%- endcomment -%}
+{%- assign p = site.data.i18n[page.lang].werkgebied.plaatsen -%}
+<svg class="kaart-svg" viewBox="0 0 600 540" role="img" aria-labelledby="kaart-alt">
+    <title id="kaart-alt">{{ site.data.i18n[page.lang].werkgebied.kaart_alt }}</title>
+    <g class="kaart-raster">
+        <path d="M0 90H600M0 180H600M0 270H600M0 360H600M0 450H600M100 0V540M200 0V540M300 0V540M400 0V540M500 0V540"/>
+    </g>
+    <circle class="kaart-ring" cx="300" cy="270" r="225"/>
+    <circle class="kaart-ring" cx="300" cy="270" r="112.5"/>
+    <text class="kaart-afstand" x="306" y="40">30 km</text>
+    <text class="kaart-afstand" x="306" y="152">15 km</text>
+
+    <g class="kaart-plaatsen">
+        <g transform="translate(327 214)"><circle r="5"/><text x="10" y="4">{{ p.sinttruiden }}</text></g>
+        <g transform="translate(407 118)"><circle r="5"/><text x="10" y="4">{{ p.hasselt }}</text></g>
+        <g transform="translate(493 89)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.genk }}</text></g>
+        <g transform="translate(473 243)"><circle r="5"/><text x="10" y="4">{{ p.tongeren }}</text></g>
+        <g transform="translate(197 221)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.tienen }}</text></g>
+        <g transform="translate(71 161)"><circle r="5"/><text x="10" y="-8">{{ p.leuven }}</text></g>
+        <g transform="translate(527 365)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.luik }}</text></g>
+        <g transform="translate(364 313)"><circle r="5"/><text x="10" y="4">{{ p.borgworm }}</text></g>
+        <g transform="translate(270 333)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.hannuit }}</text></g>
+        <g transform="translate(256 68)"><circle r="5"/><text x="10" y="4">{{ p.diest }}</text></g>
+    </g>
+
+    <g class="kaart-basis" transform="translate(300 270)">
+        <rect x="-11" y="-11" width="22" height="22"/>
+        <text x="18" y="5">{{ p.gingelom }}</text>
+    </g>
+
+    <g class="kaart-noord" transform="translate(560 40)">
+        <path d="M0 -18L8 6H-8z"/>
+        <text y="22" text-anchor="middle">N</text>
+    </g>
+</svg>

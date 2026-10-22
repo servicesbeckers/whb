@@ -1,0 +1,245 @@
+# Alle teksten van de Nederlandstalige site. Wijzig teksten hier, niet in de HTML.
+# Elke wijziging ook doorvoeren in fr.yml, en.yml en de.yml.
+
+taal: nl
+hreflang: nl-BE
+locale: nl_BE
+naam: Nederlands
+
+meta:
+  title: "Laswerk op locatie & machineherstel | Werkhuizen Beckers, Gingelom, Limburg"
+  description: "Mobiel laswerk en herstelling van machines ter plaatse. Staal, inox en aluminium. Vanuit Gingelom naar Sint-Truiden, Hasselt, Tienen, Luik en heel Haspengouw."
+  og_alt: "Werkhuizen Beckers, laswerk en machineherstel op locatie"
+
+skiplink: "Naar de inhoud"
+logo_alt: "Werkhuizen Beckers, naar de startpagina"
+menu_open: "Menu openen"
+menu_sluiten: "Menu sluiten"
+taalkeuze: "Kies een taal"
+
+nav:
+  diensten: "Diensten"
+  werkwijze: "Werkwijze"
+  werkgebied: "Werkgebied"
+  over: "Over"
+  faq: "Vragen"
+  contact: "Contact"
+
+knop:
+  bellen: "Bellen"
+  whatsapp: "WhatsApp"
+  foto: "Foto sturen"
+  mailen: "Mailen"
+
+whatsapp_tekst: "Hallo Lander, ik heb een vraag over laswerk/herstel:"
+whatsapp_foto_tekst: "Hallo Lander, hierbij een foto van het probleem. Locatie:"
+
+suggestie:
+  tekst: "Deze site bestaat ook in het Nederlands."
+  link: "Naar de Nederlandse versie"
+  sluiten: "Sluiten"
+
+hero:
+  label: "Gingelom · heel Limburg en omstreken"
+  titel: "Laswerk & machineherstel op locatie"
+  tekst: "Ik kom met mijn uitgeruste bus ter plaatse. Staal, inox en aluminium lassen, en machines mechanisch én elektrisch terug aan de praat."
+  plaat:
+    - [ "Werk", "Lassen · herstellen · afstellen" ]
+    - [ "Materiaal", "Staal · inox · alu" ]
+    - [ "Proces", "MMA · MIG/MAG · TIG" ]
+    - [ "Vertrek", "Gingelom" ]
+  plaat_titel: "Mobiele werkplaats"
+
+troeven:
+  - titel: "Ik kom ter plaatse"
+    tekst: "Geen demontage en geen transport naar een werkplaats. De machine blijft staan waar ze staat."
+  - titel: "Eén persoon voor alles"
+    tekst: "Lassen, mechanica, machine-elektriciteit, pneumatiek en hydrauliek. U belt één nummer, niet drie firma's."
+  - titel: "Snel inzetbaar"
+    tekst: "Ook als een machine stilstaat en dringend terug moet draaien."
+  - titel: "Engineer van opleiding"
+    tekst: "Ik begrijp hoe de machine werkt. Een herstelling is meer dan een lasnaad."
+
+diensten:
+  label: "Diensten"
+  titel: "Wat ik ter plaatse doe"
+  items:
+    - id: laswerk
+      titel: "Laswerk op locatie"
+      tekst: "Herstellen, versterken en aanpassen waar het stuk staat: scheuren, gebroken onderdelen, steunen, frames en maatwerk. Mijn bus heeft de volledige lasuitrusting aan boord."
+      lijst:
+        - "Staal, inox en aluminium"
+        - "Elektrode (MMA), halfautomaat (MIG/MAG) en TIG"
+        - "Constructiewerk en maatwerk in overleg"
+    - id: onderhoud
+      titel: "Onderhoud en herstelling van machines"
+      tekst: "Mechanisch, elektrisch, pneumatisch en hydraulisch. Preventief onderhoud volgens afspraak, of een storing opsporen en verhelpen als de machine stilvalt."
+      lijst:
+        - "Lagers, assen, aandrijvingen en geleidingen"
+        - "Motoren, sensoren en schakelkasten van machines"
+        - "Cilinders, ventielen, slangen en leidingen"
+      noot: "Elektriciteit enkel aan machines. Gebouwinstallaties doe ik niet."
+    - id: crash
+      titel: "Machine terug in leven na een crash"
+      tekst: "Aangereden, omgevallen of zwaar beschadigd. Ik las op wat gebroken is, lijn mechanisch uit, herstel de elektrische, pneumatische en hydraulische kant en stel de machine opnieuw in tot ze weer produceert. Verouderde onderdelen of besturing vervang of moderniseer ik waar nodig."
+      noot: "Lassen, mechanica en elektriciteit in één ingreep, door één persoon."
+    - id: spoed
+      titel: "Dringende interventie"
+      tekst: "Bij stilstand of breuk, zeker als er gelast moet worden. Spoedinterventies zijn er in de eerste plaats voor vaste klanten. Andere aanvragen bekijk ik volgens beschikbaarheid."
+  extra: "Waar nodig: CAD-ontwerp (Autodesk Inventor) en aanpassingen aan de machinebesturing (Beckhoff/TwinCAT) als onderdeel van een herstelling."
+
+spoed:
+  label: "Spoed"
+  titel: "Machine stil?"
+  tekst: "Voor vaste klanten sta ik ook bij dringende stilstand paraat. Nieuwe klant? Bel gerust, dan bekijk ik wat mogelijk is."
+
+werkwijze:
+  label: "Werkwijze"
+  titel: "Zo werkt het"
+  stappen:
+    - titel: "Stuur een foto of bel"
+      tekst: "Een foto via WhatsApp zegt vaak meer dan een lange uitleg. Vermeld waar de machine staat."
+    - titel: "Inschatting"
+      tekst: "Ik bekijk wat er hersteld moet worden en welk materiaal ik meebreng."
+    - titel: "Ik kom ter plaatse en herstel"
+      tekst: "Met de bus en het juiste gereedschap. De machine blijft waar ze staat."
+    - titel: "Factuur, klaar"
+      tekst: "U krijgt een factuur met wat er gedaan is. De machine draait weer."
+
+werkgebied:
+  label: "Werkgebied"
+  titel: "Vanuit Gingelom"
+  tekst: "Gingelom ligt op de grens van Limburg, Vlaams-Brabant en de provincie Luik. Van daaruit ben ik vlot in heel Haspengouw en de steden errond."
+  regios:
+    - "Limburg"
+    - "Haspengouw"
+    - "Vlaams-Brabant"
+    - "Provincie Luik"
+    - "Verder in overleg"
+  kaart_alt: "Schematische kaart: Gingelom in het midden, met Sint-Truiden, Hasselt, Genk, Tongeren, Tienen, Leuven, Borgworm en Luik binnen een straal van ongeveer 30 km."
+  kaart_bijschrift: "Schematisch, afstanden in vogelvlucht"
+  plaatsen:
+    gingelom: "Gingelom"
+    sinttruiden: "Sint-Truiden"
+    hasselt: "Hasselt"
+    genk: "Genk"
+    tongeren: "Tongeren"
+    tienen: "Tienen"
+    leuven: "Leuven"
+    luik: "Luik"
+    borgworm: "Borgworm"
+    hannuit: "Hannuit"
+    diest: "Diest"
+    landen: "Landen"
+
+over:
+  label: "Over"
+  titel: "Lander Beckers"
+  tekst:
+    - "Ik ben engineer van opleiding en werk bewust met mijn handen. Lassen, sleutelen en storingen zoeken doe ik liever bij de machine dan achter een bureau."
+    - "Die achtergrond helpt als een herstelling meer vraagt dan een lasnaad. Ik kijk waarom iets brak, niet enkel waar."
+    - "U krijgt mij aan de lijn en ik kom zelf. Dat kan in het Nederlands, Frans, Engels en Duits."
+  attesten_titel: "Attesten en verzekering"
+  attesten:
+    - "VCA VOL"
+    - "BA4 en BA5"
+    - "Heftruckattest"
+    - "Verzekerd: BA uitbating en beroepsaansprakelijkheid"
+  foto_alt: "Lander Beckers aan het lassen bij een klant"
+  foto_bijschrift: "Lander en de bus met lasuitrusting"
+
+faq:
+  label: "Vragen"
+  titel: "Veelgestelde vragen"
+  items:
+    - vraag: "Komt u ook buiten Limburg?"
+      antwoord: "Ja. Haspengouw, Vlaams-Brabant en de provincie Luik zitten in mijn vaste werkgebied. Verder weg kan in overleg."
+    - vraag: "Moet de machine gedemonteerd worden?"
+      antwoord: "Meestal niet. Ik las en herstel waar de machine staat. Moet er toch een onderdeel los om er goed bij te kunnen, dan doe ik dat ter plaatse."
+    - vraag: "Welke materialen last u?"
+      antwoord: "Staal, inox en aluminium. Met elektrode (MMA), halfautomaat (MIG/MAG) of TIG, afhankelijk van het werk en de plek."
+    - vraag: "Doet u ook elektriciteit?"
+      antwoord: "Enkel aan machines: motoren, sensoren, schakelkasten en de bekabeling op de machine. Elektriciteit in gebouwen doe ik niet."
+    - vraag: "Hoe stuur ik een foto van het probleem?"
+      antwoord: "Via WhatsApp naar +32 476 06 32 85. Zet er de locatie en een korte uitleg bij."
+
+contact:
+  label: "Contact"
+  titel: "Bel, stuur een foto of mail"
+  tekst: "Kies wat voor u het makkelijkst is. Liever schrijven? Vul dan het formulier in, dan neem ik contact met u op."
+  kanalen:
+    bellen: "Bel"
+    whatsapp: "WhatsApp"
+    mailen: "Mail"
+  locatie: "Gingelom – Sint-Truiden"
+
+formulier:
+  titel: "Beschrijf het probleem"
+  foto_tip: "Foto's stuurt u het makkelijkst via WhatsApp."
+  naam: "Naam"
+  bedrijf: "Bedrijf"
+  optioneel: "optioneel"
+  telefoon: "Telefoon"
+  email: "E-mail"
+  telefoon_of_email: "Telefoon of e-mail, één van beide is genoeg."
+  locatie: "Gemeente of locatie"
+  omschrijving: "Wat is er aan de hand?"
+  omschrijving_hint: "Bijvoorbeeld: gescheurde steun aan een transportband, hydraulische lek aan een pers."
+  dringend: "Dringend: de machine staat stil"
+  toestemming: "Ik ga ermee akkoord dat Werkhuizen Beckers mijn gegevens gebruikt om contact met mij op te nemen."
+  privacy_link: "Privacyverklaring"
+  verzenden: "Verzenden"
+  onderwerp: "Aanvraag via werkhuizenbeckers.be"
+  onderwerp_dringend: "DRINGEND: aanvraag via werkhuizenbeckers.be"
+  fout_contact: "Vul een telefoonnummer of een e-mailadres in."
+  bezig: "Bezig met verzenden…"
+  gelukt: "Bedankt, uw bericht is verstuurd. Ik neem contact met u op."
+  mislukt: "Verzenden lukte niet. Bel of mail gerust rechtstreeks."
+
+footer:
+  btw: "BTW"
+  baseline: "Laswerk & machineherstel op locatie"
+  privacy: "Privacy"
+  rechten: "Alle rechten voorbehouden."
+
+redirect:
+  tekst: "Deze pagina is verhuisd."
+  link: "Ga verder"
+
+privacy:
+  titel: "Privacyverklaring"
+  meta_description: "Hoe Werkhuizen Beckers omgaat met de gegevens die u via de website, het formulier, WhatsApp of e-mail doorgeeft."
+  bijgewerkt: "Laatst bijgewerkt: 22 oktober 2026."
+  terug: "Terug naar de startpagina"
+  secties:
+    - titel: "Wie is verantwoordelijk?"
+      tekst: |
+        Werkhuizen Beckers BV, Gingelom – Sint-Truiden, België. BTW BE 1041 720 216.
+
+        Vragen over deze verklaring: [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) of [+32 476 06 32 85](tel:+32476063285).
+    - titel: "Welke gegevens verwerk ik?"
+      tekst: |
+        Enkel wat u zelf doorgeeft:
+
+        - **Via het contactformulier:** naam, bedrijf (optioneel), telefoonnummer en/of e-mailadres, gemeente of locatie, uw omschrijving en of het dringend is.
+        - **Via telefoon, WhatsApp of e-mail:** uw contactgegevens, uw bericht en de foto's die u meestuurt.
+
+        De website zelf gebruikt geen cookies, geen analyse- of advertentiediensten en laadt geen lettertypes of scripts van andere sites. Klikt u de taalsuggestie weg, dan onthoudt uw browser dat lokaal. Die informatie verlaat uw toestel niet.
+    - titel: "Wie krijgt die gegevens?"
+      tekst: |
+        - **Web3Forms** ontvangt de inhoud van het formulier en stuurt die per e-mail naar mij door. Web3Forms treedt daarbij op als verwerker. Meer informatie: [web3forms.com/privacy](https://web3forms.com/privacy).
+        - **WhatsApp** (Meta) verwerkt de berichten die u mij via WhatsApp stuurt, volgens de voorwaarden die u met WhatsApp afsprak.
+        - **GitHub** host de website. Bij elk bezoek verwerkt GitHub technische gegevens zoals uw IP-adres om de pagina te kunnen tonen.
+
+        Ik verkoop uw gegevens niet en gebruik ze niet voor marketing.
+    - titel: "Waarom en op welke basis?"
+      tekst: |
+        Om uw vraag te beantwoorden, een herstelling in te plannen en uit te voeren, en om te factureren. De rechtsgrond is uw toestemming (bij het formulier), het voorbereiden of uitvoeren van een overeenkomst, of een wettelijke verplichting zoals de boekhouding (art. 6 AVG). Uw toestemming kunt u altijd intrekken.
+    - titel: "Hoe lang bewaar ik ze?"
+      tekst: |
+        Niet langer dan nodig. Aanvragen zonder opdracht verwijder ik na ten laatste twee jaar. Gegevens die op een factuur staan, bewaar ik zolang de boekhoudwetgeving dat vraagt.
+    - titel: "Uw rechten"
+      tekst: |
+        U kan uw gegevens inzien, laten verbeteren of verwijderen, de verwerking laten beperken en er bezwaar tegen maken. Mail daarvoor naar [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be).
+
+        Bent u het niet eens met hoe ik met uw gegevens omga, dan kan u klacht indienen bij de Gegevensbeschermingsautoriteit: [www.gegevensbeschermingsautoriteit.be](https://www.gegevensbeschermingsautoriteit.be).
