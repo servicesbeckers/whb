@@ -3,13 +3,26 @@
 Statische Jekyll-site op GitHub Pages (build via `.github/workflows/pages.yml`). Domein werkhuizenbeckers.be, DNS bij mijn.host. Geen backend.
 
 ## Wat de site verkoopt
-Laswerk op locatie en onderhoud/herstel van machines, B2B. Eén vakman (Lander Beckers) die met eigen bus en materiaal ter plaatse komt. Geen machinebouw vanaf nul, geen robotica, geen softwareontwikkeling, geen MES/ERP.
+B2B, ter plaatse met een uitgeruste servicewagen. Vijf diensten:
+1. Laswerk op locatie: staal, inox, alu, gietijzer; MMA, MIG/MAG, TIG; hardoplassen en opbouwlassen; plasmasnijden, autogeen snijden, gutsen; bouten uitboren, schroefdraad, kernboren.
+2. Herstelling en onderhoud: staal, machines en installaties (mechanisch, elektrisch, pneumatisch, hydraulisch, stoom).
+3. Machine terug in leven na een crash.
+4. Engineering, besturing en robots: CAD in Autodesk Inventor (ook als losse opdracht), Beckhoff/TwinCAT, robotprogramma's aanpassen bij KUKA, ABB en FANUC.
+5. Dringende interventie.
+
+Niet aanbieden: machinebouw vanaf nul, softwareontwikkeling (.NET/C#), MES/ERP.
 
 ## Talen
 - NL is de standaard op `/`. FR op `/fr/`, EN op `/en/`, DE op `/de/`.
 - Alle teksten staan in `_data/i18n/<taal>.yml`. Een tekst wijzigen gebeurt daar, nooit in de HTML.
 - Elke wijziging in alle vier de talen doorvoeren. FR: Belgisch Frans, "vous". DE: "Sie". EN: neutraal zakelijk.
-- NL spreekt aan met "u" en schrijft in de ik-vorm. Nooit "ons team", "wij" of "we".
+- NL spreekt de klant aan met "u".
+
+## Toon: niet helemaal alleen, maar ook geen team
+- Werkhuizen Beckers als onderwerp ("Werkhuizen Beckers komt ter plaatse") of neutrale en passieve zinnen ("Lassen gebeurt waar de machine staat").
+- De ik-vorm enkel in de sectie "Over" (Lander als zaakvoerder).
+- Nooit "wij", "we", "ons team": dat suggereert meerdere mensen.
+- Ook nooit "één persoon", "eenmanszaak", "Lander komt zelf": dat suggereert dat hij alleen werkt.
 
 ## Harde regels voor de inhoud
 - Geen prijzen, tarieven, toeslagen, ook geen "prijs op aanvraag".
@@ -18,6 +31,7 @@ Laswerk op locatie en onderhoud/herstel van machines, B2B. Eén vakman (Lander B
 - Wel vermelden: VCA VOL, BA4/BA5, heftruckattest, verzekerd (BA uitbating en beroepsaansprakelijkheid).
 - Machineveiligheid enkel algemeen ("veilig hersteld en terug in gebruik").
 - Elektriciteit enkel aan machines. Geen gebouwinstallaties, geen AREI.
+- Laswerk aan stoomleidingen enkel "in overleg". Geen claims over lasserskwalificatie, drukapparatuur of keuring.
 - Spoed is in de eerste plaats voor vaste klanten; andere aanvragen volgens beschikbaarheid.
 - Adres: enkel "Gingelom – Sint-Truiden". Geen straat of huisnummer, ook niet in JSON-LD.
 - BTW: BE 1041 720 216. Het oude nummer BE 1009.384.770 mag nergens meer voorkomen.
@@ -43,7 +57,7 @@ Na elke tekstwijziging de skill `tekstcontrole` draaien. De kern:
 Per taal: eigen `<title>`, meta description, `lang`, canonical, `hreflang` voor alle vier de talen plus `x-default` naar NL, Open Graph, en JSON-LD `LocalBusiness` zonder straatadres en zonder `priceRange`. Bij twijfel de skills `technical-seo`, `schema-markup`, `on-page-seo` en `content-translation` gebruiken.
 
 ## Formulier
-Web3Forms (gratis plan, geen bestandsupload), in `_includes/contactformulier.html`. De access key staat in `_config.yml` (`web3forms_key`) en is publiek-veilig; inzendingen gaan naar newleads@werkhuizenbeckers.be. Foto's komen via WhatsApp.
+Web3Forms (gratis plan, geen bestandsupload), in `_includes/contactformulier.html`. De access key staat in `_config.yml` (`web3forms_key`) en is publiek-veilig; inzendingen gaan naar newleads@werkhuizenbeckers.be. Foto's komen via WhatsApp of mail. Telefoon en e-mail staan uitgeschreven onder de knoppen in de hero.
 
 ## Structuur
 - `index.html`, `fr/index.html`, `en/index.html`, `de/index.html`: startpagina per taal (`layout: home`, `ref: home`).

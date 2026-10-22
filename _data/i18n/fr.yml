@@ -1,4 +1,5 @@
 # Tous les textes du site en français (Belgique). Même structure que nl.yml.
+# Ton : Werkhuizen Beckers comme sujet ou phrases neutres. Le « je » uniquement dans « À propos ».
 
 taal: fr
 hreflang: fr-BE
@@ -7,7 +8,7 @@ naam: Français
 
 meta:
   title: "Soudure sur site & réparation de machines | Werkhuizen Beckers, Hesbaye"
-  description: "Soudure mobile et réparation de machines sur place. Acier, inox et aluminium. Depuis Gingelom vers Liège, Waremme, Hannut, Saint-Trond et toute la Hesbaye."
+  description: "Soudure mobile, rechargement dur et réparation de machines sur place. Ingénierie, CAO et programmation de robots. Depuis Gingelom vers Liège, Waremme, Hannut et Saint-Trond."
   og_alt: "Werkhuizen Beckers, soudure et réparation de machines sur site"
 
 skiplink: "Aller au contenu"
@@ -30,8 +31,8 @@ knop:
   foto: "Envoyer une photo"
   mailen: "E-mail"
 
-whatsapp_tekst: "Bonjour Lander, j'ai une question concernant de la soudure ou une réparation :"
-whatsapp_foto_tekst: "Bonjour Lander, voici une photo du problème. Lieu :"
+whatsapp_tekst: "Bonjour, j'ai une question concernant de la soudure ou une réparation :"
+whatsapp_foto_tekst: "Bonjour, voici une photo du problème. Lieu :"
 
 suggestie:
   tekst: "Ce site existe aussi en français."
@@ -41,66 +42,80 @@ suggestie:
 hero:
   label: "Gingelom · Hesbaye, Limbourg et région liégeoise"
   titel: "Soudure & réparation de machines sur site"
-  tekst: "Je viens sur place avec ma camionnette équipée. Je soude l'acier, l'inox et l'aluminium, et je remets vos machines en marche, côté mécanique comme côté électrique."
+  tekst: "Werkhuizen Beckers intervient sur place avec une camionnette entièrement équipée. Soudure de l'acier, de l'inox et de l'aluminium, et remise en marche de vos machines, côté mécanique comme côté électrique."
+  of: "Ou directement"
   plaat:
-    - [ "Travail", "Souder · réparer · régler" ]
-    - [ "Matériau", "Acier · inox · alu" ]
+    - [ "Travail", "Souder · réparer · concevoir" ]
+    - [ "Matériau", "Acier · inox · alu · fonte" ]
     - [ "Procédé", "MMA · MIG/MAG · TIG" ]
     - [ "Départ", "Gingelom" ]
   plaat_titel: "Atelier mobile"
 
 troeven:
-  - titel: "Je viens sur place"
+  - titel: "Sur place"
     tekst: "Pas de démontage, pas de transport vers un atelier. La machine reste là où elle est."
-  - titel: "Une seule personne pour tout"
-    tekst: "Soudure, mécanique, électricité machine, pneumatique et hydraulique. Vous appelez un seul numéro, pas trois entreprises."
+  - titel: "Tout en une intervention"
+    tekst: "Soudure, mécanique, électricité machine, pneumatique, hydraulique et commande. Vous appelez un seul numéro, pas trois entreprises."
   - titel: "Disponible rapidement"
     tekst: "Aussi quand une machine est à l'arrêt et doit redémarrer d'urgence."
-  - titel: "Ingénieur de formation"
-    tekst: "Je comprends comment la machine fonctionne. Une réparation, c'est plus qu'un cordon de soudure."
+  - titel: "Ingénierie intégrée"
+    tekst: "Chaque réparation est abordée avec un regard d'ingénieur : pourquoi la pièce a cassé, et comment éviter que cela se reproduise."
 
 diensten:
   label: "Services"
-  titel: "Ce que je fais sur place"
+  titel: "Souder, réparer, concevoir"
   items:
     - id: laswerk
       titel: "Soudure sur site"
-      tekst: "Réparer, renforcer et modifier là où se trouve la pièce : fissures, pièces cassées, supports, châssis et pièces adaptées sur place. Ma camionnette transporte l'équipement de soudage complet."
+      tekst: "Réparer, renforcer et modifier là où se trouve la pièce : fissures, pièces cassées, supports, châssis et pièces adaptées sur place. Les pièces usées reçoivent une nouvelle couche anti-usure. La camionnette transporte l'équipement complet de soudage et de découpe."
       lijst:
         - "Acier, inox et aluminium"
+        - "Fonte, avec préchauffage et refroidissement contrôlé"
         - "Électrode (MMA), semi-automatique (MIG/MAG) et TIG"
+        - "Rechargement dur et rechargement : dents, couteaux, palettes, rouleaux, arbres et portées de roulements"
+        - "Découpe plasma, oxycoupage et gougeage"
+        - "Extraction de boulons cassés, réparation de filetages, perçage à la foreuse magnétique"
         - "Construction métallique et sur mesure, en concertation"
     - id: onderhoud
-      titel: "Entretien et réparation de machines"
-      tekst: "Mécanique, électricité, pneumatique et hydraulique. Entretien préventif selon un planning convenu, ou recherche de panne et dépannage quand la machine s'arrête."
+      titel: "Réparation et entretien"
+      tekst: "Réparations sur l'acier, les machines et les installations : mécanique, électricité, pneumatique, hydraulique et vapeur. Souvent avec de la soudure, mais pas toujours. Entretien préventif selon un planning convenu, ou recherche de panne et dépannage quand la machine s'arrête."
       lijst:
         - "Roulements, arbres, entraînements et guidages"
         - "Moteurs, capteurs et armoires électriques des machines"
-        - "Vérins, distributeurs, flexibles et conduites"
-      noot: "Électricité uniquement sur les machines. Pas d'installations électriques de bâtiments."
+        - "Vérins, distributeurs, flexibles et conduites hydrauliques"
+        - "Installations vapeur : conduites, vannes, purgeurs et supports"
+      noot: "Électricité uniquement sur les machines, pas d'installations de bâtiments. Soudure sur conduites vapeur en concertation."
     - id: crash
       titel: "Remettre en service une machine accidentée"
-      tekst: "Percutée, renversée ou fortement endommagée. Je ressoude ce qui est cassé, je réaligne la mécanique, je répare la partie électrique, pneumatique et hydraulique, puis je règle la machine jusqu'à ce qu'elle produise à nouveau. Si nécessaire, je remplace ou je modernise les pièces ou la commande obsolètes."
-      noot: "Soudure, mécanique et électricité en une seule intervention, par une seule personne."
+      tekst: "Percutée, renversée ou fortement endommagée. Ce qui est cassé est ressoudé, la mécanique réalignée, la partie électrique, pneumatique et hydraulique réparée, puis la machine est réglée jusqu'à ce qu'elle produise à nouveau. Si nécessaire, les pièces ou la commande obsolètes sont remplacées ou modernisées."
+      noot: "Soudure, mécanique, électricité et commande en une seule intervention."
+    - id: engineering
+      titel: "Ingénierie, automatisme et robots"
+      tekst: "Conception et dessin dans Autodesk Inventor : modifications, renforts, supports, protections et pièces de remplacement. Dans le cadre d'une réparation ou comme mission séparée. Également des adaptations de la commande machine et des programmes robots."
+      lijst:
+        - "Conception CAO et plans d'exécution (Autodesk Inventor)"
+        - "Relevé et redessin de pièces usées ou cassées"
+        - "Adaptation de la commande machine (Beckhoff/TwinCAT)"
+        - "Adaptation de programmes robots : KUKA, ABB et FANUC"
+        - "Réparation de cellules robotisées, préhenseurs et montages"
     - id: spoed
       titel: "Intervention urgente"
-      tekst: "En cas d'arrêt ou de casse, surtout quand il faut souder. Les interventions urgentes sont d'abord réservées à mes clients réguliers. Les autres demandes sont traitées selon mes disponibilités."
-  extra: "Si nécessaire : conception CAO (Autodesk Inventor) et adaptations de la commande machine (Beckhoff/TwinCAT) dans le cadre d'une réparation."
+      tekst: "En cas d'arrêt ou de casse, surtout quand il faut souder. Les interventions urgentes sont d'abord réservées aux clients réguliers. Les autres demandes sont traitées selon les disponibilités."
 
 spoed:
   label: "Urgence"
   titel: "Machine à l'arrêt ?"
-  tekst: "Pour mes clients réguliers, je suis aussi disponible en cas d'arrêt urgent. Nouveau client ? Appelez sans hésiter, je verrai ce qui est possible."
+  tekst: "Pour ses clients réguliers, Werkhuizen Beckers est aussi disponible en cas d'arrêt urgent. Nouveau client ? Appelez sans hésiter pour voir ce qui est possible."
 
 werkwijze:
   label: "Méthode"
   titel: "Comment ça se passe"
   stappen:
     - titel: "Envoyez une photo ou appelez"
-      tekst: "Une photo par WhatsApp en dit souvent plus qu'une longue explication. Indiquez où se trouve la machine."
+      tekst: "Une photo par WhatsApp ou par e-mail en dit souvent plus qu'une longue explication. Indiquez où se trouve la machine."
     - titel: "Évaluation"
-      tekst: "J'examine ce qu'il faut réparer et le matériel à emporter."
-    - titel: "Je viens sur place et je répare"
+      tekst: "Que faut-il réparer, et quel matériel emporter ? C'est réglé avant le départ."
+    - titel: "Réparation sur place"
       tekst: "Avec la camionnette et l'outillage adapté. La machine reste où elle est."
     - titel: "Facture, c'est réglé"
       tekst: "Vous recevez une facture avec le détail du travail. La machine tourne à nouveau."
@@ -108,7 +123,7 @@ werkwijze:
 werkgebied:
   label: "Zone d'intervention"
   titel: "Au départ de Gingelom"
-  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. De là, je rejoins facilement toute la Hesbaye et les villes alentour."
+  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. De là, toute la Hesbaye et les villes alentour sont facilement accessibles."
   regios:
     - "Limbourg"
     - "Hesbaye"
@@ -135,9 +150,9 @@ over:
   label: "À propos"
   titel: "Lander Beckers"
   tekst:
-    - "Je suis ingénieur de formation et j'ai choisi de travailler de mes mains. Souder, réparer et chercher une panne, je préfère le faire devant la machine plutôt que derrière un bureau."
-    - "Cette formation aide quand une réparation demande plus qu'un cordon de soudure. Je cherche pourquoi la pièce a cassé, pas seulement où."
-    - "Au téléphone, c'est moi que vous avez, et c'est moi qui viens. En français, en néerlandais, en anglais ou en allemand."
+    - "Je suis le gérant de Werkhuizen Beckers et ingénieur de formation. Pourtant, je travaille volontairement sur le terrain : souder, réparer et chercher une panne, cela se fait devant la machine, pas derrière un bureau."
+    - "Cette formation aide quand une réparation demande plus qu'un cordon de soudure. La question n'est pas seulement où la pièce a cassé, mais aussi pourquoi."
+    - "Chez Werkhuizen Beckers, vous êtes servi en français, en néerlandais, en anglais et en allemand."
   attesten_titel: "Attestations et assurance"
   attesten:
     - "VCA VOL"
@@ -145,27 +160,31 @@ over:
     - "Brevet de cariste"
     - "Assuré : RC exploitation et RC professionnelle"
   foto_alt: "Lander Beckers en train de souder chez un client"
-  foto_bijschrift: "Lander et la camionnette avec l'équipement de soudage"
+  foto_bijschrift: "Lander Beckers, gérant"
 
 faq:
   label: "Questions"
   titel: "Questions fréquentes"
   items:
     - vraag: "Intervenez-vous aussi hors du Limbourg ?"
-      antwoord: "Oui. La Hesbaye, le Brabant flamand et la province de Liège font partie de ma zone habituelle. Plus loin, c'est possible en concertation."
+      antwoord: "Oui. La Hesbaye, le Brabant flamand et la province de Liège font partie de la zone habituelle. Plus loin, c'est possible en concertation."
     - vraag: "Faut-il démonter la machine ?"
-      antwoord: "Généralement pas. Je soude et je répare là où se trouve la machine. S'il faut quand même démonter une pièce pour y accéder, je le fais sur place."
+      antwoord: "Généralement pas. La soudure et la réparation se font là où se trouve la machine. S'il faut quand même démonter une pièce pour y accéder, cela se fait sur place."
     - vraag: "Quels matériaux soudez-vous ?"
-      antwoord: "Acier, inox et aluminium. À l'électrode (MMA), en semi-automatique (MIG/MAG) ou en TIG, selon le travail et l'endroit."
+      antwoord: "Acier, inox, aluminium et fonte. À l'électrode (MMA), en semi-automatique (MIG/MAG) ou en TIG, selon le travail et l'endroit. Les pièces usées peuvent aussi être rechargées."
     - vraag: "Faites-vous aussi de l'électricité ?"
-      antwoord: "Uniquement sur les machines : moteurs, capteurs, armoires électriques et câblage de la machine. Je ne fais pas d'électricité de bâtiment."
+      antwoord: "Uniquement sur les machines : moteurs, capteurs, armoires électriques et câblage de la machine. L'électricité de bâtiment n'en fait pas partie."
+    - vraag: "Pouvez-vous seulement réaliser un plan ou une conception ?"
+      antwoord: "Oui. La conception CAO et les plans d'exécution dans Autodesk Inventor sont aussi possibles comme mission séparée, par exemple pour une modification, un support ou une pièce de remplacement que vous faites fabriquer ailleurs."
+    - vraag: "Adaptez-vous aussi des programmes robots ?"
+      antwoord: "Oui, pour KUKA, ABB et FANUC. Par exemple après une réparation ou une modification de la cellule, quand des positions ou des trajectoires doivent être réglées à nouveau."
     - vraag: "Comment envoyer une photo du problème ?"
-      antwoord: "Par WhatsApp au +32 476 06 32 85. Ajoutez le lieu et une courte explication."
+      antwoord: "Par WhatsApp au +32 476 06 32 85 ou par e-mail à info@werkhuizenbeckers.be. Ajoutez le lieu et une courte explication."
 
 contact:
   label: "Contact"
-  titel: "Appelez, envoyez une photo ou un e-mail"
-  tekst: "Choisissez ce qui vous convient le mieux. Vous préférez écrire ? Remplissez le formulaire, je vous recontacte."
+  titel: "Appelez, écrivez ou envoyez une photo"
+  tekst: "Choisissez ce qui vous convient le mieux. Vous préférez écrire ? Remplissez le formulaire, vous serez recontacté par téléphone ou par e-mail."
   kanalen:
     bellen: "Appeler"
     whatsapp: "WhatsApp"
@@ -174,7 +193,7 @@ contact:
 
 formulier:
   titel: "Décrivez le problème"
-  foto_tip: "Pour les photos, le plus simple est WhatsApp."
+  foto_tip: "Pour les photos, le plus simple est WhatsApp ou l'e-mail."
   naam: "Nom"
   bedrijf: "Entreprise"
   optioneel: "facultatif"
@@ -183,7 +202,7 @@ formulier:
   telefoon_of_email: "Téléphone ou e-mail, l'un des deux suffit."
   locatie: "Commune ou lieu"
   omschrijving: "Que se passe-t-il ?"
-  omschrijving_hint: "Par exemple : support fissuré sur un convoyeur, fuite hydraulique sur une presse."
+  omschrijving_hint: "Par exemple : support fissuré sur un convoyeur, couteaux usés d'une ensileuse, fuite hydraulique sur une presse."
   dringend: "Urgent : la machine est à l'arrêt"
   toestemming: "J'accepte que Werkhuizen Beckers utilise mes données pour me recontacter."
   privacy_link: "Déclaration de confidentialité"
@@ -192,7 +211,7 @@ formulier:
   onderwerp_dringend: "URGENT : demande via werkhuizenbeckers.be (FR)"
   fout_contact: "Indiquez un numéro de téléphone ou une adresse e-mail."
   bezig: "Envoi en cours…"
-  gelukt: "Merci, votre message est envoyé. Je vous recontacte."
+  gelukt: "Merci, votre message est envoyé. Vous recevrez une réponse par téléphone ou par e-mail."
   mislukt: "L'envoi n'a pas fonctionné. Appelez ou envoyez un e-mail directement."
 
 footer:
@@ -216,9 +235,9 @@ privacy:
         Werkhuizen Beckers BV, Gingelom – Saint-Trond, Belgique. TVA BE 1041 720 216.
 
         Questions sur cette déclaration : [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) ou [+32 476 06 32 85](tel:+32476063285).
-    - titel: "Quelles données je traite"
+    - titel: "Quelles données sont traitées ?"
       tekst: |
-        Uniquement ce que vous me transmettez vous-même :
+        Uniquement ce que vous transmettez vous-même :
 
         - **Via le formulaire de contact :** nom, entreprise (facultatif), numéro de téléphone et/ou adresse e-mail, commune ou lieu, votre description et l'indication d'urgence.
         - **Par téléphone, WhatsApp ou e-mail :** vos coordonnées, votre message et les photos que vous joignez.
@@ -226,19 +245,19 @@ privacy:
         Le site lui-même n'utilise pas de cookies, pas d'outils d'analyse ou de publicité, et ne charge ni polices ni scripts depuis d'autres sites. Si vous fermez la suggestion de langue, votre navigateur s'en souvient localement. Cette information ne quitte pas votre appareil.
     - titel: "Qui reçoit ces données ?"
       tekst: |
-        - **Web3Forms** reçoit le contenu du formulaire et me le transmet par e-mail. Web3Forms agit en tant que sous-traitant. Plus d'informations : [web3forms.com/privacy](https://web3forms.com/privacy).
-        - **WhatsApp** (Meta) traite les messages que vous m'envoyez via WhatsApp, selon les conditions que vous avez acceptées chez WhatsApp.
+        - **Web3Forms** reçoit le contenu du formulaire et le transmet par e-mail à Werkhuizen Beckers. Web3Forms agit en tant que sous-traitant. Plus d'informations : [web3forms.com/privacy](https://web3forms.com/privacy).
+        - **WhatsApp** (Meta) traite les messages que vous envoyez via WhatsApp, selon les conditions que vous avez acceptées chez WhatsApp.
         - **GitHub** héberge le site. À chaque visite, GitHub traite des données techniques comme votre adresse IP pour pouvoir afficher la page.
 
-        Je ne vends pas vos données et je ne les utilise pas à des fins de marketing.
+        Werkhuizen Beckers ne vend pas vos données et ne les utilise pas à des fins de marketing.
     - titel: "Pourquoi et sur quelle base ?"
       tekst: |
         Pour répondre à votre demande, planifier et effectuer une réparation, et pour facturer. La base légale est votre consentement (via le formulaire), la préparation ou l'exécution d'un contrat, ou une obligation légale comme la comptabilité (art. 6 RGPD). Vous pouvez retirer votre consentement à tout moment.
-    - titel: "Combien de temps je les conserve"
+    - titel: "Combien de temps sont-elles conservées ?"
       tekst: |
         Pas plus longtemps que nécessaire. Les demandes qui n'aboutissent pas à une commande sont supprimées au plus tard après deux ans. Les données qui figurent sur une facture sont conservées aussi longtemps que la législation comptable l'exige.
     - titel: "Vos droits"
       tekst: |
         Vous pouvez consulter vos données, les faire corriger ou supprimer, en limiter le traitement et vous y opposer. Envoyez simplement un e-mail à [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be).
 
-        Si vous n'êtes pas d'accord avec la manière dont je traite vos données, vous pouvez introduire une plainte auprès de l'Autorité de protection des données : [www.autoriteprotectiondonnees.be](https://www.autoriteprotectiondonnees.be).
+        Si vous n'êtes pas d'accord avec la manière dont vos données sont traitées, vous pouvez introduire une plainte auprès de l'Autorité de protection des données : [www.autoriteprotectiondonnees.be](https://www.autoriteprotectiondonnees.be).

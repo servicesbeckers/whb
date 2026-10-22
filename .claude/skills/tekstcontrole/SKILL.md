@@ -24,7 +24,7 @@ De scan vangt niet alles. Lees daarna elke gewijzigde tekst in alle vier de tale
 1. **Ritme.** Drie zinnen na elkaar met dezelfde opbouw? Herschrijf er één. AI-tekst heeft een te regelmatig ritme.
 2. **Opsommingen van drie.** "Snel, betrouwbaar en vakkundig" is een typisch AI-patroon. Kies het ene woord dat klopt, of maak het concreet.
 3. **Vage woorden.** "Diverse", "allerhande", "een breed gamma", "kwalitatief". Vervang door een echt voorbeeld uit de praktijk (staal, inox, alu; een kipper, een transportband, een persframe).
-4. **Ik-vorm.** NL in de ik-vorm met "u". Nooit "wij", "we", "ons team". FR: "je" en "vous". DE: "ich" en "Sie". EN: "I" en "you".
+4. **Toon.** Werkhuizen Beckers als onderwerp of een neutrale zin. De ik-vorm enkel in "Over". Nooit "wij/we/ons team" (suggereert een team), maar ook nooit "één persoon" of "Lander komt zelf" (suggereert dat hij alleen werkt). Klant altijd met "u", "vous", "Sie", "you".
 5. **Vertaling.** FR en DE mogen niet als een vertaling lezen. Een Belgische Franstalige klant zegt "soudure sur site", "dépannage", "machine à l'arrêt". Een Duitstalige klant zegt "Schweißarbeiten vor Ort", "Maschinenstillstand", "Instandsetzung".
 6. **Claims.** Zie de harde regels in `CLAUDE.md`. Geen prijzen, geen reactietijd, geen certificaten die er niet zijn, geen "dragende constructies".
 7. **Lengte.** Als een zin weg kan zonder dat de klant iets mist, schrap hem.
