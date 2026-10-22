@@ -1,29 +1,42 @@
-title: Werkhuizen Beckers - Laswerk, onderhoud, CAD, besturing & machinebouw
+title: Werkhuizen Beckers
 email: info@werkhuizenbeckers.be
 description: >-
-  Probleem in, oplossing uit. We vertrekken vanuit uw probleem, niet vanuit een oplossing uit de catalogus: laswerk,
-  onderhoud en herstelling van machineparken, CAD, PLC/HMI- en softwareprogrammatie en machinebouw (nieuw én retrofit)
-  — mechanica en besturing in dezelfde hand.
+  Laswerk en machineherstel op locatie. Staal, inox en aluminium, en machines mechanisch, elektrisch,
+  pneumatisch en hydraulisch terug aan de praat. Vanuit Gingelom, voor heel Limburg en omstreken.
 url: "https://werkhuizenbeckers.be"
 baseurl: ""
-lang: nl-BE
 markdown: kramdown
 permalink: pretty
 
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: page
+# Volgorde van de taalkiezer. NL is de standaard op /.
+talen: [nl, fr, en, de]
+standaardtaal: nl
+
+bedrijf:
+  naam: "Werkhuizen Beckers"
+  rechtsvorm: "Werkhuizen Beckers BV"
+  btw: "BE 1041 720 216"
+  telefoon: "+32 476 06 32 85"
+  telefoon_link: "+32476063285"
+  whatsapp: "32476063285"
+  email: "info@werkhuizenbeckers.be"
+  plaats: "Gingelom"
+  regio: "Limburg"
+  land: "BE"
+  geo: { lat: 50.7475, lng: 5.1350 }
+
+# Web3Forms access key: publiek-veilig, inzendingen gaan naar newleads@werkhuizenbeckers.be.
+web3forms_key: "db658052-43f2-4afb-837c-79c4810bb665"
 
 sass:
   style: compressed
 
 exclude:
   - README.md
+  - CLAUDE.md
+  - LICENSE
+  - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-plugins:
-  - jekyll-sitemap
+  - tools

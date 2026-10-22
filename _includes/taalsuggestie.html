@@ -1,0 +1,22 @@
+{%- comment -%}
+Discrete suggestiebalk: geen automatische redirect. site.js toont de balk alleen als de browsertaal
+een van de vier talen is, verschilt van deze pagina, en de bezoeker de balk nog niet wegklikte.
+{%- endcomment -%}
+{%- assign alts = site.pages | where: "ref", page.ref -%}
+<div class="taalsuggestie" hidden>
+    <div class="kader taalsuggestie-binnen">
+        <p class="taalsuggestie-tekst"></p>
+        <a class="taalsuggestie-link" href="#"></a>
+        <button class="taalsuggestie-sluit" type="button" aria-label="">×</button>
+    </div>
+    <script type="application/json" class="taalsuggestie-data">
+    {
+    {%- for code in site.talen %}
+        {%- assign alt = alts | where: "lang", code | first %}
+        {%- if alt %}
+        "{{ code }}": { "url": {{ alt.url | relative_url | jsonify }}, "tekst": {{ site.data.i18n[code].suggestie.tekst | jsonify }}, "link": {{ site.data.i18n[code].suggestie.link | jsonify }}, "sluiten": {{ site.data.i18n[code].suggestie.sluiten | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {%- endif %}
+    {%- endfor %}
+    }
+    </script>
+</div>

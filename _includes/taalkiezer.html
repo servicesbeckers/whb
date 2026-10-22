@@ -1,0 +1,12 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign alts = site.pages | where: "ref", page.ref -%}
+<nav class="taalkiezer" aria-label="{{ t.taalkeuze }}">
+    <ul>
+    {%- for code in site.talen %}
+        {%- assign alt = alts | where: "lang", code | first %}
+        {%- unless alt %}{% assign alt = site.pages | where: "ref", "home" | where: "lang", code | first %}{% endunless %}
+        {%- assign doel = alt.url %}
+        <li><a href="{{ doel | relative_url }}" hreflang="{{ site.data.i18n[code].hreflang }}" lang="{{ site.data.i18n[code].hreflang }}" title="{{ site.data.i18n[code].naam }}"{% if code == page.lang %} aria-current="true"{% endif %}>{{ code | upcase }}</a></li>
+    {%- endfor %}
+    </ul>
+</nav>

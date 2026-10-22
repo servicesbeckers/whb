@@ -1,27 +1,27 @@
-<header class="site-header">
-    <div class="container header-inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Werkhuizen Beckers home">
-            <span class="brand-mark">
-                <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="44" height="44">
-            </span>
-            <span class="brand-copy">
-                <strong>Werkhuizen Beckers</strong>
-                <small>Probleem in, oplossing uit</small>
-            </span>
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign b = site.bedrijf -%}
+{%- assign home = site.pages | where: "ref", "home" | where: "lang", page.lang | first -%}
+{%- if page.ref == "home" %}{% assign anker = "" %}{% else %}{% assign anker = home.url | relative_url %}{% endif -%}
+<header class="kop">
+    <div class="kader kop-binnen">
+        <a class="kop-merk" href="{{ home.url | relative_url }}" aria-label="{{ t.logo_alt }}">
+            {% include woordmerk.html %}
         </a>
 
-        <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
+        {% include taalkiezer.html %}
+
+        <button class="menuknop" type="button" aria-expanded="false" aria-controls="hoofdmenu" data-open="{{ t.menu_open }}" data-sluiten="{{ t.menu_sluiten }}" aria-label="{{ t.menu_open }}">
+            <span></span><span></span><span></span>
         </button>
 
-        <nav class="site-nav" aria-label="Hoofdnavigatie">
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/diensten/' | relative_url }}">Diensten</a>
-            <a href="{{ '/aanpak/' | relative_url }}">Aanpak</a>
-            <a href="{{ '/over/' | relative_url }}">Over</a>
-            <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Offerte aanvragen</a>
+        <nav class="hoofdmenu" id="hoofdmenu" aria-label="Menu">
+            <a href="{{ anker }}#diensten">{{ t.nav.diensten }}</a>
+            <a href="{{ anker }}#werkwijze">{{ t.nav.werkwijze }}</a>
+            <a href="{{ anker }}#werkgebied">{{ t.nav.werkgebied }}</a>
+            <a href="{{ anker }}#over">{{ t.nav.over }}</a>
+            <a href="{{ anker }}#vragen">{{ t.nav.faq }}</a>
+            <a href="{{ anker }}#contact">{{ t.nav.contact }}</a>
+            <a class="kop-tel" href="tel:{{ b.telefoon_link }}">{{ b.telefoon }}</a>
         </nav>
     </div>
 </header>

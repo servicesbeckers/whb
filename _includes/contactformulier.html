@@ -1,0 +1,62 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign f = t.formulier -%}
+{%- assign privacy = site.pages | where: "ref", "privacy" | where: "lang", page.lang | first -%}
+{%- comment -%}
+Web3Forms, gratis plan: geen bestandsupload. Foto's lopen via WhatsApp (zie foto_tip).
+site.js verstuurt via fetch en toont de meldingen uit data-attributen in de taal van de pagina.
+{%- endcomment -%}
+<form class="formulier" action="https://api.web3forms.com/submit" method="POST" novalidate
+      data-fout-contact="{{ f.fout_contact }}" data-bezig="{{ f.bezig }}" data-gelukt="{{ f.gelukt }}" data-mislukt="{{ f.mislukt }}"
+      data-onderwerp="{{ f.onderwerp }}" data-onderwerp-dringend="{{ f.onderwerp_dringend }}">
+    <input type="hidden" name="access_key" value="{{ site.web3forms_key }}">
+    <input type="hidden" name="subject" value="{{ f.onderwerp }}">
+    <input type="hidden" name="from_name" value="werkhuizenbeckers.be">
+    <input type="hidden" name="taal" value="{{ page.lang | upcase }}">
+    <input type="checkbox" name="botcheck" class="verborgen" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <h3>{{ f.titel }}</h3>
+    <p class="formulier-tip">{% include icoon.html naam="foto" %}<a href="{{ include.wa_foto }}">{{ f.foto_tip }}</a></p>
+
+    <div class="veld">
+        <label for="f-naam">{{ f.naam }}</label>
+        <input id="f-naam" name="naam" type="text" autocomplete="name" required>
+    </div>
+    <div class="veld">
+        <label for="f-bedrijf">{{ f.bedrijf }} <span class="optioneel">({{ f.optioneel }})</span></label>
+        <input id="f-bedrijf" name="bedrijf" type="text" autocomplete="organization">
+    </div>
+
+    <fieldset class="veldgroep">
+        <legend>{{ f.telefoon_of_email }}</legend>
+        <div class="veld">
+            <label for="f-telefoon">{{ f.telefoon }}</label>
+            <input id="f-telefoon" name="telefoon" type="tel" autocomplete="tel" inputmode="tel">
+        </div>
+        <div class="veld">
+            <label for="f-email">{{ f.email }}</label>
+            <input id="f-email" name="email" type="email" autocomplete="email">
+        </div>
+    </fieldset>
+
+    <div class="veld">
+        <label for="f-locatie">{{ f.locatie }}</label>
+        <input id="f-locatie" name="locatie" type="text" autocomplete="address-level2" required>
+    </div>
+    <div class="veld">
+        <label for="f-omschrijving">{{ f.omschrijving }}</label>
+        <textarea id="f-omschrijving" name="omschrijving" rows="4" required aria-describedby="f-omschrijving-hint"></textarea>
+        <p class="veld-hint" id="f-omschrijving-hint">{{ f.omschrijving_hint }}</p>
+    </div>
+
+    <label class="vinkje vinkje-dringend">
+        <input type="checkbox" name="dringend" value="ja">
+        <span>{{ f.dringend }}</span>
+    </label>
+    <label class="vinkje">
+        <input type="checkbox" name="toestemming" value="ja" required>
+        <span>{{ f.toestemming }} <a href="{{ privacy.url | relative_url }}">{{ f.privacy_link }}</a></span>
+    </label>
+
+    <button class="knop knop-primair knop-breed" type="submit">{{ f.verzenden }}</button>
+    <p class="formulier-status" role="status" aria-live="polite"></p>
+</form>
