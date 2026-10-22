@@ -1,4 +1,5 @@
 # Alle Texte der deutschen Website. Gleiche Struktur wie nl.yml.
+# Ton: Werkhuizen Beckers als Subjekt oder neutrale Sätze. "Ich" nur unter "Über".
 
 taal: de
 hreflang: de
@@ -7,7 +8,7 @@ naam: Deutsch
 
 meta:
   title: "Schweißarbeiten vor Ort & Maschinenreparatur | Werkhuizen Beckers, Belgien"
-  description: "Mobile Schweißarbeiten und Maschinenreparatur direkt vor Ort. Stahl, Edelstahl und Aluminium. Von Gingelom aus in Limburg, im Haspengau und in der Provinz Lüttich."
+  description: "Mobile Schweißarbeiten, Auftragschweißen und Maschinenreparatur vor Ort. Konstruktion, CAD und Roboterprogrammierung. Von Gingelom aus in Limburg, im Haspengau und in Lüttich."
   og_alt: "Werkhuizen Beckers, Schweißarbeiten und Maschinenreparatur vor Ort"
 
 skiplink: "Zum Inhalt"
@@ -20,7 +21,7 @@ nav:
   diensten: "Leistungen"
   werkwijze: "Ablauf"
   werkgebied: "Gebiet"
-  over: "Über mich"
+  over: "Über"
   faq: "Fragen"
   contact: "Kontakt"
 
@@ -30,8 +31,8 @@ knop:
   foto: "Foto senden"
   mailen: "E-Mail"
 
-whatsapp_tekst: "Hallo Lander, ich habe eine Frage zu Schweißarbeiten oder einer Reparatur:"
-whatsapp_foto_tekst: "Hallo Lander, hier ein Foto des Problems. Ort:"
+whatsapp_tekst: "Hallo, ich habe eine Frage zu Schweißarbeiten oder einer Reparatur:"
+whatsapp_foto_tekst: "Hallo, hier ein Foto des Problems. Ort:"
 
 suggestie:
   tekst: "Diese Website gibt es auch auf Deutsch."
@@ -40,75 +41,89 @@ suggestie:
 
 hero:
   label: "Gingelom · Limburg und Umgebung"
-  titel: "Schweißarbeiten & Maschinenreparatur vor Ort"
-  tekst: "Ich komme mit meinem voll ausgestatteten Transporter zu Ihnen. Ich schweiße Stahl, Edelstahl und Aluminium und bringe Maschinen wieder zum Laufen, mechanisch wie elektrisch."
+  titel: "Schweißarbeiten & Maschinen­reparatur vor Ort"
+  tekst: "Werkhuizen Beckers kommt mit einem voll ausgestatteten Servicewagen zu Ihnen. Schweißen von Stahl, Edelstahl und Aluminium, und Maschinen wieder zum Laufen bringen, mechanisch wie elektrisch."
+  of: "Oder direkt"
   plaat:
-    - [ "Arbeit", "Schweißen · reparieren · einstellen" ]
-    - [ "Werkstoff", "Stahl · Edelstahl · Alu" ]
+    - [ "Arbeit", "Schweißen · Instandsetzen · Konstruktion" ]
+    - [ "Werkstoff", "Stahl · Edelstahl · Alu · Guss" ]
     - [ "Verfahren", "E-Hand · MIG/MAG · WIG" ]
     - [ "Start", "Gingelom" ]
   plaat_titel: "Mobile Werkstatt"
 
 troeven:
-  - titel: "Ich komme zu Ihnen"
+  - titel: "Vor Ort"
     tekst: "Keine Demontage, kein Transport in eine Werkstatt. Die Maschine bleibt, wo sie steht."
-  - titel: "Eine Person für alles"
-    tekst: "Schweißen, Mechanik, Maschinenelektrik, Pneumatik und Hydraulik. Sie rufen eine Nummer an, nicht drei Firmen."
+  - titel: "Alles in einem Einsatz"
+    tekst: "Schweißen, Mechanik, Maschinenelektrik, Pneumatik, Hydraulik und Steuerung. Sie rufen eine Nummer an, nicht drei Firmen."
   - titel: "Schnell einsatzbereit"
     tekst: "Auch wenn eine Maschine steht und dringend wieder laufen muss."
-  - titel: "Ausgebildeter Ingenieur"
-    tekst: "Ich verstehe, wie die Maschine funktioniert. Eine Reparatur ist mehr als eine Schweißnaht."
+  - titel: "Konstruktion im Haus"
+    tekst: "Jede Reparatur wird mit dem Blick eines Ingenieurs betrachtet: Warum ist es gebrochen, und wie verhindert man, dass es wieder passiert."
 
 diensten:
   label: "Leistungen"
-  titel: "Was ich vor Ort erledige"
+  titel: "Schweißen, instand setzen, konstruieren"
   items:
     - id: laswerk
       titel: "Schweißarbeiten vor Ort"
-      tekst: "Reparieren, verstärken und anpassen, wo das Teil steht: Risse, gebrochene Teile, Halterungen, Rahmen und Einzelanfertigungen. Mein Transporter hat die komplette Schweißausrüstung an Bord."
+      tekst: "Reparieren, verstärken und anpassen, wo das Teil steht: Risse, gebrochene Teile, Halterungen, Rahmen und Einzelanfertigungen. Verschlissene Teile erhalten eine neue Verschleißschicht. Der Servicewagen hat die komplette Schweiß- und Schneidausrüstung an Bord."
       lijst:
         - "Stahl, Edelstahl und Aluminium"
+        - "Gusseisen, mit Vorwärmen und kontrolliertem Abkühlen"
         - "Elektrode (E-Hand), MIG/MAG und WIG"
+        - "Auftragschweißen und Panzern: Zähne, Messer, Schaufeln, Walzen, Wellen und Lagersitze"
+        - "Plasmaschneiden, Brennschneiden und Fugenhobeln"
+        - "Abgerissene Schrauben ausbohren, Gewinde instand setzen, Kernbohren mit Magnetbohrmaschine"
         - "Konstruktions- und Sonderanfertigungen nach Absprache"
     - id: onderhoud
-      titel: "Wartung und Reparatur von Maschinen"
-      tekst: "Mechanisch, elektrisch, pneumatisch und hydraulisch. Vorbeugende Wartung nach Vereinbarung oder Fehlersuche und Instandsetzung, wenn die Maschine stillsteht."
+      titel: "Instandsetzung und Wartung"
+      tekst: "Reparaturen an Stahl, Maschinen und Anlagen: mechanisch, elektrisch, pneumatisch, hydraulisch und Dampf. Oft gehört Schweißen dazu, aber nicht immer. Vorbeugende Wartung nach Vereinbarung oder Fehlersuche und Instandsetzung, wenn die Maschine stillsteht."
       lijst:
         - "Lager, Wellen, Antriebe und Führungen"
         - "Motoren, Sensoren und Schaltschränke von Maschinen"
-        - "Zylinder, Ventile, Schläuche und Leitungen"
-      noot: "Elektrik nur an Maschinen. Keine Gebäudeinstallationen."
+        - "Zylinder, Ventile, Schläuche und Hydraulikleitungen"
+        - "Dampfanlagen: Leitungen, Armaturen, Kondensatableiter und Halterungen"
+      noot: "Elektrik nur an Maschinen, keine Gebäudeinstallationen. Schweißen an Dampfleitungen nach Absprache."
     - id: crash
       titel: "Maschine nach einem Unfall wieder in Betrieb"
-      tekst: "Angefahren, umgekippt oder schwer beschädigt. Ich schweiße, was gebrochen ist, richte die Mechanik neu aus, setze Elektrik, Pneumatik und Hydraulik instand und stelle die Maschine neu ein, bis sie wieder produziert. Wo nötig, ersetze oder modernisiere ich veraltete Teile oder Steuerungen."
-      noot: "Schweißen, Mechanik und Elektrik in einem Einsatz, von einer Person."
+      tekst: "Angefahren, umgekippt oder schwer beschädigt. Gebrochenes wird geschweißt, die Mechanik neu ausgerichtet, Elektrik, Pneumatik und Hydraulik instand gesetzt und die Maschine neu eingestellt, bis sie wieder produziert. Wo nötig, werden veraltete Teile oder Steuerungen ersetzt oder modernisiert."
+      noot: "Schweißen, Mechanik, Elektrik und Steuerung in einem Einsatz."
+    - id: engineering
+      titel: "Konstruktion, Steuerung und Roboter"
+      tekst: "Konstruktion und Zeichnungen in Autodesk Inventor: Anpassungen, Verstärkungen, Halterungen, Schutzabdeckungen und Ersatzteile. Im Rahmen einer Reparatur oder als eigener Auftrag. Dazu Anpassungen an der Maschinensteuerung und an Roboterprogrammen."
+      lijst:
+        - "CAD-Konstruktion und Fertigungszeichnungen (Autodesk Inventor)"
+        - "Verschlissene oder gebrochene Teile aufmessen und nachzeichnen"
+        - "Maschinensteuerung anpassen (Beckhoff/TwinCAT)"
+        - "Roboterprogramme anpassen: KUKA, ABB und FANUC"
+        - "Roboterzellen, Greifer und Vorrichtungen instand setzen"
     - id: spoed
       titel: "Notfalleinsatz"
-      tekst: "Bei Stillstand oder Bruch, vor allem wenn geschweißt werden muss. Notfalleinsätze sind in erster Linie für Stammkunden da. Andere Anfragen prüfe ich je nach Verfügbarkeit."
-  extra: "Wo nötig: CAD-Konstruktion (Autodesk Inventor) und Anpassungen an der Maschinensteuerung (Beckhoff/TwinCAT) als Teil einer Reparatur."
+      tekst: "Bei Stillstand oder Bruch, vor allem wenn geschweißt werden muss. Notfalleinsätze sind in erster Linie für Stammkunden da. Andere Anfragen werden je nach Verfügbarkeit geprüft."
 
 spoed:
   label: "Notfall"
   titel: "Maschine steht still?"
-  tekst: "Für Stammkunden bin ich auch bei dringendem Stillstand da. Neukunde? Rufen Sie ruhig an, dann schaue ich, was möglich ist."
+  tekst: "Für Stammkunden ist Werkhuizen Beckers auch bei dringendem Stillstand da. Neukunde? Rufen Sie ruhig an, um zu klären, was möglich ist."
 
 werkwijze:
   label: "Ablauf"
   titel: "So läuft es ab"
   stappen:
     - titel: "Foto schicken oder anrufen"
-      tekst: "Ein Foto per WhatsApp sagt oft mehr als eine lange Erklärung. Geben Sie an, wo die Maschine steht."
+      tekst: "Ein Foto per WhatsApp oder E-Mail sagt oft mehr als eine lange Erklärung. Geben Sie an, wo die Maschine steht."
     - titel: "Einschätzung"
-      tekst: "Ich prüfe, was repariert werden muss und welches Material ich mitbringe."
-    - titel: "Ich komme und repariere"
-      tekst: "Mit dem Transporter und dem passenden Werkzeug. Die Maschine bleibt, wo sie steht."
+      tekst: "Was muss repariert werden, und welches Material kommt mit? Das steht fest, bevor jemand losfährt."
+    - titel: "Reparatur vor Ort"
+      tekst: "Mit dem Servicewagen und dem passenden Werkzeug. Die Maschine bleibt, wo sie steht."
     - titel: "Rechnung, fertig"
       tekst: "Sie erhalten eine Rechnung mit den ausgeführten Arbeiten. Die Maschine läuft wieder."
 
 werkgebied:
   label: "Einsatzgebiet"
   titel: "Von Gingelom aus"
-  tekst: "Gingelom liegt an der Grenze von Limburg, Flämisch-Brabant und der Provinz Lüttich. Von dort aus bin ich schnell im ganzen Haspengau und in den Städten ringsum."
+  tekst: "Gingelom liegt an der Grenze von Limburg, Flämisch-Brabant und der Provinz Lüttich. Von dort aus sind der ganze Haspengau und die Städte ringsum schnell erreichbar."
   regios:
     - "Limburg"
     - "Haspengau"
@@ -132,12 +147,12 @@ werkgebied:
     landen: "Landen"
 
 over:
-  label: "Über mich"
+  label: "Über"
   titel: "Lander Beckers"
   tekst:
-    - "Ich bin ausgebildeter Ingenieur und arbeite bewusst mit den Händen. Schweißen, schrauben und Fehler suchen mache ich lieber an der Maschine als am Schreibtisch."
-    - "Dieser Hintergrund hilft, wenn eine Reparatur mehr verlangt als eine Schweißnaht. Ich schaue, warum etwas gebrochen ist, nicht nur wo."
-    - "Am Telefon haben Sie mich direkt, und ich komme selbst. Auf Deutsch, Niederländisch, Französisch oder Englisch."
+    - "Ich bin Geschäftsführer von Werkhuizen Beckers und ausgebildeter Ingenieur. Trotzdem arbeite ich bewusst praktisch: Schweißen, schrauben und Fehler suchen passiert an der Maschine, nicht am Schreibtisch."
+    - "Dieser Hintergrund hilft, wenn eine Reparatur mehr verlangt als eine Schweißnaht. Die Frage ist nicht nur, wo etwas gebrochen ist, sondern auch warum."
+    - "Bei Werkhuizen Beckers werden Sie auf Deutsch, Niederländisch, Französisch und Englisch betreut."
   attesten_titel: "Nachweise und Versicherung"
   attesten:
     - "VCA VOL"
@@ -145,27 +160,31 @@ over:
     - "Staplerschein"
     - "Versichert: Betriebs- und Berufshaftpflicht"
   foto_alt: "Lander Beckers beim Schweißen bei einem Kunden"
-  foto_bijschrift: "Lander und der Transporter mit Schweißausrüstung"
+  foto_bijschrift: "Lander Beckers, Geschäftsführer"
 
 faq:
   label: "Fragen"
   titel: "Häufige Fragen"
   items:
     - vraag: "Kommen Sie auch außerhalb von Limburg?"
-      antwoord: "Ja. Der Haspengau, Flämisch-Brabant und die Provinz Lüttich gehören zu meinem festen Einsatzgebiet. Weiter entfernt nach Absprache."
+      antwoord: "Ja. Der Haspengau, Flämisch-Brabant und die Provinz Lüttich gehören zum festen Einsatzgebiet. Weiter entfernt nach Absprache."
     - vraag: "Muss die Maschine demontiert werden?"
-      antwoord: "Meistens nicht. Ich schweiße und repariere dort, wo die Maschine steht. Muss doch ein Teil ab, um an die Schadstelle zu kommen, mache ich das vor Ort."
+      antwoord: "Meistens nicht. Geschweißt und repariert wird dort, wo die Maschine steht. Muss doch ein Teil ab, um an die Schadstelle zu kommen, geschieht das vor Ort."
     - vraag: "Welche Werkstoffe schweißen Sie?"
-      antwoord: "Stahl, Edelstahl und Aluminium. Mit Elektrode (E-Hand), MIG/MAG oder WIG, je nach Arbeit und Ort."
+      antwoord: "Stahl, Edelstahl, Aluminium und Gusseisen. Mit Elektrode (E-Hand), MIG/MAG oder WIG, je nach Arbeit und Ort. Verschlissene Teile können auch aufgepanzert werden."
     - vraag: "Machen Sie auch Elektrik?"
-      antwoord: "Nur an Maschinen: Motoren, Sensoren, Schaltschränke und die Verkabelung an der Maschine. Gebäudeelektrik mache ich nicht."
+      antwoord: "Nur an Maschinen: Motoren, Sensoren, Schaltschränke und die Verkabelung an der Maschine. Gebäudeelektrik gehört nicht dazu."
+    - vraag: "Machen Sie auch nur eine Zeichnung oder Konstruktion?"
+      antwoord: "Ja. CAD-Konstruktion und Fertigungszeichnungen in Autodesk Inventor gibt es auch als eigenen Auftrag, zum Beispiel für eine Anpassung, eine Halterung oder ein Ersatzteil, das Sie anderswo fertigen lassen."
+    - vraag: "Passen Sie auch Roboterprogramme an?"
+      antwoord: "Ja, bei KUKA, ABB und FANUC. Zum Beispiel nach einer Reparatur oder einer Änderung an der Zelle, wenn Positionen oder Bahnen neu eingestellt werden müssen."
     - vraag: "Wie schicke ich ein Foto des Problems?"
-      antwoord: "Per WhatsApp an +32 476 06 32 85. Schreiben Sie den Ort und eine kurze Beschreibung dazu."
+      antwoord: "Per WhatsApp an +32 476 06 32 85 oder per E-Mail an info@werkhuizenbeckers.be. Schreiben Sie den Ort und eine kurze Beschreibung dazu."
 
 contact:
   label: "Kontakt"
-  titel: "Anrufen, Foto schicken oder mailen"
-  tekst: "Wählen Sie, was für Sie am einfachsten ist. Lieber schreiben? Füllen Sie das Formular aus, dann melde ich mich bei Ihnen."
+  titel: "Anrufen, mailen oder Foto schicken"
+  tekst: "Wählen Sie, was für Sie am einfachsten ist. Lieber schreiben? Füllen Sie das Formular aus, Sie erhalten dann einen Rückruf oder eine E-Mail."
   kanalen:
     bellen: "Anrufen"
     whatsapp: "WhatsApp"
@@ -174,7 +193,7 @@ contact:
 
 formulier:
   titel: "Beschreiben Sie das Problem"
-  foto_tip: "Fotos schicken Sie am einfachsten per WhatsApp."
+  foto_tip: "Fotos schicken Sie am einfachsten per WhatsApp oder E-Mail."
   naam: "Name"
   bedrijf: "Firma"
   optioneel: "optional"
@@ -183,7 +202,7 @@ formulier:
   telefoon_of_email: "Telefon oder E-Mail, eines von beiden reicht."
   locatie: "Ort"
   omschrijving: "Was ist passiert?"
-  omschrijving_hint: "Zum Beispiel: gerissene Halterung an einem Förderband, Hydraulikleck an einer Presse."
+  omschrijving_hint: "Zum Beispiel: gerissene Halterung an einem Förderband, verschlissene Messer eines Häckslers, Hydraulikleck an einer Presse."
   dringend: "Dringend: Die Maschine steht still"
   toestemming: "Ich bin einverstanden, dass Werkhuizen Beckers meine Daten verwendet, um mich zu kontaktieren."
   privacy_link: "Datenschutzerklärung"
@@ -192,7 +211,7 @@ formulier:
   onderwerp_dringend: "DRINGEND: Anfrage über werkhuizenbeckers.be (DE)"
   fout_contact: "Bitte geben Sie eine Telefonnummer oder E-Mail-Adresse an."
   bezig: "Wird gesendet…"
-  gelukt: "Danke, Ihre Nachricht wurde gesendet. Ich melde mich bei Ihnen."
+  gelukt: "Danke, Ihre Nachricht wurde gesendet. Sie erhalten eine Antwort per Telefon oder E-Mail."
   mislukt: "Das Senden hat nicht geklappt. Rufen Sie gern direkt an oder schreiben Sie eine E-Mail."
 
 footer:
@@ -216,9 +235,9 @@ privacy:
         Werkhuizen Beckers BV, Gingelom – Sint-Truiden, Belgien. USt-IdNr. BE 1041 720 216.
 
         Fragen zu dieser Erklärung: [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) oder [+32 476 06 32 85](tel:+32476063285).
-    - titel: "Welche Daten ich verarbeite"
+    - titel: "Welche Daten werden verarbeitet?"
       tekst: |
-        Nur das, was Sie mir selbst mitteilen:
+        Nur das, was Sie selbst mitteilen:
 
         - **Über das Kontaktformular:** Name, Firma (optional), Telefonnummer und/oder E-Mail-Adresse, Ort, Ihre Beschreibung und ob es dringend ist.
         - **Per Telefon, WhatsApp oder E-Mail:** Ihre Kontaktdaten, Ihre Nachricht und die Fotos, die Sie mitschicken.
@@ -226,19 +245,19 @@ privacy:
         Die Website selbst verwendet keine Cookies, keine Analyse- oder Werbedienste und lädt keine Schriften oder Skripte von anderen Websites. Wenn Sie den Sprachhinweis schließen, merkt sich Ihr Browser das lokal. Diese Information verlässt Ihr Gerät nicht.
     - titel: "Wer erhält die Daten?"
       tekst: |
-        - **Web3Forms** empfängt den Inhalt des Formulars und leitet ihn per E-Mail an mich weiter. Web3Forms handelt dabei als Auftragsverarbeiter. Mehr Informationen: [web3forms.com/privacy](https://web3forms.com/privacy).
-        - **WhatsApp** (Meta) verarbeitet die Nachrichten, die Sie mir über WhatsApp schicken, nach den Bedingungen, die Sie mit WhatsApp vereinbart haben.
+        - **Web3Forms** empfängt den Inhalt des Formulars und leitet ihn per E-Mail an Werkhuizen Beckers weiter. Web3Forms handelt dabei als Auftragsverarbeiter. Mehr Informationen: [web3forms.com/privacy](https://web3forms.com/privacy).
+        - **WhatsApp** (Meta) verarbeitet die Nachrichten, die Sie über WhatsApp schicken, nach den Bedingungen, die Sie mit WhatsApp vereinbart haben.
         - **GitHub** hostet die Website. Bei jedem Besuch verarbeitet GitHub technische Daten wie Ihre IP-Adresse, um die Seite ausliefern zu können.
 
-        Ich verkaufe Ihre Daten nicht und nutze sie nicht für Werbung.
+        Werkhuizen Beckers verkauft Ihre Daten nicht und nutzt sie nicht für Werbung.
     - titel: "Warum und auf welcher Grundlage?"
       tekst: |
         Um Ihre Anfrage zu beantworten, eine Reparatur zu planen und auszuführen und um Rechnungen zu stellen. Rechtsgrundlage ist Ihre Einwilligung (über das Formular), die Vorbereitung oder Erfüllung eines Vertrags oder eine gesetzliche Pflicht wie die Buchhaltung (Art. 6 DSGVO). Ihre Einwilligung können Sie jederzeit widerrufen.
-    - titel: "Wie lange ich sie speichere"
+    - titel: "Wie lange werden sie gespeichert?"
       tekst: |
-        Nicht länger als nötig. Anfragen ohne Auftrag lösche ich spätestens nach zwei Jahren. Daten, die auf einer Rechnung stehen, bewahre ich so lange auf, wie es das Buchhaltungsrecht verlangt.
+        Nicht länger als nötig. Anfragen ohne Auftrag werden spätestens nach zwei Jahren gelöscht. Daten, die auf einer Rechnung stehen, werden so lange aufbewahrt, wie es das Buchhaltungsrecht verlangt.
     - titel: "Ihre Rechte"
       tekst: |
         Sie können Ihre Daten einsehen, berichtigen oder löschen lassen, die Verarbeitung einschränken lassen und ihr widersprechen. Schreiben Sie dazu einfach an [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be).
 
-        Wenn Sie mit meinem Umgang mit Ihren Daten nicht einverstanden sind, können Sie Beschwerde bei der belgischen Datenschutzbehörde einreichen: [www.datenschutzbehorde.be](https://www.datenschutzbehorde.be).
+        Wenn Sie mit dem Umgang mit Ihren Daten nicht einverstanden sind, können Sie Beschwerde bei der belgischen Datenschutzbehörde einreichen: [www.datenschutzbehorde.be](https://www.datenschutzbehorde.be).

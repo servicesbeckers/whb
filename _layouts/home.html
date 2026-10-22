@@ -17,6 +17,11 @@ layout: default
                 <a class="knop knop-licht" href="{{ wa }}">{% include icoon.html naam="whatsapp" %}<span>{{ t.knop.whatsapp }}</span></a>
                 <a class="knop knop-lijn" href="{{ wa_foto }}">{% include icoon.html naam="foto" %}<span>{{ t.knop.foto }}</span></a>
             </div>
+            <p class="held-direct">
+                <span>{{ t.hero.of }}</span>
+                <a href="tel:{{ b.telefoon_link }}">{% include icoon.html naam="bel" %}{{ b.telefoon }}</a>
+                <a href="mailto:{{ b.email }}">{% include icoon.html naam="mail" %}{{ b.email }}</a>
+            </p>
         </div>
 
         <div class="plaat" aria-hidden="true">
@@ -73,7 +78,9 @@ layout: default
         {%- endfor %}
         </div>
 
+        {%- if t.diensten.extra %}
         <p class="diensten-extra">{{ t.diensten.extra }}</p>
+        {%- endif %}
     </div>
 </section>
 

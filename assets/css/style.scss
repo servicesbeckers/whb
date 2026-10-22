@@ -279,9 +279,11 @@ a:hover { color: var(--steenblauw); }
     border-bottom: 1px solid var(--lijn-licht);
 }
 .hoofdmenu a:hover { color: var(--terracotta-licht); }
+.hoofdmenu .kop-mail { margin-top: 12px; }
+.hoofdmenu .kop-tel { margin-top: 0; }
+.hoofdmenu .kop-mail,
 .hoofdmenu .kop-tel {
     border: 0;
-    margin-top: 12px;
     font-family: var(--mono);
     color: var(--terracotta-licht);
 }
@@ -305,6 +307,7 @@ a:hover { color: var(--steenblauw); }
         border: 0;
         font-size: 0.9375rem;
     }
+    .hoofdmenu .kop-mail { display: none; }
     .hoofdmenu .kop-tel {
         white-space: nowrap;
         margin: 0 0 0 10px;
@@ -414,6 +417,35 @@ a:hover { color: var(--steenblauw); }
     max-width: 34em;
     color: var(--creme);
 }
+.held-direct {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 22px;
+    margin: 22px 0 0;
+    font-family: var(--mono);
+    font-size: 0.9375rem;
+}
+.held-direct span {
+    width: 100%;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terracotta-licht);
+}
+.held-direct a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    color: var(--creme);
+    text-decoration: none;
+    border-bottom: 1px solid var(--lijn-licht);
+    word-break: break-all;
+}
+.held-direct a:hover { color: var(--terracotta-licht); border-bottom-color: currentColor; }
+.held-direct .icoon { width: 18px; height: 18px; flex: none; color: var(--terracotta-licht); }
+
 .held-raster {
     display: grid;
     gap: 48px;
