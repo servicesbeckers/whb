@@ -4,7 +4,7 @@ Statische Jekyll-site op GitHub Pages (build via `.github/workflows/pages.yml`).
 
 ## Wat de site verkoopt
 B2B, ter plaatse met een uitgeruste servicewagen. Vijf diensten:
-1. Laswerk op locatie: staal, inox, alu, gietijzer; MMA, MIG/MAG, TIG; hardoplassen en opbouwlassen; plasmasnijden, autogeen snijden, gutsen; bouten uitboren, schroefdraad, kernboren.
+1. Laswerk op locatie: staal, inox, alu, gietijzer; MMA, MIG/MAG, TIG; hardoplassen en opbouwlassen; bouten uitboren, schroefdraad herstellen. De servicewagen enkel algemeen beschrijven ("uitgerust voor alle laswerken"); geen specifieke toestellen of uitrusting noemen (geen plasma, gutsen, magneetboor, ...).
 2. Herstelling en onderhoud: staal, machines en installaties (mechanisch, elektrisch, pneumatisch, hydraulisch, stoom).
 3. Machine terug in leven na een crash.
 4. Engineering, besturing en robots: CAD in Autodesk Inventor (ook als losse opdracht), PLC en machinebesturing (geen merknamen), robotprogramma's aanpassen bij KUKA, ABB en FANUC.
@@ -56,6 +56,7 @@ Na elke tekstwijziging de skill `tekstcontrole` draaien. De kern:
 - Mobile-first. Op mobiel altijd een sticky balk onderaan met Bel, WhatsApp en Foto sturen.
 
 ## SEO
+Titel hoogstens ±65 tekens, meta description hoogstens ±155 tekens (anders knipt Google af). Kaart: enkel grotere, herkenbare steden, gespreid binnen de ring van 60 km; nieuwe steden ook toevoegen aan `plaatsen`, `kaart_alt` en de stedenlijst in `_includes/jsonld.html`.
 Per taal: eigen `<title>`, meta description, `lang`, canonical, `hreflang` voor alle vier de talen plus `x-default` naar NL, Open Graph, en JSON-LD `LocalBusiness` zonder straatadres en zonder `priceRange`. Bij twijfel de skills `technical-seo`, `schema-markup`, `on-page-seo` en `content-translation` gebruiken.
 
 ## Formulier
