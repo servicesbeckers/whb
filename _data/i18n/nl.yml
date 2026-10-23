@@ -8,8 +8,8 @@ locale: nl_BE
 naam: Nederlands
 
 meta:
-  title: "Laswerk op locatie & machineherstel | Werkhuizen Beckers, Gingelom, Limburg"
-  description: "Mobiel laswerk, hardoplassen en herstelling van machines ter plaatse. Engineering, CAD en robotprogrammatie. Vanuit Gingelom tot Brussel, Maasmechelen, Luik en Namen."
+  title: "Laswerk op locatie & machineherstel, Limburg | Werkhuizen Beckers"
+  description: "Mobiel laswerk, hardoplassen en machineherstel ter plaatse. Engineering, CAD en robots. Vanuit Gingelom tot Brussel, Maasmechelen, Luik en Namen."
   og_alt: "Werkhuizen Beckers, laswerk en machineherstel op locatie"
 
 skiplink: "Naar de inhoud"
@@ -68,14 +68,13 @@ diensten:
   items:
     - id: laswerk
       titel: "Laswerk op locatie"
-      tekst: "Herstellen, versterken en aanpassen waar het stuk staat: scheuren, gebroken onderdelen, steunen, frames en maatwerk. Versleten delen krijgen een nieuwe slijtlaag. De servicewagen heeft de volledige las- en snijuitrusting aan boord."
+      tekst: "Herstellen, versterken en aanpassen waar het stuk staat: scheuren, gebroken onderdelen, steunen, frames en maatwerk. Versleten delen krijgen een nieuwe slijtlaag. De servicewagen is uitgerust voor alle laswerken ter plaatse."
       lijst:
         - "Staal, inox en aluminium"
         - "Gietijzer, met voorwarmen en gecontroleerd afkoelen"
         - "Elektrode (MMA), halfautomaat (MIG/MAG) en TIG"
         - "Hardoplassen en opbouwlassen: tanden, messen, schoepen, rollen, assen en lagerzittingen"
-        - "Plasmasnijden, autogeen snijden en gutsen"
-        - "Afgebroken bouten uitboren, schroefdraad herstellen, kernboren met de magneetboor"
+        - "Afgebroken bouten uitboren en schroefdraad herstellen"
         - "Constructiewerk en maatwerk in overleg"
     - id: onderhoud
       titel: "Herstelling en onderhoud"
@@ -124,17 +123,18 @@ werkwijze:
 werkgebied:
   label: "Werkgebied"
   titel: "Vanuit Gingelom"
-  tekst: "Gingelom ligt op de grens van Limburg, Vlaams-Brabant en de provincie Luik. Binnen ongeveer een uur rijden liggen heel Limburg en Haspengouw, Leuven en de oostrand van Brussel, Mechelen, Luik, Verviers en Namen."
+  tekst: "Gingelom ligt op de grens van Limburg, Vlaams-Brabant en de provincie Luik. Binnen ongeveer een uur rijden liggen heel Limburg, de Kempen en Haspengouw, Leuven en de oostrand van Brussel, Mechelen, Luik, Verviers en Namen."
   regios:
     - "Limburg"
     - "Haspengouw"
+    - "Kempen"
     - "Vlaams-Brabant"
     - "Oostrand van Brussel"
     - "Waals-Brabant"
     - "Provincie Luik"
     - "Provincie Namen"
     - "Verder in overleg"
-  kaart_alt: "Schematische kaart met Gingelom in het midden. Binnen 30 km: Sint-Truiden, Hasselt, Tongeren, Tienen, Diest, Borgworm en Hoei. Binnen 60 km, ongeveer een uur rijden: Genk, Maasmechelen, Beringen, Aarschot, Leuven, Mechelen, Brussel, Waver, Namen, Luik en Verviers."
+  kaart_alt: "Schematische kaart met Gingelom in het midden. Binnen 30 km: Sint-Truiden, Hasselt, Tienen, Tongeren, Diest en Hoei. Binnen 60 km, ongeveer een uur rijden: Lommel, Geel, Mechelen, Brussel, Leuven, Waver, Gembloux, Namen, Dinant, Luik, Verviers, Spa, Lier, Bree, Fleurus, Durbuy, Genk en Maasmechelen."
   kaart_bijschrift: "Schematisch, afstanden in vogelvlucht. Buitenste cirkel: ongeveer een uur rijden."
   ring_binnen: "30 km"
   ring_buiten: "60 km · ± 1 uur"
@@ -144,20 +144,26 @@ werkgebied:
     hasselt: "Hasselt"
     genk: "Genk"
     maasmechelen: "Maasmechelen"
-    tongeren: "Tongeren"
-    beringen: "Beringen"
+    lommel: "Lommel"
+    geel: "Geel"
     diest: "Diest"
-    aarschot: "Aarschot"
     mechelen: "Mechelen"
     brussel: "Brussel"
     leuven: "Leuven"
     tienen: "Tienen"
+    tongeren: "Tongeren"
     waver: "Waver"
+    gembloux: "Gembloux"
     namen: "Namen"
+    dinant: "Dinant"
     hoei: "Hoei"
-    borgworm: "Borgworm"
     luik: "Luik"
     verviers: "Verviers"
+    spa: "Spa"
+    lier: "Lier"
+    bree: "Bree"
+    fleurus: "Fleurus"
+    durbuy: "Durbuy"
 
 over:
   label: "Over"

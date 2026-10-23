@@ -7,8 +7,8 @@ locale: de_DE
 naam: Deutsch
 
 meta:
-  title: "Schweißarbeiten vor Ort & Maschinenreparatur | Werkhuizen Beckers, Belgien"
-  description: "Mobile Schweißarbeiten, Auftragschweißen und Maschinenreparatur vor Ort. Konstruktion, CAD und Roboterprogrammierung. Von Gingelom bis Brüssel, Maasmechelen, Lüttich und Namur."
+  title: "Schweißen vor Ort & Maschinenreparatur | Werkhuizen Beckers"
+  description: "Mobile Schweißarbeiten, Auftragschweißen und Maschinenreparatur vor Ort. CAD und Roboter. Von Gingelom bis Brüssel, Lüttich und Namur."
   og_alt: "Werkhuizen Beckers, Schweißarbeiten und Maschinenreparatur vor Ort"
 
 skiplink: "Zum Inhalt"
@@ -67,14 +67,13 @@ diensten:
   items:
     - id: laswerk
       titel: "Schweißarbeiten vor Ort"
-      tekst: "Reparieren, verstärken und anpassen, wo das Teil steht: Risse, gebrochene Teile, Halterungen, Rahmen und Einzelanfertigungen. Verschlissene Teile erhalten eine neue Verschleißschicht. Der Servicewagen hat die komplette Schweiß- und Schneidausrüstung an Bord."
+      tekst: "Reparieren, verstärken und anpassen, wo das Teil steht: Risse, gebrochene Teile, Halterungen, Rahmen und Einzelanfertigungen. Verschlissene Teile erhalten eine neue Verschleißschicht. Der Servicewagen ist für alle Schweißarbeiten vor Ort ausgerüstet."
       lijst:
         - "Stahl, Edelstahl und Aluminium"
         - "Gusseisen, mit Vorwärmen und kontrolliertem Abkühlen"
         - "Elektrode (E-Hand), MIG/MAG und WIG"
         - "Auftragschweißen und Panzern: Zähne, Messer, Schaufeln, Walzen, Wellen und Lagersitze"
-        - "Plasmaschneiden, Brennschneiden und Fugenhobeln"
-        - "Abgerissene Schrauben ausbohren, Gewinde instand setzen, Kernbohren mit Magnetbohrmaschine"
+        - "Abgerissene Schrauben ausbohren und Gewinde instand setzen"
         - "Konstruktions- und Sonderanfertigungen nach Absprache"
     - id: onderhoud
       titel: "Instandsetzung und Wartung"
@@ -123,17 +122,18 @@ werkwijze:
 werkgebied:
   label: "Einsatzgebiet"
   titel: "Von Gingelom aus"
-  tekst: "Gingelom liegt an der Grenze von Limburg, Flämisch-Brabant und der Provinz Lüttich. In etwa einer Stunde Fahrt erreichbar: ganz Limburg und der Haspengau, Löwen und der Osten von Brüssel, Mecheln, Lüttich, Verviers und Namur."
+  tekst: "Gingelom liegt an der Grenze von Limburg, Flämisch-Brabant und der Provinz Lüttich. In etwa einer Stunde Fahrt erreichbar: ganz Limburg, die Kempen und der Haspengau, Löwen und der Osten von Brüssel, Mecheln, Lüttich, Verviers und Namur."
   regios:
     - "Limburg"
     - "Haspengau"
+    - "Kempen"
     - "Flämisch-Brabant"
     - "Osten von Brüssel"
     - "Wallonisch-Brabant"
     - "Provinz Lüttich"
     - "Provinz Namur"
     - "Weiter entfernt nach Absprache"
-  kaart_alt: "Schematische Karte mit Gingelom in der Mitte. Im Umkreis von 30 km: Sint-Truiden, Hasselt, Tongern, Tienen, Diest, Waremme und Huy. Im Umkreis von 60 km, etwa eine Stunde Fahrt: Genk, Maasmechelen, Beringen, Aarschot, Löwen, Mecheln, Brüssel, Wavre, Namur, Lüttich und Verviers."
+  kaart_alt: "Schematische Karte mit Gingelom in der Mitte. Im Umkreis von 30 km: Sint-Truiden, Hasselt, Tienen, Tongern, Diest und Huy. Im Umkreis von 60 km, etwa eine Stunde Fahrt: Lommel, Geel, Mecheln, Brüssel, Löwen, Wavre, Gembloux, Namur, Dinant, Lüttich, Verviers, Spa, Lier, Bree, Fleurus, Durbuy, Genk und Maasmechelen."
   kaart_bijschrift: "Schematisch, Entfernungen in Luftlinie. Äußerer Kreis: etwa eine Stunde Fahrt."
   ring_binnen: "30 km"
   ring_buiten: "60 km · ± 1 Std."
@@ -143,20 +143,26 @@ werkgebied:
     hasselt: "Hasselt"
     genk: "Genk"
     maasmechelen: "Maasmechelen"
-    tongeren: "Tongern"
-    beringen: "Beringen"
+    lommel: "Lommel"
+    geel: "Geel"
     diest: "Diest"
-    aarschot: "Aarschot"
     mechelen: "Mecheln"
     brussel: "Brüssel"
     leuven: "Löwen"
     tienen: "Tienen"
+    tongeren: "Tongern"
     waver: "Wavre"
+    gembloux: "Gembloux"
     namen: "Namur"
+    dinant: "Dinant"
     hoei: "Huy"
-    borgworm: "Waremme"
     luik: "Lüttich"
     verviers: "Verviers"
+    spa: "Spa"
+    lier: "Lier"
+    bree: "Bree"
+    fleurus: "Fleurus"
+    durbuy: "Durbuy"
 
 over:
   label: "Über"
