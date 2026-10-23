@@ -35,18 +35,17 @@
         "longitude": {{ b.geo.lng }}
       },
       "areaServed": [
-        {%- for regio in t.werkgebied.regios limit: 4 %}
+        {%- comment %} Alle regio's behalve de laatste ("verder in overleg") {% endcomment %}
+        {%- for regio in t.werkgebied.regios %}{% unless forloop.last %}
         { "@type": "AdministrativeArea", "name": {{ regio | jsonify }} },
+        {%- endunless %}{% endfor %}
+        {%- assign steden = "sinttruiden,hasselt,genk,maasmechelen,tongeren,beringen,diest,aarschot,mechelen,brussel,leuven,tienen,waver,namen,hoei,borgworm,luik,verviers" | split: "," %}
+        {%- for stad in steden %}
+        { "@type": "City", "name": {{ w[stad] | jsonify }} }{% unless forloop.last %},{% endunless %}
         {%- endfor %}
-        { "@type": "City", "name": {{ w.sinttruiden | jsonify }} },
-        { "@type": "City", "name": {{ w.hasselt | jsonify }} },
-        { "@type": "City", "name": {{ w.tienen | jsonify }} },
-        { "@type": "City", "name": {{ w.tongeren | jsonify }} },
-        { "@type": "City", "name": {{ w.luik | jsonify }} },
-        { "@type": "City", "name": {{ w.borgworm | jsonify }} },
-        { "@type": "City", "name": {{ w.leuven | jsonify }} }
       ],
-      "knowsLanguage": ["nl", "fr", "en", "de"],
+      {%- comment %} Geen Frans: de site is in vier talen, maar contact gebeurt in NL, EN en DE. {% endcomment %}
+      "knowsLanguage": ["nl", "en", "de"],
       "knowsAbout": {{ kennis | jsonify }},
       "founder": { "@type": "Person", "name": "Lander Beckers", "jobTitle": "Engineer" },
       "contactPoint": {
@@ -54,7 +53,7 @@
         "telephone": "{{ b.telefoon_link }}",
         "email": "{{ b.email }}",
         "contactType": "customer service",
-        "availableLanguage": ["Dutch", "French", "English", "German"]
+        "availableLanguage": ["Dutch", "English", "German"]
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
