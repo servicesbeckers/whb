@@ -8,7 +8,7 @@ naam: English
 
 meta:
   title: "On-site welding & machine repair | Werkhuizen Beckers, Limburg, Belgium"
-  description: "Mobile welding, hardfacing and on-site machine repair in Belgium. Engineering, CAD and robot programming. Based in Gingelom, covering Limburg, Hesbaye, Leuven and Liège."
+  description: "Mobile welding, hardfacing and on-site machine repair in Belgium. Engineering, CAD and robot programming. From Gingelom to Brussels, Maasmechelen, Liège and Namur."
   og_alt: "Werkhuizen Beckers, on-site welding and machine repair"
 
 skiplink: "Skip to content"
@@ -40,7 +40,7 @@ suggestie:
   sluiten: "Close"
 
 hero:
-  label: "Gingelom · Limburg and the surrounding area"
+  label: "Gingelom · up to an hour's drive"
   titel: "On-site welding & machine repair"
   tekst: "Werkhuizen Beckers comes to you with a fully equipped service van. Welding in steel, stainless steel and aluminium, and machines running again, mechanically and electrically."
   of: "Or directly"
@@ -95,7 +95,7 @@ diensten:
       lijst:
         - "CAD design and workshop drawings (Autodesk Inventor)"
         - "Measuring and redrawing worn or broken parts"
-        - "Machine control changes (Beckhoff/TwinCAT)"
+        - "PLC and machine control changes"
         - "Robot program changes: KUKA, ABB and FANUC"
         - "Repairing robot cells, grippers and fixtures"
     - id: spoed
@@ -123,28 +123,40 @@ werkwijze:
 werkgebied:
   label: "Service area"
   titel: "Based in Gingelom"
-  tekst: "Gingelom sits where Limburg, Flemish Brabant and the province of Liège meet. From there the whole Hesbaye region and the towns around it are within easy reach."
+  tekst: "Gingelom sits where Limburg, Flemish Brabant and the province of Liège meet. Within about an hour's drive: all of Limburg and Hesbaye, Leuven and the eastern edge of Brussels, Mechelen, Liège, Verviers and Namur."
   regios:
     - "Limburg"
     - "Hesbaye (Haspengouw)"
     - "Flemish Brabant"
+    - "Eastern Brussels"
+    - "Walloon Brabant"
     - "Province of Liège"
+    - "Province of Namur"
     - "Further afield by arrangement"
-  kaart_alt: "Schematic map: Gingelom in the centre, with Sint-Truiden, Hasselt, Genk, Tongeren, Tienen, Leuven, Waremme and Liège within a radius of about 30 km."
-  kaart_bijschrift: "Schematic, straight-line distances"
+  kaart_alt: "Schematic map with Gingelom in the centre. Within 30 km: Sint-Truiden, Hasselt, Tongeren, Tienen, Diest, Waremme and Huy. Within 60 km, about an hour's drive: Genk, Maasmechelen, Beringen, Aarschot, Leuven, Mechelen, Brussels, Wavre, Namur, Liège and Verviers."
+  kaart_bijschrift: "Schematic, straight-line distances. Outer circle: about an hour's drive."
+  ring_binnen: "30 km"
+  ring_buiten: "60 km · ± 1 hr"
   plaatsen:
     gingelom: "Gingelom"
     sinttruiden: "Sint-Truiden"
     hasselt: "Hasselt"
     genk: "Genk"
+    maasmechelen: "Maasmechelen"
     tongeren: "Tongeren"
-    tienen: "Tienen"
-    leuven: "Leuven"
-    luik: "Liège"
-    borgworm: "Waremme"
-    hannuit: "Hannut"
+    beringen: "Beringen"
     diest: "Diest"
-    landen: "Landen"
+    aarschot: "Aarschot"
+    mechelen: "Mechelen"
+    brussel: "Brussels"
+    leuven: "Leuven"
+    tienen: "Tienen"
+    waver: "Wavre"
+    namen: "Namur"
+    hoei: "Huy"
+    borgworm: "Waremme"
+    luik: "Liège"
+    verviers: "Verviers"
 
 over:
   label: "About"
@@ -152,7 +164,7 @@ over:
   tekst:
     - "I run Werkhuizen Beckers and I am an engineer by training. Even so, I choose to work hands-on: welding, fixing and troubleshooting happen at the machine, not behind a desk."
     - "That background helps when a repair takes more than a weld. The question is not just where something broke, but why."
-    - "At Werkhuizen Beckers you can be helped in English, Dutch, French and German."
+    - "At Werkhuizen Beckers you can be helped in English, Dutch and German."
   attesten_titel: "Certificates and insurance"
   attesten:
     - "VCA VOL safety certificate"
@@ -167,7 +179,7 @@ faq:
   titel: "Frequently asked questions"
   items:
     - vraag: "Do you work outside Limburg?"
-      antwoord: "Yes. Hesbaye, Flemish Brabant and the province of Liège are part of the regular area. Further afield is possible by arrangement."
+      antwoord: "Yes. Up to about an hour's drive from Gingelom: Hesbaye, Leuven, the eastern edge of Brussels, Mechelen, Liège, Verviers and Namur. Further afield is possible by arrangement."
     - vraag: "Does the machine need to be dismantled?"
       antwoord: "Usually not. Welding and repairs are done where the machine stands. If a part has to come off to reach the damage, that is done on site."
     - vraag: "Which materials do you weld?"
