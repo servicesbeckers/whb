@@ -7,8 +7,8 @@ locale: en_GB
 naam: English
 
 meta:
-  title: "On-site welding & machine repair | Werkhuizen Beckers, Limburg, Belgium"
-  description: "Mobile welding, hardfacing and on-site machine repair in Belgium. Engineering, CAD and robot programming. From Gingelom to Brussels, Maasmechelen, Liège and Namur."
+  title: "On-site welding & machine repair, Belgium | Werkhuizen Beckers"
+  description: "Mobile welding, hardfacing and on-site machine repair. Engineering, CAD and robots. From Gingelom to Brussels, Maasmechelen, Liège and Namur."
   og_alt: "Werkhuizen Beckers, on-site welding and machine repair"
 
 skiplink: "Skip to content"
@@ -67,14 +67,13 @@ diensten:
   items:
     - id: laswerk
       titel: "On-site welding"
-      tekst: "Repairing, reinforcing and modifying parts where they are: cracks, broken parts, brackets, frames and one-off pieces. Worn parts get a new wear layer. The service van carries a complete welding and cutting setup."
+      tekst: "Repairing, reinforcing and modifying parts where they are: cracks, broken parts, brackets, frames and one-off pieces. Worn parts get a new wear layer. The service van is equipped for all welding work on site."
       lijst:
         - "Steel, stainless steel and aluminium"
         - "Cast iron, with preheating and controlled cooling"
         - "Stick (MMA), MIG/MAG and TIG"
         - "Hardfacing and build-up welding: teeth, knives, blades, rollers, shafts and bearing seats"
-        - "Plasma cutting, oxy-fuel cutting and gouging"
-        - "Drilling out broken bolts, thread repair, magnetic drilling"
+        - "Drilling out broken bolts and repairing threads"
         - "Fabrication and custom work by arrangement"
     - id: onderhoud
       titel: "Repair and maintenance"
@@ -123,17 +122,18 @@ werkwijze:
 werkgebied:
   label: "Service area"
   titel: "Based in Gingelom"
-  tekst: "Gingelom sits where Limburg, Flemish Brabant and the province of Liège meet. Within about an hour's drive: all of Limburg and Hesbaye, Leuven and the eastern edge of Brussels, Mechelen, Liège, Verviers and Namur."
+  tekst: "Gingelom sits where Limburg, Flemish Brabant and the province of Liège meet. Within about an hour's drive: all of Limburg, the Campine and Hesbaye, Leuven and the eastern edge of Brussels, Mechelen, Liège, Verviers and Namur."
   regios:
     - "Limburg"
     - "Hesbaye (Haspengouw)"
+    - "Campine (Kempen)"
     - "Flemish Brabant"
     - "Eastern Brussels"
     - "Walloon Brabant"
     - "Province of Liège"
     - "Province of Namur"
     - "Further afield by arrangement"
-  kaart_alt: "Schematic map with Gingelom in the centre. Within 30 km: Sint-Truiden, Hasselt, Tongeren, Tienen, Diest, Waremme and Huy. Within 60 km, about an hour's drive: Genk, Maasmechelen, Beringen, Aarschot, Leuven, Mechelen, Brussels, Wavre, Namur, Liège and Verviers."
+  kaart_alt: "Schematic map with Gingelom in the centre. Within 30 km: Sint-Truiden, Hasselt, Tienen, Tongeren, Diest and Huy. Within 60 km, about an hour's drive: Lommel, Geel, Mechelen, Brussels, Leuven, Wavre, Gembloux, Namur, Dinant, Liège, Verviers, Spa, Lier, Bree, Fleurus, Durbuy, Genk and Maasmechelen."
   kaart_bijschrift: "Schematic, straight-line distances. Outer circle: about an hour's drive."
   ring_binnen: "30 km"
   ring_buiten: "60 km · ± 1 hr"
@@ -143,20 +143,26 @@ werkgebied:
     hasselt: "Hasselt"
     genk: "Genk"
     maasmechelen: "Maasmechelen"
-    tongeren: "Tongeren"
-    beringen: "Beringen"
+    lommel: "Lommel"
+    geel: "Geel"
     diest: "Diest"
-    aarschot: "Aarschot"
     mechelen: "Mechelen"
     brussel: "Brussels"
     leuven: "Leuven"
     tienen: "Tienen"
+    tongeren: "Tongeren"
     waver: "Wavre"
+    gembloux: "Gembloux"
     namen: "Namur"
+    dinant: "Dinant"
     hoei: "Huy"
-    borgworm: "Waremme"
     luik: "Liège"
     verviers: "Verviers"
+    spa: "Spa"
+    lier: "Lier"
+    bree: "Bree"
+    fleurus: "Fleurus"
+    durbuy: "Durbuy"
 
 over:
   label: "About"

@@ -53,6 +53,10 @@
     {
       "patroon": "Beckhoff|TwinCAT",
       "reden": "Geen merknaam voor de besturing, zeg PLC."
+    },
+    {
+      "patroon": "plasma|guts|gougea|gouging|Fugenhobel|magneetboor|foreuse magn|magnetic drill|Magnetbohr|autogeen|oxycoup|oxy-fuel|Brennschneid",
+      "reden": "Geen specifieke uitrusting van de servicewagen noemen."
     }
   ],
   "nl": [
