@@ -7,8 +7,8 @@ locale: fr_BE
 naam: Français
 
 meta:
-  title: "Soudure sur site & réparation de machines | Werkhuizen Beckers, Hesbaye"
-  description: "Soudure mobile, rechargement dur et réparation de machines sur place. Ingénierie, CAO et programmation de robots. Depuis Gingelom jusqu'à Liège, Namur, Wavre et Bruxelles."
+  title: "Soudure sur site & réparation de machines | Werkhuizen Beckers"
+  description: "Soudure mobile, rechargement dur et réparation de machines sur place. Ingénierie, CAO et robots. De Gingelom à Liège, Namur et Bruxelles."
   og_alt: "Werkhuizen Beckers, soudure et réparation de machines sur site"
 
 skiplink: "Aller au contenu"
@@ -67,14 +67,13 @@ diensten:
   items:
     - id: laswerk
       titel: "Soudure sur site"
-      tekst: "Réparer, renforcer et modifier là où se trouve la pièce : fissures, pièces cassées, supports, châssis et pièces adaptées sur place. Les pièces usées reçoivent une nouvelle couche anti-usure. La camionnette transporte l'équipement complet de soudage et de découpe."
+      tekst: "Réparer, renforcer et modifier là où se trouve la pièce : fissures, pièces cassées, supports, châssis et pièces adaptées sur place. Les pièces usées reçoivent une nouvelle couche anti-usure. La camionnette de service est équipée pour tous les travaux de soudure sur place."
       lijst:
         - "Acier, inox et aluminium"
         - "Fonte, avec préchauffage et refroidissement contrôlé"
         - "Électrode (MMA), semi-automatique (MIG/MAG) et TIG"
         - "Rechargement dur et rechargement : dents, couteaux, palettes, rouleaux, arbres et portées de roulements"
-        - "Découpe plasma, oxycoupage et gougeage"
-        - "Extraction de boulons cassés, réparation de filetages, perçage à la foreuse magnétique"
+        - "Extraction de boulons cassés et réparation de filetages"
         - "Construction métallique et sur mesure, en concertation"
     - id: onderhoud
       titel: "Réparation et entretien"
@@ -123,17 +122,18 @@ werkwijze:
 werkgebied:
   label: "Zone d'intervention"
   titel: "Au départ de Gingelom"
-  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. À environ une heure de route : tout le Limbourg et la Hesbaye, Louvain et l'est de Bruxelles, Malines, Liège, Verviers et Namur."
+  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. À environ une heure de route : tout le Limbourg, la Campine et la Hesbaye, Louvain et l'est de Bruxelles, Malines, Liège, Verviers et Namur."
   regios:
     - "Limbourg"
     - "Hesbaye"
+    - "Campine"
     - "Brabant flamand"
     - "Est de Bruxelles"
     - "Brabant wallon"
     - "Province de Liège"
     - "Province de Namur"
     - "Plus loin, en concertation"
-  kaart_alt: "Carte schématique avec Gingelom au centre. Dans un rayon de 30 km : Saint-Trond, Hasselt, Tongres, Tirlemont, Diest, Waremme et Huy. Dans un rayon de 60 km, environ une heure de route : Genk, Maasmechelen, Beringen, Aarschot, Louvain, Malines, Bruxelles, Wavre, Namur, Liège et Verviers."
+  kaart_alt: "Carte schématique avec Gingelom au centre. Dans un rayon de 30 km : Saint-Trond, Hasselt, Tirlemont, Tongres, Diest et Huy. Dans un rayon de 60 km, environ une heure de route : Lommel, Geel, Malines, Bruxelles, Louvain, Wavre, Gembloux, Namur, Dinant, Liège, Verviers, Spa, Lierre, Bree, Fleurus, Durbuy, Genk et Maasmechelen."
   kaart_bijschrift: "Schématique, distances à vol d'oiseau. Cercle extérieur : environ une heure de route."
   ring_binnen: "30 km"
   ring_buiten: "60 km · ± 1 h"
@@ -143,20 +143,26 @@ werkgebied:
     hasselt: "Hasselt"
     genk: "Genk"
     maasmechelen: "Maasmechelen"
-    tongeren: "Tongres"
-    beringen: "Beringen"
+    lommel: "Lommel"
+    geel: "Geel"
     diest: "Diest"
-    aarschot: "Aarschot"
     mechelen: "Malines"
     brussel: "Bruxelles"
     leuven: "Louvain"
     tienen: "Tirlemont"
+    tongeren: "Tongres"
     waver: "Wavre"
+    gembloux: "Gembloux"
     namen: "Namur"
+    dinant: "Dinant"
     hoei: "Huy"
-    borgworm: "Waremme"
     luik: "Liège"
     verviers: "Verviers"
+    spa: "Spa"
+    lier: "Lierre"
+    bree: "Bree"
+    fleurus: "Fleurus"
+    durbuy: "Durbuy"
 
 over:
   label: "À propos"
