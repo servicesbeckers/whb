@@ -9,7 +9,7 @@ naam: Nederlands
 
 meta:
   title: "Laswerk op locatie & machineherstel | Werkhuizen Beckers, Gingelom, Limburg"
-  description: "Mobiel laswerk, hardoplassen en herstelling van machines ter plaatse. Engineering, CAD en robotprogrammatie. Vanuit Gingelom voor Sint-Truiden, Hasselt, Tienen en Luik."
+  description: "Mobiel laswerk, hardoplassen en herstelling van machines ter plaatse. Engineering, CAD en robotprogrammatie. Vanuit Gingelom tot Brussel, Maasmechelen, Luik en Namen."
   og_alt: "Werkhuizen Beckers, laswerk en machineherstel op locatie"
 
 skiplink: "Naar de inhoud"
@@ -41,7 +41,7 @@ suggestie:
   sluiten: "Sluiten"
 
 hero:
-  label: "Gingelom · heel Limburg en omstreken"
+  label: "Gingelom · tot een uur rijden in de omtrek"
   titel: "Laswerk & machineherstel op locatie"
   tekst: "Werkhuizen Beckers komt met een volledig uitgeruste servicewagen ter plaatse. Lassen in staal, inox en aluminium, en machines mechanisch én elektrisch terug aan de praat."
   of: "Of rechtstreeks"
@@ -96,7 +96,7 @@ diensten:
       lijst:
         - "CAD-ontwerp en werktekeningen (Autodesk Inventor)"
         - "Versleten of gebroken onderdelen opmeten en natekenen"
-        - "Machinebesturing aanpassen (Beckhoff/TwinCAT)"
+        - "PLC-programma's en machinebesturing aanpassen"
         - "Robotprogramma's aanpassen: KUKA, ABB en FANUC"
         - "Robotcellen, grijpers en opspanningen herstellen"
     - id: spoed
@@ -124,28 +124,40 @@ werkwijze:
 werkgebied:
   label: "Werkgebied"
   titel: "Vanuit Gingelom"
-  tekst: "Gingelom ligt op de grens van Limburg, Vlaams-Brabant en de provincie Luik. Van daaruit is heel Haspengouw vlot bereikbaar, net als de steden errond."
+  tekst: "Gingelom ligt op de grens van Limburg, Vlaams-Brabant en de provincie Luik. Binnen ongeveer een uur rijden liggen heel Limburg en Haspengouw, Leuven en de oostrand van Brussel, Mechelen, Luik, Verviers en Namen."
   regios:
     - "Limburg"
     - "Haspengouw"
     - "Vlaams-Brabant"
+    - "Oostrand van Brussel"
+    - "Waals-Brabant"
     - "Provincie Luik"
+    - "Provincie Namen"
     - "Verder in overleg"
-  kaart_alt: "Schematische kaart: Gingelom in het midden, met Sint-Truiden, Hasselt, Genk, Tongeren, Tienen, Leuven, Borgworm en Luik binnen een straal van ongeveer 30 km."
-  kaart_bijschrift: "Schematisch, afstanden in vogelvlucht"
+  kaart_alt: "Schematische kaart met Gingelom in het midden. Binnen 30 km: Sint-Truiden, Hasselt, Tongeren, Tienen, Diest, Borgworm en Hoei. Binnen 60 km, ongeveer een uur rijden: Genk, Maasmechelen, Beringen, Aarschot, Leuven, Mechelen, Brussel, Waver, Namen, Luik en Verviers."
+  kaart_bijschrift: "Schematisch, afstanden in vogelvlucht. Buitenste cirkel: ongeveer een uur rijden."
+  ring_binnen: "30 km"
+  ring_buiten: "60 km · ± 1 uur"
   plaatsen:
     gingelom: "Gingelom"
     sinttruiden: "Sint-Truiden"
     hasselt: "Hasselt"
     genk: "Genk"
+    maasmechelen: "Maasmechelen"
     tongeren: "Tongeren"
-    tienen: "Tienen"
-    leuven: "Leuven"
-    luik: "Luik"
-    borgworm: "Borgworm"
-    hannuit: "Hannuit"
+    beringen: "Beringen"
     diest: "Diest"
-    landen: "Landen"
+    aarschot: "Aarschot"
+    mechelen: "Mechelen"
+    brussel: "Brussel"
+    leuven: "Leuven"
+    tienen: "Tienen"
+    waver: "Waver"
+    namen: "Namen"
+    hoei: "Hoei"
+    borgworm: "Borgworm"
+    luik: "Luik"
+    verviers: "Verviers"
 
 over:
   label: "Over"
@@ -153,7 +165,7 @@ over:
   tekst:
     - "Ik ben zaakvoerder van Werkhuizen Beckers en engineer van opleiding. Toch werk ik bewust hands-on: lassen, sleutelen en storingen zoeken gebeurt bij de machine, niet achter een bureau."
     - "Die achtergrond helpt als een herstelling meer vraagt dan een lasnaad. De vraag is niet enkel waar iets brak, maar ook waarom."
-    - "Bij Werkhuizen Beckers kan u terecht in het Nederlands, Frans, Engels en Duits."
+    - "Bij Werkhuizen Beckers kan u terecht in het Nederlands, Engels en Duits."
   attesten_titel: "Attesten en verzekering"
   attesten:
     - "VCA VOL"
@@ -168,7 +180,7 @@ faq:
   titel: "Veelgestelde vragen"
   items:
     - vraag: "Komt u ook buiten Limburg?"
-      antwoord: "Ja. Haspengouw, Vlaams-Brabant en de provincie Luik horen bij het vaste werkgebied. Verder weg kan in overleg."
+      antwoord: "Ja. Tot ongeveer een uur rijden vanuit Gingelom: Haspengouw, Leuven, de oostrand van Brussel, Mechelen, Luik, Verviers en Namen. Verder weg kan in overleg."
     - vraag: "Moet de machine gedemonteerd worden?"
       antwoord: "Meestal niet. Lassen en herstellen gebeurt waar de machine staat. Moet er toch een onderdeel los om er goed bij te kunnen, dan gebeurt dat ter plaatse."
     - vraag: "Welke materialen last u?"

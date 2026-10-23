@@ -8,7 +8,7 @@ naam: Français
 
 meta:
   title: "Soudure sur site & réparation de machines | Werkhuizen Beckers, Hesbaye"
-  description: "Soudure mobile, rechargement dur et réparation de machines sur place. Ingénierie, CAO et programmation de robots. Depuis Gingelom vers Liège, Waremme, Hannut et Saint-Trond."
+  description: "Soudure mobile, rechargement dur et réparation de machines sur place. Ingénierie, CAO et programmation de robots. Depuis Gingelom jusqu'à Liège, Namur, Wavre et Bruxelles."
   og_alt: "Werkhuizen Beckers, soudure et réparation de machines sur site"
 
 skiplink: "Aller au contenu"
@@ -40,7 +40,7 @@ suggestie:
   sluiten: "Fermer"
 
 hero:
-  label: "Gingelom · Hesbaye, Limbourg et région liégeoise"
+  label: "Gingelom · jusqu'à une heure de route"
   titel: "Soudure & réparation de machines sur site"
   tekst: "Werkhuizen Beckers intervient sur place avec une camionnette entièrement équipée. Soudure de l'acier, de l'inox et de l'aluminium, et remise en marche de vos machines, côté mécanique comme côté électrique."
   of: "Ou directement"
@@ -95,7 +95,7 @@ diensten:
       lijst:
         - "Conception CAO et plans d'exécution (Autodesk Inventor)"
         - "Relevé et redessin de pièces usées ou cassées"
-        - "Adaptation de la commande machine (Beckhoff/TwinCAT)"
+        - "Adaptation des automates (PLC) et de la commande machine"
         - "Adaptation de programmes robots : KUKA, ABB et FANUC"
         - "Réparation de cellules robotisées, préhenseurs et montages"
     - id: spoed
@@ -123,28 +123,40 @@ werkwijze:
 werkgebied:
   label: "Zone d'intervention"
   titel: "Au départ de Gingelom"
-  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. De là, toute la Hesbaye et les villes alentour sont facilement accessibles."
+  tekst: "Gingelom se trouve à la frontière du Limbourg, du Brabant flamand et de la province de Liège. À environ une heure de route : tout le Limbourg et la Hesbaye, Louvain et l'est de Bruxelles, Malines, Liège, Verviers et Namur."
   regios:
     - "Limbourg"
     - "Hesbaye"
     - "Brabant flamand"
+    - "Est de Bruxelles"
+    - "Brabant wallon"
     - "Province de Liège"
+    - "Province de Namur"
     - "Plus loin, en concertation"
-  kaart_alt: "Carte schématique : Gingelom au centre, avec Saint-Trond, Hasselt, Genk, Tongres, Tirlemont, Louvain, Waremme et Liège dans un rayon d'environ 30 km."
-  kaart_bijschrift: "Schématique, distances à vol d'oiseau"
+  kaart_alt: "Carte schématique avec Gingelom au centre. Dans un rayon de 30 km : Saint-Trond, Hasselt, Tongres, Tirlemont, Diest, Waremme et Huy. Dans un rayon de 60 km, environ une heure de route : Genk, Maasmechelen, Beringen, Aarschot, Louvain, Malines, Bruxelles, Wavre, Namur, Liège et Verviers."
+  kaart_bijschrift: "Schématique, distances à vol d'oiseau. Cercle extérieur : environ une heure de route."
+  ring_binnen: "30 km"
+  ring_buiten: "60 km · ± 1 h"
   plaatsen:
     gingelom: "Gingelom"
     sinttruiden: "Saint-Trond"
     hasselt: "Hasselt"
     genk: "Genk"
+    maasmechelen: "Maasmechelen"
     tongeren: "Tongres"
-    tienen: "Tirlemont"
-    leuven: "Louvain"
-    luik: "Liège"
-    borgworm: "Waremme"
-    hannuit: "Hannut"
+    beringen: "Beringen"
     diest: "Diest"
-    landen: "Landen"
+    aarschot: "Aarschot"
+    mechelen: "Malines"
+    brussel: "Bruxelles"
+    leuven: "Louvain"
+    tienen: "Tirlemont"
+    waver: "Wavre"
+    namen: "Namur"
+    hoei: "Huy"
+    borgworm: "Waremme"
+    luik: "Liège"
+    verviers: "Verviers"
 
 over:
   label: "À propos"
@@ -152,7 +164,7 @@ over:
   tekst:
     - "Je suis le gérant de Werkhuizen Beckers et ingénieur de formation. Pourtant, je travaille volontairement sur le terrain : souder, réparer et chercher une panne, cela se fait devant la machine, pas derrière un bureau."
     - "Cette formation aide quand une réparation demande plus qu'un cordon de soudure. La question n'est pas seulement où la pièce a cassé, mais aussi pourquoi."
-    - "Chez Werkhuizen Beckers, vous êtes servi en français, en néerlandais, en anglais et en allemand."
+    - "Chez Werkhuizen Beckers, vous pouvez être servi en néerlandais, en anglais et en allemand."
   attesten_titel: "Attestations et assurance"
   attesten:
     - "VCA VOL"
@@ -167,7 +179,7 @@ faq:
   titel: "Questions fréquentes"
   items:
     - vraag: "Intervenez-vous aussi hors du Limbourg ?"
-      antwoord: "Oui. La Hesbaye, le Brabant flamand et la province de Liège font partie de la zone habituelle. Plus loin, c'est possible en concertation."
+      antwoord: "Oui. Jusqu'à environ une heure de route depuis Gingelom : la Hesbaye, Louvain, l'est de Bruxelles, Malines, Liège, Verviers et Namur. Plus loin, c'est possible en concertation."
     - vraag: "Faut-il démonter la machine ?"
       antwoord: "Généralement pas. La soudure et la réparation se font là où se trouve la machine. S'il faut quand même démonter une pièce pour y accéder, cela se fait sur place."
     - vraag: "Quels matériaux soudez-vous ?"

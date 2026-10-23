@@ -7,7 +7,7 @@ B2B, ter plaatse met een uitgeruste servicewagen. Vijf diensten:
 1. Laswerk op locatie: staal, inox, alu, gietijzer; MMA, MIG/MAG, TIG; hardoplassen en opbouwlassen; plasmasnijden, autogeen snijden, gutsen; bouten uitboren, schroefdraad, kernboren.
 2. Herstelling en onderhoud: staal, machines en installaties (mechanisch, elektrisch, pneumatisch, hydraulisch, stoom).
 3. Machine terug in leven na een crash.
-4. Engineering, besturing en robots: CAD in Autodesk Inventor (ook als losse opdracht), Beckhoff/TwinCAT, robotprogramma's aanpassen bij KUKA, ABB en FANUC.
+4. Engineering, besturing en robots: CAD in Autodesk Inventor (ook als losse opdracht), PLC en machinebesturing (geen merknamen), robotprogramma's aanpassen bij KUKA, ABB en FANUC.
 5. Dringende interventie.
 
 Niet aanbieden: machinebouw vanaf nul, softwareontwikkeling (.NET/C#), MES/ERP.
@@ -17,6 +17,8 @@ Niet aanbieden: machinebouw vanaf nul, softwareontwikkeling (.NET/C#), MES/ERP.
 - Alle teksten staan in `_data/i18n/<taal>.yml`. Een tekst wijzigen gebeurt daar, nooit in de HTML.
 - Elke wijziging in alle vier de talen doorvoeren. FR: Belgisch Frans, "vous". DE: "Sie". EN: neutraal zakelijk.
 - NL spreekt de klant aan met "u".
+- De site bestaat in vier talen, maar contact gebeurt in het Nederlands, Engels en Duits. Nergens beloven dat er in het Frans gecommuniceerd wordt (ook niet in JSON-LD `knowsLanguage`/`availableLanguage`).
+- Werkgebied: tot ongeveer een uur rijden vanuit Gingelom (kaart: ringen op 30 en 60 km), verder in overleg.
 
 ## Toon: niet helemaal alleen, maar ook geen team
 - Werkhuizen Beckers als onderwerp ("Werkhuizen Beckers komt ter plaatse") of neutrale en passieve zinnen ("Lassen gebeurt waar de machine staat").

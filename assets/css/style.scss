@@ -802,6 +802,7 @@ a:hover { color: var(--steenblauw); }
 }
 .kaart-raster path { stroke: var(--lijn); stroke-width: 1; fill: none; }
 .kaart-ring { fill: none; stroke: var(--steenblauw); stroke-width: 1.5; stroke-dasharray: 6 6; }
+.kaart-ring-buiten { stroke: var(--terracotta); stroke-width: 2; }
 .kaart-afstand { font-family: var(--mono); font-size: 13px; fill: var(--grijs); }
 .kaart-plaatsen circle { fill: var(--steenblauw); }
 .kaart-plaatsen text { font-family: var(--mono); font-size: 16px; fill: var(--inkt); paint-order: stroke; stroke: var(--papier); stroke-width: 4px; }
