@@ -8,7 +8,7 @@ naam: Deutsch
 
 meta:
   title: "Schweißarbeiten vor Ort & Maschinenreparatur | Werkhuizen Beckers, Belgien"
-  description: "Mobile Schweißarbeiten, Auftragschweißen und Maschinenreparatur vor Ort. Konstruktion, CAD und Roboterprogrammierung. Von Gingelom aus in Limburg, im Haspengau und in Lüttich."
+  description: "Mobile Schweißarbeiten, Auftragschweißen und Maschinenreparatur vor Ort. Konstruktion, CAD und Roboterprogrammierung. Von Gingelom bis Brüssel, Maasmechelen, Lüttich und Namur."
   og_alt: "Werkhuizen Beckers, Schweißarbeiten und Maschinenreparatur vor Ort"
 
 skiplink: "Zum Inhalt"
@@ -40,7 +40,7 @@ suggestie:
   sluiten: "Schließen"
 
 hero:
-  label: "Gingelom · Limburg und Umgebung"
+  label: "Gingelom · bis eine Stunde Fahrt"
   titel: "Schweißarbeiten & Maschinen­reparatur vor Ort"
   tekst: "Werkhuizen Beckers kommt mit einem voll ausgestatteten Servicewagen zu Ihnen. Schweißen von Stahl, Edelstahl und Aluminium, und Maschinen wieder zum Laufen bringen, mechanisch wie elektrisch."
   of: "Oder direkt"
@@ -95,7 +95,7 @@ diensten:
       lijst:
         - "CAD-Konstruktion und Fertigungszeichnungen (Autodesk Inventor)"
         - "Verschlissene oder gebrochene Teile aufmessen und nachzeichnen"
-        - "Maschinensteuerung anpassen (Beckhoff/TwinCAT)"
+        - "SPS (PLC) und Maschinensteuerung anpassen"
         - "Roboterprogramme anpassen: KUKA, ABB und FANUC"
         - "Roboterzellen, Greifer und Vorrichtungen instand setzen"
     - id: spoed
@@ -123,28 +123,40 @@ werkwijze:
 werkgebied:
   label: "Einsatzgebiet"
   titel: "Von Gingelom aus"
-  tekst: "Gingelom liegt an der Grenze von Limburg, Flämisch-Brabant und der Provinz Lüttich. Von dort aus sind der ganze Haspengau und die Städte ringsum schnell erreichbar."
+  tekst: "Gingelom liegt an der Grenze von Limburg, Flämisch-Brabant und der Provinz Lüttich. In etwa einer Stunde Fahrt erreichbar: ganz Limburg und der Haspengau, Löwen und der Osten von Brüssel, Mecheln, Lüttich, Verviers und Namur."
   regios:
     - "Limburg"
     - "Haspengau"
     - "Flämisch-Brabant"
+    - "Osten von Brüssel"
+    - "Wallonisch-Brabant"
     - "Provinz Lüttich"
+    - "Provinz Namur"
     - "Weiter entfernt nach Absprache"
-  kaart_alt: "Schematische Karte: Gingelom in der Mitte, mit Sint-Truiden, Hasselt, Genk, Tongern, Tienen, Löwen, Waremme und Lüttich in einem Umkreis von etwa 30 km."
-  kaart_bijschrift: "Schematisch, Entfernungen in Luftlinie"
+  kaart_alt: "Schematische Karte mit Gingelom in der Mitte. Im Umkreis von 30 km: Sint-Truiden, Hasselt, Tongern, Tienen, Diest, Waremme und Huy. Im Umkreis von 60 km, etwa eine Stunde Fahrt: Genk, Maasmechelen, Beringen, Aarschot, Löwen, Mecheln, Brüssel, Wavre, Namur, Lüttich und Verviers."
+  kaart_bijschrift: "Schematisch, Entfernungen in Luftlinie. Äußerer Kreis: etwa eine Stunde Fahrt."
+  ring_binnen: "30 km"
+  ring_buiten: "60 km · ± 1 Std."
   plaatsen:
     gingelom: "Gingelom"
     sinttruiden: "Sint-Truiden"
     hasselt: "Hasselt"
     genk: "Genk"
+    maasmechelen: "Maasmechelen"
     tongeren: "Tongern"
-    tienen: "Tienen"
-    leuven: "Löwen"
-    luik: "Lüttich"
-    borgworm: "Waremme"
-    hannuit: "Hannut"
+    beringen: "Beringen"
     diest: "Diest"
-    landen: "Landen"
+    aarschot: "Aarschot"
+    mechelen: "Mecheln"
+    brussel: "Brüssel"
+    leuven: "Löwen"
+    tienen: "Tienen"
+    waver: "Wavre"
+    namen: "Namur"
+    hoei: "Huy"
+    borgworm: "Waremme"
+    luik: "Lüttich"
+    verviers: "Verviers"
 
 over:
   label: "Über"
@@ -152,7 +164,7 @@ over:
   tekst:
     - "Ich bin Geschäftsführer von Werkhuizen Beckers und ausgebildeter Ingenieur. Trotzdem arbeite ich bewusst praktisch: Schweißen, schrauben und Fehler suchen passiert an der Maschine, nicht am Schreibtisch."
     - "Dieser Hintergrund hilft, wenn eine Reparatur mehr verlangt als eine Schweißnaht. Die Frage ist nicht nur, wo etwas gebrochen ist, sondern auch warum."
-    - "Bei Werkhuizen Beckers werden Sie auf Deutsch, Niederländisch, Französisch und Englisch betreut."
+    - "Bei Werkhuizen Beckers werden Sie auf Deutsch, Niederländisch und Englisch betreut."
   attesten_titel: "Nachweise und Versicherung"
   attesten:
     - "VCA VOL"
@@ -167,7 +179,7 @@ faq:
   titel: "Häufige Fragen"
   items:
     - vraag: "Kommen Sie auch außerhalb von Limburg?"
-      antwoord: "Ja. Der Haspengau, Flämisch-Brabant und die Provinz Lüttich gehören zum festen Einsatzgebiet. Weiter entfernt nach Absprache."
+      antwoord: "Ja. Bis etwa eine Stunde Fahrt ab Gingelom: der Haspengau, Löwen, der Osten von Brüssel, Mecheln, Lüttich, Verviers und Namur. Weiter entfernt nach Absprache."
     - vraag: "Muss die Maschine demontiert werden?"
       antwoord: "Meistens nicht. Geschweißt und repariert wird dort, wo die Maschine steht. Muss doch ein Teil ab, um an die Schadstelle zu kommen, geschieht das vor Ort."
     - vraag: "Welche Werkstoffe schweißen Sie?"

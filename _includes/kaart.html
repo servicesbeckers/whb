@@ -1,37 +1,47 @@
 {%- comment -%}
 Schematische kaart van het werkgebied. Posities berekend uit echte coördinaten
-(equirectangulaire projectie rond Gingelom, 7,5 px per km). Ringen op 15 en 30 km.
+(equirectangulaire projectie rond Gingelom, 4,6 px per km). Ringen op 30 en 60 km;
+60 km in vogelvlucht komt ongeveer overeen met een uur rijden.
 {%- endcomment -%}
-{%- assign p = site.data.i18n[page.lang].werkgebied.plaatsen -%}
-<svg class="kaart-svg" viewBox="0 0 600 540" role="img" aria-labelledby="kaart-alt">
-    <title id="kaart-alt">{{ site.data.i18n[page.lang].werkgebied.kaart_alt }}</title>
+{%- assign w = site.data.i18n[page.lang].werkgebied -%}
+{%- assign p = w.plaatsen -%}
+<svg class="kaart-svg" viewBox="0 0 640 640" role="img" aria-labelledby="kaart-alt">
+    <title id="kaart-alt">{{ w.kaart_alt }}</title>
     <g class="kaart-raster">
-        <path d="M0 90H600M0 180H600M0 270H600M0 360H600M0 450H600M100 0V540M200 0V540M300 0V540M400 0V540M500 0V540"/>
+        <path d="M0 80H640M0 160H640M0 240H640M0 320H640M0 400H640M0 480H640M0 560H640M80 0V640M160 0V640M240 0V640M320 0V640M400 0V640M480 0V640M560 0V640"/>
     </g>
-    <circle class="kaart-ring" cx="300" cy="270" r="225"/>
-    <circle class="kaart-ring" cx="300" cy="270" r="112.5"/>
-    <text class="kaart-afstand" x="306" y="40">30 km</text>
-    <text class="kaart-afstand" x="306" y="152">15 km</text>
+    <circle class="kaart-ring kaart-ring-buiten" cx="320" cy="320" r="276"/>
+    <circle class="kaart-ring" cx="320" cy="320" r="138"/>
+    <text class="kaart-afstand" x="328" y="38">{{ w.ring_buiten }}</text>
+    <text class="kaart-afstand" x="328" y="476">{{ w.ring_binnen }}</text>
 
     <g class="kaart-plaatsen">
-        <g transform="translate(327 214)"><circle r="5"/><text x="10" y="4">{{ p.sinttruiden }}</text></g>
-        <g transform="translate(407 118)"><circle r="5"/><text x="10" y="4">{{ p.hasselt }}</text></g>
-        <g transform="translate(493 89)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.genk }}</text></g>
-        <g transform="translate(473 243)"><circle r="5"/><text x="10" y="4">{{ p.tongeren }}</text></g>
-        <g transform="translate(197 221)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.tienen }}</text></g>
-        <g transform="translate(71 161)"><circle r="5"/><text x="10" y="-8">{{ p.leuven }}</text></g>
-        <g transform="translate(527 365)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.luik }}</text></g>
-        <g transform="translate(364 313)"><circle r="5"/><text x="10" y="4">{{ p.borgworm }}</text></g>
-        <g transform="translate(270 333)"><circle r="5"/><text x="-10" y="4" text-anchor="end">{{ p.hannuit }}</text></g>
-        <g transform="translate(256 68)"><circle r="5"/><text x="10" y="4">{{ p.diest }}</text></g>
+        <g transform="translate(337 285)"><circle r="5"/><text y="-12" text-anchor="middle">{{ p.sinttruiden }}</text></g>
+        <g transform="translate(386 227)"><circle r="5"/><text x="-10" y="5" text-anchor="end">{{ p.hasselt }}</text></g>
+        <g transform="translate(438 209)"><circle r="5"/><text y="24" text-anchor="middle">{{ p.genk }}</text></g>
+        <g transform="translate(501 209)"><circle r="5"/><text y="-12" text-anchor="middle">{{ p.maasmechelen }}</text></g>
+        <g transform="translate(426 303)"><circle r="5"/><text x="10" y="5">{{ p.tongeren }}</text></g>
+        <g transform="translate(349 166)"><circle r="5"/><text x="10" y="5">{{ p.beringen }}</text></g>
+        <g transform="translate(293 197)"><circle r="5"/><text x="-10" y="5" text-anchor="end">{{ p.diest }}</text></g>
+        <g transform="translate(223 198)"><circle r="5"/><text x="-10" y="5" text-anchor="end">{{ p.aarschot }}</text></g>
+        <g transform="translate(107 178)"><circle r="5"/><text x="10" y="5">{{ p.mechelen }}</text></g>
+        <g transform="translate(68 269)"><circle r="5"/><text x="10" y="5">{{ p.brussel }}</text></g>
+        <g transform="translate(180 253)"><circle r="5"/><text y="-12" text-anchor="middle">{{ p.leuven }}</text></g>
+        <g transform="translate(257 290)"><circle r="5"/><text x="-10" y="5" text-anchor="end">{{ p.tienen }}</text></g>
+        <g transform="translate(147 336)"><circle r="5"/><text x="10" y="5">{{ p.waver }}</text></g>
+        <g transform="translate(234 464)"><circle r="5"/><text x="10" y="5">{{ p.namen }}</text></g>
+        <g transform="translate(354 437)"><circle r="5"/><text x="10" y="5">{{ p.hoei }}</text></g>
+        <g transform="translate(359 346)"><circle r="5"/><text x="10" y="5">{{ p.borgworm }}</text></g>
+        <g transform="translate(460 379)"><circle r="5"/><text x="10" y="5">{{ p.luik }}</text></g>
+        <g transform="translate(556 401)"><circle r="5"/><text y="24" text-anchor="middle">{{ p.verviers }}</text></g>
     </g>
 
-    <g class="kaart-basis" transform="translate(300 270)">
+    <g class="kaart-basis" transform="translate(320 320)">
         <rect x="-11" y="-11" width="22" height="22"/>
-        <text x="18" y="5">{{ p.gingelom }}</text>
+        <text x="-40" y="40" text-anchor="middle">{{ p.gingelom }}</text>
     </g>
 
-    <g class="kaart-noord" transform="translate(560 40)">
+    <g class="kaart-noord" transform="translate(604 44)">
         <path d="M0 -18L8 6H-8z"/>
         <text y="22" text-anchor="middle">N</text>
     </g>

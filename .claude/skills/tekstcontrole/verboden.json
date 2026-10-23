@@ -49,6 +49,10 @@
     {
       "patroon": ".NET\b|C#",
       "reden": "Dienst die van de site verwijderd is (softwareontwikkeling)."
+    },
+    {
+      "patroon": "Beckhoff|TwinCAT",
+      "reden": "Geen merknaam voor de besturing, zeg PLC."
     }
   ],
   "nl": [
@@ -107,6 +111,10 @@
     {
       "patroon": "één persoon|eenmanszaak|ik kom zelf|kom ik zelf|in mijn eentje|alleen werk",
       "reden": "Suggereert dat Lander alleen werkt."
+    },
+    {
+      "patroon": "(Nederlands|Engels|Duits)[^.]*\\bFrans\\b|\\bFrans\\b[^.]*(Nederlands|Engels|Duits)",
+      "reden": "Geen belofte dat er in het Frans gecommuniceerd wordt."
     }
   ],
   "fr": [
