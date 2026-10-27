@@ -67,7 +67,9 @@ h1, h2, h3 {
     color: var(--steenblauw);
     text-wrap: balance;
     overflow-wrap: break-word;
-    hyphens: auto; /* lange Duitse samenstellingen op gsm */
+    /* Geen automatische afbreking ("machi-neherstel"). Lange woorden krijgen een zacht
+       afbreekteken (­) in de tekst zelf, zoals "Maschinen­reparatur" in de.yml. */
+    hyphens: manual;
 }
 
 p { margin: 0 0 1em; }
@@ -235,6 +237,10 @@ a:hover { color: var(--steenblauw); }
     .kop-merk { font-size: 0.9rem; }
     .kop .taalkiezer li + li::before { display: none; }
     .kop .taalkiezer a { min-width: 28px; padding: 8px 2px; }
+}
+@media (max-width: 359px) {
+    .kop-merk { font-size: 0.8rem; }
+    .kop .taalkiezer a { min-width: 24px; padding: 8px 1px; }
 }
 
 .menuknop {

@@ -57,6 +57,10 @@
     {
       "patroon": "plasma|guts|gougea|gouging|Fugenhobel|magneetboor|foreuse magn|magnetic drill|Magnetbohr|autogeen|oxycoup|oxy-fuel|Brennschneid",
       "reden": "Geen specifieke uitrusting van de servicewagen noemen."
+    },
+    {
+      "patroon": "476 ?06 ?32 ?85|0?476063285",
+      "reden": "Oud telefoonnummer. Nieuw: +32 456 16 40 51."
     }
   ],
   "nl": [
