@@ -54,6 +54,10 @@ Na elke tekstwijziging de skill `tekstcontrole` draaien. De kern:
 - Uitstraling: werkplaats en industrieel. Donker steenblauw, terracotta-accenten, motieven van het machineplaatje (schroefhoeken, gestanste labels in DM Mono), strakke lijnen, rechte hoeken.
 - Niet doen: verlopen in paars of blauw, glaseffecten, zachte schaduwen overal, ronde pillen-knoppen, rasters van identieke kaartjes met een icoontje, generieke icoonsets, decoratieve emoji.
 - Mobile-first. Op mobiel altijd een sticky balk onderaan met Bel, WhatsApp en Foto sturen.
+- Geen automatische woordafbreking in titels. Past een lang woord niet op gsm, zet dan een zacht afbreekteken (`­`) op een logische plaats in de yml (bv. "Maschinen­reparatur").
+
+## Contactgegevens
+Telefoon en WhatsApp Business: +32 456 16 40 51 (staat centraal in `_config.yml` onder `bedrijf`). Het oude nummer 0476 06 32 85 mag nergens meer voorkomen.
 
 ## SEO
 Titel hoogstens ±65 tekens, meta description hoogstens ±155 tekens (anders knipt Google af). Kaart: enkel grotere, herkenbare steden, gespreid binnen de ring van 60 km; nieuwe steden ook toevoegen aan `plaatsen`, `kaart_alt` en de stedenlijst in `_includes/jsonld.html`.

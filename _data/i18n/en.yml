@@ -197,7 +197,7 @@ faq:
     - vraag: "Do you also change robot programs?"
       antwoord: "Yes, for KUKA, ABB and FANUC. For example after a repair or a change to the cell, when positions or paths have to be set again."
     - vraag: "How do I send a photo of the problem?"
-      antwoord: "Through WhatsApp to +32 476 06 32 85 or by email to info@werkhuizenbeckers.be. Add the location and a short description."
+      antwoord: "Through WhatsApp to +32 456 16 40 51 or by email to info@werkhuizenbeckers.be. Add the location and a short description."
 
 contact:
   label: "Contact"
@@ -252,7 +252,7 @@ privacy:
       tekst: |
         Werkhuizen Beckers BV, Gingelom – Sint-Truiden, Belgium. VAT BE 1041 720 216.
 
-        Questions about this statement: [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) or [+32 476 06 32 85](tel:+32476063285).
+        Questions about this statement: [info@werkhuizenbeckers.be](mailto:info@werkhuizenbeckers.be) or [+32 456 16 40 51](tel:+32456164051).
     - titel: "Which data is processed?"
       tekst: |
         Only what you provide yourself:
